@@ -1,28 +1,53 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:71:"C:\wamp64\www\ptcznweb\public/../application/index\view\back\index.html";i:1520745314;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:71:"C:\wamp64\www\ptcznweb\public/../application/index\view\back\index.html";i:1520773429;s:62:"C:\wamp64\www\ptcznweb\application\index\view\common\head.html";i:1520663413;s:64:"C:\wamp64\www\ptcznweb\application\index\view\back\backhead.html";i:1520773087;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\linkus.html";i:1520669848;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\footer.html";i:1520668646;}*/ ?>
 <!DOCTYPE html>
-
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
-
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta charset="utf-8" />
-	<title> Admin Lab Dashboard</title>
-	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
-	<meta content="" name="description" />
-	<meta content="" name="author" />
-	<link href="/ptcznweb/public/static/assets/back/backbootstrap/css/bootstrap.min.css" rel="stylesheet" />
-	<link href="/ptcznweb/public/static/assets/back/backbootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
-	<link href="/ptcznweb/public/static/assets/back/backfont-awesome/css/font-awesome.css" rel="stylesheet" />
-	<link href="/ptcznweb/public/static/css/back/style.css" rel="stylesheet" />
-	<link href="/ptcznweb/public/static/css/back/style_responsive.css" rel="stylesheet" />
-	<link href="/ptcznweb/public/static/css/back/style_default.css" rel="stylesheet" id="style_color" />
-
-	<link href="/ptcznweb/public/static/assets/back/backfancybox/source/jquery.fancybox.css" rel="stylesheet" />
-	<link rel="stylesheet" type="text/css" href="/ptcznweb/public/static/assets/back/backuniform/css/uniform.default.css" />
-	<link href="/ptcznweb/public/static/assets/back/backfullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />
-	<link href="/ptcznweb/public/static/assets/back/backjqvmap/jqvmap/jqvmap.css" media="screen" rel="stylesheet" type="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<link rel="stylesheet" type="text/css" href="/ptcznweb/public/static/css/index/reset.css"/>
+<script type="text/javascript" src="/ptcznweb/public/static/js/index/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="/ptcznweb/public/static/js/index/js_z.js"></script>
+<script type="text/javascript" src="/ptcznweb/public/static/js/index/banner.js"></script>
+<link rel="stylesheet" type="text/css" href="/ptcznweb/public/static/css/index/thems.css">
+<link rel="stylesheet" type="text/css" href="/ptcznweb/public/static/css/index/responsive.css">
+<script language="javascript">
+$(function(){
+	$('#owl-demo').owlCarousel({
+		items: 1,
+		navigation: true,
+		navigationText: ["上一个","下一个"],
+		autoPlay: true,
+		stopOnHover: true
+	}).hover(function(){
+		$('.owl-buttons').show();
+	}, function(){
+		$('.owl-buttons').hide();
+	});
+});
+</script>
 </head>
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <link href="/ptcznweb/public/static/assets/back/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/ptcznweb/public/static/assets/back/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="/ptcznweb/public/static/assets/back/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="/ptcznweb/public/static/css/back/style.css" rel="stylesheet" />
+    <link href="/ptcznweb/public/static/css/back/style_responsive.css" rel="stylesheet" />
+    <link href="/ptcznweb/public/static/css/back/style_default.css" rel="stylesheet" id="style_color" />
+
+    <link href="/ptcznweb/public/static/assets/back/fancybox/source/jquery.fancybox.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/ptcznweb/public/static/assets/back/uniform/css/uniform.default.css" />
+    <link href="/ptcznweb/public/static/assets/back/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />
+    <link href="/ptcznweb/public/static/assets/back/jqvmap/jqvmap/jqvmap.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<title>作者后台界面</title>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
 <body class="fixed-top">
@@ -33,7 +58,7 @@
 			<div class="container-fluid">
 				<!-- BEGIN LOGO -->
 				<a class="brand" href="index.html">
-				    <img src="/ptcznweb/public/static/img/back/logo.png" alt="Admin Lab" />
+				    <img src="/ptcznweb/public/static/img/back/nandgatelogo4.png" alt="Admin Lab" />
 				</a>
 				<!-- END LOGO -->
 				<!-- BEGIN RESPONSIVE MENU TOGGLER -->
@@ -201,7 +226,7 @@
 								<li><a href="#"><i class="icon-tasks"></i> My Tasks</a></li>
 								<li><a href="#"><i class="icon-calendar"></i> Calendar</a></li>
 								<li class="divider"></li>
-								<li><a href="login.html"><i class="icon-key"></i> Log Out</a></li>
+								<li><a href="<?php echo url('Publogin/index'); ?>"><i class="icon-key"></i> Log Out</a></li>
 							</ul>
 						</li>
 						<!-- END USER LOGIN DROPDOWN -->
@@ -1183,7 +1208,7 @@
 	<!-- END CONTAINER -->
 	<!-- BEGIN FOOTER -->
 	<div id="footer">
-		2013 &copy; Admin Lab Dashboard. 更多模板：<a href="http://www.mycodes.net/" target="_blank">源码之家</a>
+        返回页面顶端
 		<div class="span pull-right">
 			<span class="go-top"><i class="icon-arrow-up"></i></span>
 		</div>
@@ -1192,10 +1217,10 @@
 	<!-- BEGIN JAVASCRIPTS -->
 	<!-- Load javascripts at bottom, this will reduce page load time -->
 	<script src="/ptcznweb/public/static/js/back/jquery-1.8.3.min.js"></script>
-	<script src="/ptcznweb/public/static/assets/back/backjquery-slimscroll/jquery-ui-1.9.2.custom.min.js"></script>
-	<script src="/ptcznweb/public/static/assets/back/backjquery-slimscroll/jquery.slimscroll.min.js"></script>
-	<script src="/ptcznweb/public/static/assets/back/backfullcalendar/fullcalendar/fullcalendar.min.js"></script>
-	<script src="/ptcznweb/public/static/assets/back/backbootstrap/js/bootstrap.min.js"></script>
+	<script src="/ptcznweb/public/static/assets/back/jquery-slimscroll/jquery-ui-1.9.2.custom.min.js"></script>
+	<script src="/ptcznweb/public/static/assets/back/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+	<script src="/ptcznweb/public/static/assets/back/fullcalendar/fullcalendar/fullcalendar.min.js"></script>
+	<script src="/ptcznweb/public/static/assets/back/bootstrap/js/bootstrap.min.js"></script>
 	<script src="/ptcznweb/public/static/js/back/jquery.blockui.js"></script>
 	<script src="/ptcznweb/public/static/js/back/jquery.cookie.js"></script>
 	<!-- ie8 fixes -->
@@ -1203,23 +1228,23 @@
 	<script src="/ptcznweb/public/static/js/back/excanvas.js"></script>
 	<script src="/ptcznweb/public/static/js/back/respond.js"></script>
 	<![endif]-->
-	<script src="/ptcznweb/public/static/assets/back/backjqvmap/jqvmap/jquery.vmap.js" type="text/javascript"></script>
-	<script src="/ptcznweb/public/static/assets/back/backjqvmap/jqvmap/maps/jquery.vmap.russia.js" type="text/javascript"></script>
-	<script src="/ptcznweb/public/static/assets/back/backjqvmap/jqvmap/maps/jquery.vmap.world.js" type="text/javascript"></script>
-	<script src="/ptcznweb/public/static/assets/back/backjqvmap/jqvmap/maps/jquery.vmap.europe.js" type="text/javascript"></script>
-	<script src="/ptcznweb/public/static/assets/back/backjqvmap/jqvmap/maps/jquery.vmap.germany.js" type="text/javascript"></script>
-	<script src="/ptcznweb/public/static/assets/back/backjqvmap/jqvmap/maps/jquery.vmap.usa.js" type="text/javascript"></script>
-	<script src="/ptcznweb/public/static/assets/back/backjqvmap/jqvmap/data/jquery.vmap.sampledata.js" type="text/javascript"></script>
-	<script src="/ptcznweb/public/static/assets/back/backjquery-knob/js/jquery.knob.js"></script>
-	<script src="/ptcznweb/public/static/assets/back/backflot/jquery.flot.js"></script>
-	<script src="/ptcznweb/public/static/assets/back/backflot/jquery.flot.resize.js"></script>
+	<script src="/ptcznweb/public/static/assets/back/jqvmap/jqvmap/jquery.vmap.js" type="text/javascript"></script>
+	<script src="/ptcznweb/public/static/assets/back/jqvmap/jqvmap/maps/jquery.vmap.russia.js" type="text/javascript"></script>
+	<script src="/ptcznweb/public/static/assets/back/jqvmap/jqvmap/maps/jquery.vmap.world.js" type="text/javascript"></script>
+	<script src="/ptcznweb/public/static/assets/back/jqvmap/jqvmap/maps/jquery.vmap.europe.js" type="text/javascript"></script>
+	<script src="/ptcznweb/public/static/assets/back/jqvmap/jqvmap/maps/jquery.vmap.germany.js" type="text/javascript"></script>
+	<script src="/ptcznweb/public/static/assets/back/jqvmap/jqvmap/maps/jquery.vmap.usa.js" type="text/javascript"></script>
+	<script src="/ptcznweb/public/static/assets/back/jqvmap/jqvmap/data/jquery.vmap.sampledata.js" type="text/javascript"></script>
+	<script src="/ptcznweb/public/static/assets/back/jquery-knob/js/jquery.knob.js"></script>
+	<script src="/ptcznweb/public/static/assets/back/flot/jquery.flot.js"></script>
+	<script src="/ptcznweb/public/static/assets/back/flot/jquery.flot.resize.js"></script>
 
-    <script src="/ptcznweb/public/static/assets/back/backflot/jquery.flot.pie.js"></script>
-    <script src="/ptcznweb/public/static/assets/back/backflot/jquery.flot.stack.js"></script>
-    <script src="/ptcznweb/public/static/assets/back/backflot/jquery.flot.crosshair.js"></script>
+    <script src="/ptcznweb/public/static/assets/back/flot/jquery.flot.pie.js"></script>
+    <script src="/ptcznweb/public/static/assets/back/flot/jquery.flot.stack.js"></script>
+    <script src="/ptcznweb/public/static/assets/back/flot/jquery.flot.crosshair.js"></script>
 
 	<script src="/ptcznweb/public/static/js/back/jquery.peity.min.js"></script>
-	<script type="text/javascript" src="/ptcznweb/public/static/assets/back/backuniform/jquery.uniform.min.js"></script>
+	<script type="text/javascript" src="/ptcznweb/public/static/assets/back/uniform/jquery.uniform.min.js"></script>
 	<script src="/ptcznweb/public/static/js/back/scripts.js"></script>
 	<script>
 		jQuery(document).ready(function() {
@@ -1229,6 +1254,38 @@
 		});
 	</script>
 	<!-- END JAVASCRIPTS -->
+
 </body>
+
+<div class="fn_bg">
+	<ul class="f_nav clearfix">
+    	<li>
+        	<a href="">
+            	<img src="/ptcznweb/public/static/img/index/f_1.png" alt=""/>
+                <span>联系方式</span>
+            </a>
+        </li>
+        <li>
+        	<a href="">
+            	<img src="/ptcznweb/public/static/img/index/f_4.png" alt=""/>
+                <span>微信公众号</span>
+            </a>
+        </li>
+        <li>
+        	<a href="">
+            	<img src="/ptcznweb/public/static/img/index/f_2.png" alt=""/>
+                <span>工作室介绍</span>
+            </a>
+        </li>
+        <li>
+        	<a href="">
+            	<img src="/ptcznweb/public/static/img/index/f_5.png" alt=""/>
+                <span>一键分享</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="bq">Copyright&copy;2017-2018&nbsp;&nbsp;<b>www.ptczn.cn</b>&nbsp;&nbsp;<a href="http://www.miitbeian.gov.cn" target="_blank">京ICP备18007602号</a></div>
+
 <!-- END BODY -->
 </html>

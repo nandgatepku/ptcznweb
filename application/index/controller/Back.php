@@ -16,4 +16,9 @@ class Back extends Base
     {
         return $this->fetch('index');
     }
+
+    public function logout()
+    {
+        return $this->fetch('Publogin/index');
+    }
 }

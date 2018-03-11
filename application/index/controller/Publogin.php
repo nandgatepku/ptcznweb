@@ -21,6 +21,11 @@ class Publogin extends Base
         return $this->fetch('log');
     }
 
+    public function back()
+    {
+        return $this->fetch('../back/index');
+    }
+
     public function denglu(){
         $uname=$_POST['uname']; // 获取用户名
         $upwd=$_POST['upwd'];   // 获取密码
@@ -39,7 +44,9 @@ class Publogin extends Base
 //                        $this->redirect('Index/show', '', 2, '登录成功！前往管理后台!...页面跳转中...');
                         echo $uname;
                         echo $upwd;
-                        $this->success('登录成功','log','','10');
+//                        $this->redirect('Back/index');
+                        exit('<script language="javascript">top.location.href="../back/index.html"</script>');
+
                     } else {  // 如果用户不存在
                         $this->error('用户名或密码错误!...页面跳转中...', 'log', '', '2');
                     }
