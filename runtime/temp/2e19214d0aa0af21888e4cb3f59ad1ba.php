@@ -1,0 +1,16 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:59:"C:\wamp64\www\ptcznweb\public/../application/error/404.html";i:1520697315;}*/ ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>望问津的云端站点</title>
+</head>
+<body>
+<h2>404错误</h2>
+<br/>
+<p>老哥，报404错误啦</p>
+<p>有可能是您以前访问过本站，然后浏览器的缓存未更新呦~</p>
+<p>试试访问以下网址进入本站：</p>
+<p><a href="http://pku.ptczn.cn">pku.ptczn.cn</a></p>
+</body>
+</html>
