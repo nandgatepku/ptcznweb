@@ -33853,3 +33853,1571 @@ G ] INIT File
 [ info ] [ PARAM ] array (
 )
 [ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:34:58+08:00 ] 127.0.0.1 GET /ptcznweb/public/index/back/index.html
+[ info ] 127.0.0.1/ptcznweb/public/index/back/index.html [运行时间：0.032024s][吞吐率：31.23req/s] [内存消耗：3,030.80kb] [文件加载：45]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'back',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/index/publogin/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Back->index[ C:\wamp64\www\ptcznweb\application\index\controller\Back.php ]
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/index\view\back\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:34:58+08:00 ] 127.0.0.1 GET /ptcznweb/public/index/back//ptcznweb/public/static/img/back/avatar-mini.png
+[ info ] 127.0.0.1/ptcznweb/public/index/back//ptcznweb/public/static/img/back/avatar-mini.png [运行时间：0.041224s][吞吐率：24.26req/s] [内存消耗：2,936.80kb] [文件加载：46]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'back',
+    2 => 'ptcznweb',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/index/back/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+  'public' => 'static',
+  'img' => 'back',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:34:58+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/img/side-bar-list-bg.png
+[ info ] 127.0.0.1/ptcznweb/public/static/css/img/side-bar-list-bg.png [运行时间：0.127202s][吞吐率：7.86req/s] [内存消耗：2,414.08kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style_default.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:34:58+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/back/__STATIC__/img/back/body-bg.png
+[ info ] 127.0.0.1/ptcznweb/public/static/css/back/__STATIC__/img/back/body-bg.png [运行时间：0.163970s][吞吐率：6.10req/s] [内存消耗：2,414.89kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'back',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+  '__STATIC__' => 'img',
+  'back' => 'body-bg.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:34:58+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/back/__STATIC__/img/back/side-bar-list-bg.png
+[ info ] 127.0.0.1/ptcznweb/public/static/css/back/__STATIC__/img/back/side-bar-list-bg.png [运行时间：0.161111s][吞吐率：6.21req/s] [内存消耗：2,415.41kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'back',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+  '__STATIC__' => 'img',
+  'back' => 'side-bar-list-bg.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:34:58+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/back/__STATIC__/img/back/submenu_hover.png
+[ info ] 127.0.0.1/ptcznweb/public/static/css/back/__STATIC__/img/back/submenu_hover.png [运行时间：0.116579s][吞吐率：8.58req/s] [内存消耗：2,414.81kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'back',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+  '__STATIC__' => 'img',
+  'back' => 'submenu_hover.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:34:58+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/back/__STATIC__/img/back/bread-crumb-last.jpg
+[ info ] 127.0.0.1/ptcznweb/public/static/css/back/__STATIC__/img/back/bread-crumb-last.jpg [运行时间：0.031781s][吞吐率：31.47req/s] [内存消耗：2,415.41kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'back',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+  '__STATIC__' => 'img',
+  'back' => 'bread-crumb-last.jpg',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:34:59+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/back/__STATIC__/font/myriadprolight.ttf
+[ info ] 127.0.0.1/ptcznweb/public/static/css/back/__STATIC__/font/myriadprolight.ttf [运行时间：0.133622s][吞吐率：7.48req/s] [内存消耗：2,414.90kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'back',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+  '__STATIC__' => 'font',
+)
+[ info ] [ LOG ] INIT File
+'bread-crumb-divider.jpg',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:34:59+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/back/__STATIC__/img/back/bread-crumb-bg.jpg
+[ info ] 127.0.0.1/ptcznweb/public/static/css/back/__STATIC__/img/back/bread-crumb-bg.jpg [运行时间：0.224429s][吞吐率：4.46req/s] [内存消耗：2,414.73kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'back',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+  '__STATIC__' => 'img',
+  'back' => 'bread-crumb-bg.jpg',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:34:59+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/back/__STATIC__/font/myriadprolight.woff
+[ info ] 127.0.0.1/ptcznweb/public/static/css/back/__STATIC__/font/myriadprolight.woff [运行时间：0.169636s][吞吐率：5.89req/s] [内存消耗：2,414.90kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'back',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+  '__STATIC__' => 'font',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:45:09+08:00 ] 127.0.0.1 GET /ptcznweb/public/
+[ info ] 127.0.0.1/ptcznweb/public/ [运行时间：0.036170s][吞吐率：27.65req/s] [内存消耗：2,969.25kb] [文件加载：45]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\wamp64\www\ptcznweb\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:45:12+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/upload/banner.jpg
+[ info ] 127.0.0.1/ptcznweb/public/static/upload/banner.jpg [运行时间：0.031554s][吞吐率：31.69req/s] [内存消耗：2,413.80kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'upload',
+    2 => 'banner.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:45:30+08:00 ] 127.0.0.1 GET /ptcznweb/public/index/publogin/index.html
+[ info ] 127.0.0.1/ptcznweb/public/index/publogin/index.html [运行时间：0.028965s][吞吐率：34.52req/s] [内存消耗：2,981.48kb] [文件加载：45]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'publogin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Publogin->index[ C:\wamp64\www\ptcznweb\application\index\controller\Publogin.php ]
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/index\view\publogin\publogin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:45:30+08:00 ] 127.0.0.1 GET /ptcznweb/public/index/publogin/log.html
+[ info ] 127.0.0.1/ptcznweb/public/index/publogin/log.html [运行时间：0.036950s][吞吐率：27.06req/s] [内存消耗：2,981.38kb] [文件加载：45]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'publogin',
+    2 => 'log',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/index/publogin/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Publogin->log[ C:\wamp64\www\ptcznweb\application\index\controller\Publogin.php ]
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/index\view\publogin\log.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:45:34+08:00 ] 127.0.0.1 GET /ptcznweb/public/index/publogin/index.html
+[ info ] 127.0.0.1/ptcznweb/public/index/publogin/index.html [运行时间：0.029713s][吞吐率：33.66req/s] [内存消耗：2,981.48kb] [文件加载：45]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'publogin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/index/publogin/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Publogin->index[ C:\wamp64\www\ptcznweb\application\index\controller\Publogin.php ]
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/index\view\publogin\publogin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:45:34+08:00 ] 127.0.0.1 GET /ptcznweb/public/index/publogin/log.html
+[ info ] 127.0.0.1/ptcznweb/public/index/publogin/log.html [运行时间：0.043088s][吞吐率：23.21req/s] [内存消耗：2,981.38kb] [文件加载：45]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'publogin',
+    2 => 'log',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/index/publogin/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Publogin->log[ C:\wamp64\www\ptcznweb\application\index\controller\Publogin.php ]
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/index\view\publogin\log.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:45:57+08:00 ] 127.0.0.1 POST /ptcznweb/public/index/publogin/denglu.html
+[ info ] 127.0.0.1/ptcznweb/public/index/publogin/denglu.html [运行时间：0.071165s][吞吐率：14.05req/s] [内存消耗：3,095.34kb] [文件加载：45]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'publogin',
+    2 => 'denglu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '42',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://127.0.0.1',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/index/publogin/log.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+  'uname' => 'user2',
+  'upwd' => '123456',
+  'uyzm' => '8',
+  'inum' => '8',
+  'sub' => '',
+)
+[ info ] [ RUN ] app\index\controller\Publogin->denglu[ C:\wamp64\www\ptcznweb\application\index\controller\Publogin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.029627s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] select *from author where authorname='user2' and password='123456' [ RunTime:0.015583s ]
+---------------------------------------------------------------
+[ 2018-03-11T23:45:57+08:00 ] 127.0.0.1 GET /ptcznweb/public/index/back/index.html
+[ info ] 127.0.0.1/ptcznweb/public/index/back/index.html [运行时间：0.030869s][吞吐率：32.39req/s] [内存消耗：3,030.59kb] [文件加载：45]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'back',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/index/publogin/denglu.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Back->index[ C:\wamp64\www\ptcznweb\application\index\controller\Back.php ]
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/index\view\back\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:45:57+08:00 ] 127.0.0.1 GET /ptcznweb/public/index/back//ptcznweb/public/static/img/back/avatar-mini.png
+[ info ] 127.0.0.1/ptcznweb/public/index/back//ptcznweb/public/static/img/back/avatar-mini.png [运行时间：0.042380s][吞吐率：23.60req/s] [内存消耗：2,936.80kb] [文件加载：46]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'back',
+    2 => 'ptcznweb',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/index/back/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+  'public' => 'static',
+  'img' => 'back',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:45:58+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/back/__STATIC__/img/back/side-bar-list-bg.png
+[ info ] 127.0.0.1/ptcznweb/public/static/css/back/__STATIC__/img/back/side-bar-list-bg.png [运行时间：0.161030s][吞吐率：6.21req/s] [内存消耗：2,415.41kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'back',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+  '__STATIC__' => 'img',
+  'back' => 'side-bar-list-bg.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:45:58+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/img/bg-default.jpg
+[ info ] 127.0.0.1/ptcznweb/public/static/css/img/bg-default.jpg [运行时间：0.196448s][吞吐率：5.09req/s] [内存消耗：2,414.00kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style_default.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:45:58+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/img/top-bg.jpg
+[ info ] 127.0.0.1/ptcznweb/public/static/css/img/top-bg.jpg [运行时间：0.182815s][吞吐率：5.47req/s] [内存消耗：2,413.79kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style_default.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:45:58+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/back/__STATIC__/img/back/body-bg.png
+[ info ] 127.0.0.1/ptcznweb/public/static/css/back/__STATIC__/img/back/body-bg.png [运行时间：0.166832s][吞吐率：5.99req/s] [内存消耗：2,414.89kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'back',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+  '__STATIC__' => 'img',
+  'back' => 'body-bg.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:45:58+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/img/side-bar-list-bg.png
+[ info ] 127.0.0.1/ptcznweb/public/static/css/img/side-bar-list-bg.png [运行时间：0.147068s][吞吐率：6.80req/s] [内存消耗：2,414.08kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style_default.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:45:58+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/back/__STATIC__/font/myriadprolight.woff
+[ info ] 127.0.0.1/ptcznweb/public/static/css/back/__STATIC__/font/myriadprolight.woff [运行时间：0.166555s][吞吐率：6.00req/s] [内存消耗：2,414.90kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'back',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+  '__STATIC__' => 'font',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:45:58+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/back/__STATIC__/img/back/submenu_hover.png
+[ info ] 127.0.0.1/ptcznweb/public/static/css/back/__STATIC__/img/back/submenu_hover.png [运行时间：0.395520s][吞吐率：2.53req/s] [内存消耗：2,414.81kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'back',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+  '__STATIC__' => 'img',
+  'back' => 'submenu_hover.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:45:58+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/back/__STATIC__/img/back/bread-crumb-divider.jpg
+[ info ] 127.0.0.1/ptcznweb/public/static/css/back/__STATIC__/img/back/bread-crumb-divider.jpg [运行时间：0.354101s][吞吐率：2.82req/s] [内存消耗：2,415.23kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'back',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+  '__STATIC__' => 'img',
+  'back' => 'bread-crumb-divider.jpg',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:45:58+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/back/__STATIC__/img/back/bread-crumb-bg.jpg
+[ info ] 127.0.0.1/ptcznweb/public/static/css/back/__STATIC__/img/back/bread-crumb-bg.jpg [运行时间：0.354687s][吞吐率：2.82req/s] [内存消耗：2,414.73kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'back',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+  '__STATIC__' => 'img',
+  'back' => 'bread-crumb-bg.jpg',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:45:58+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/back/__STATIC__/img/back/bread-crumb-last.jpg
+[ info ] 127.0.0.1/ptcznweb/public/static/css/back/__STATIC__/img/back/bread-crumb-last.jpg [运行时间：0.356266s][吞吐率：2.81req/s] [内存消耗：2,415.41kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'back',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+  '__STATIC__' => 'img',
+  'back' => 'bread-crumb-last.jpg',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:45:58+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/back/__STATIC__/font/myriadprolight.ttf
+[ info ] 127.0.0.1/ptcznweb/public/static/css/back/__STATIC__/font/myriadprolight.ttf [运行时间：0.121367s][吞吐率：8.24req/s] [内存消耗：2,414.90kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'back',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+  '__STATIC__' => 'font',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:48:51+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/img/side-bar-list-bg.png
+[ info ] 127.0.0.1/ptcznweb/public/static/css/img/side-bar-list-bg.png [运行时间：0.035356s][吞吐率：28.28req/s] [内存消耗：2,414.08kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style_default.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:48:53+08:00 ] 127.0.0.1 GET /ptcznweb/public/index/back/calendar.html
+[ info ] 127.0.0.1/ptcznweb/public/index/back/calendar.html [运行时间：0.038741s][吞吐率：25.81req/s] [内存消耗：2,936.32kb] [文件加载：46]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'back',
+    2 => 'calendar',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/index/back/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:48:57+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/img/bg-default.jpg
+[ info ] 127.0.0.1/ptcznweb/public/static/css/img/bg-default.jpg [运行时间：0.030287s][吞吐率：33.02req/s] [内存消耗：2,414.00kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style_default.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:48:57+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/back/__STATIC__/img/back/body-bg.png
+[ info ] 127.0.0.1/ptcznweb/public/static/css/back/__STATIC__/img/back/body-bg.png [运行时间：0.233952s][吞吐率：4.27req/s] [内存消耗：2,414.89kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'back',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+  '__STATIC__' => 'img',
+  'back' => 'body-bg.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:48:57+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/back/__STATIC__/img/back/submenu_hover.png
+[ info ] 127.0.0.1/ptcznweb/public/static/css/back/__STATIC__/img/back/submenu_hover.png [运行时间：0.201353s][吞吐率：4.97req/s] [内存消耗：2,414.81kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'back',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+  '__STATIC__' => 'img',
+  'back' => 'submenu_hover.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:48:57+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/img/side-bar-list-bg.png
+[ info ] 127.0.0.1/ptcznweb/public/static/css/img/side-bar-list-bg.png [运行时间：0.233098s][吞吐率：4.29req/s] [内存消耗：2,414.08kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style_default.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:48:57+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/img/top-bg.jpg
+[ info ] 127.0.0.1/ptcznweb/public/static/css/img/top-bg.jpg [运行时间：0.204596s][吞吐率：4.89req/s] [内存消耗：2,413.79kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style_default.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:48:57+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/back/__STATIC__/img/back/side-bar-list-bg.png
+[ info ] 127.0.0.1/ptcznweb/public/static/css/back/__STATIC__/img/back/side-bar-list-bg.png [运行时间：0.233016s][吞吐率：4.29req/s] [内存消耗：2,415.41kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'back',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+  '__STATIC__' => 'img',
+  'back' => 'side-bar-list-bg.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:48:57+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/back/__STATIC__/font/myriadprolight.ttf
+[ info ] 127.0.0.1/ptcznweb/public/static/css/back/__STATIC__/font/myriadprolight.ttf [运行时间：0.066100s][吞吐率：15.13req/s] [内存消耗：2,414.90kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'back',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+  '__STATIC__' => 'font',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:48:58+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/back/__STATIC__/img/back/bread-crumb-last.jpg
+[ info ] 127.0.0.1/ptcznweb/public/static/css/back/__STATIC__/img/back/bread-crumb-last.jpg [运行时间：0.259128s][吞吐率：3.86req/s] [内存消耗：2,415.41kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'back',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+  '__STATIC__' => 'img',
+  'back' => 'bread-crumb-last.jpg',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:48:58+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/back/__STATIC__/img/back/bread-crumb-bg.jpg
+[ info ] 127.0.0.1/ptcznweb/public/static/css/back/__STATIC__/img/back/bread-crumb-bg.jpg [运行时间：0.259555s][吞吐率：3.85req/s] [内存消耗：2,414.73kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'back',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+  '__STATIC__' => 'img',
+  'back' => 'bread-crumb-bg.jpg',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:48:58+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/back/__STATIC__/img/back/bread-crumb-divider.jpg
+[ info ] 127.0.0.1/ptcznweb/public/static/css/back/__STATIC__/img/back/bread-crumb-divider.jpg [运行时间：0.358406s][吞吐率：2.79req/s] [内存消耗：2,415.23kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'back',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+  '__STATIC__' => 'img',
+  'back' => 'bread-crumb-divider.jpg',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:52:10+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/img/side-bar-list-bg.png
+[ info ] 127.0.0.1/ptcznweb/public/static/css/img/side-bar-list-bg.png [运行时间：0.034512s][吞吐率：28.98req/s] [内存消耗：2,414.08kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style_default.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:52:12+08:00 ] 127.0.0.1 GET /ptcznweb/public/index/back/index.html
+[ info ] 127.0.0.1/ptcznweb/public/index/back/index.html [运行时间：0.031910s][吞吐率：31.34req/s] [内存消耗：3,030.74kb] [文件加载：45]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'back',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/index/back/lock.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Back->index[ C:\wamp64\www\ptcznweb\application\index\controller\Back.php ]
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/index\view\back\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:52:12+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/back/__STATIC__/font/myriadprolight.woff
+[ info ] 127.0.0.1/ptcznweb/public/static/css/back/__STATIC__/font/myriadprolight.woff [运行时间：0.044251s][吞吐率：22.60req/s] [内存消耗：2,415.61kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'back',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+  '__STATIC__' => 'font',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:52:12+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/back/__STATIC__/font/myriadprolight.ttf
+[ info ] 127.0.0.1/ptcznweb/public/static/css/back/__STATIC__/font/myriadprolight.ttf [运行时间：0.163125s][吞吐率：6.13req/s] [内存消耗：2,415.66kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'back',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+  '__STATIC__' => 'font',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:52:12+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/img/bg-default.jpg
+[ info ] 127.0.0.1/ptcznweb/public/static/css/img/bg-default.jpg [运行时间：0.284865s][吞吐率：3.51req/s] [内存消耗：2,414.70kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style_default.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+PARAM ] array (
+  '__STATIC__' => 'img',
+  'back' => 'side-bar-list-bg.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:52:12+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/back/__STATIC__/img/back/bread-crumb-last.jpg
+[ info ] 127.0.0.1/ptcznweb/public/static/css/back/__STATIC__/img/back/bread-crumb-last.jpg [运行时间：0.128889s][吞吐率：7.76req/s] [内存消耗：2,415.78kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'back',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+  '__STATIC__' => 'img',
+  'back' => 'bread-crumb-last.jpg',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:52:12+08:00 ] 127.0.0.1 GET /ptcznweb/public/index/back//ptcznweb/public/static/img/back/avatar-mini.png
+[ info ] 127.0.0.1/ptcznweb/public/index/back//ptcznweb/public/static/img/back/avatar-mini.png [运行时间：0.315064s][吞吐率：3.17req/s] [内存消耗：2,937.25kb] [文件加载：46]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'back',
+    2 => 'ptcznweb',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/index/back/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+  'public' => 'static',
+  'img' => 'back',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:52:12+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/back/__STATIC__/img/back/bread-crumb-divider.jpg
+[ info ] 127.0.0.1/ptcznweb/public/static/css/back/__STATIC__/img/back/bread-crumb-divider.jpg [运行时间：0.128963s][吞吐率：7.75req/s] [内存消耗：2,415.79kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'back',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+  '__STATIC__' => 'img',
+  'back' => 'bread-crumb-divider.jpg',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:52:12+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/back/__STATIC__/img/back/submenu_hover.png
+[ info ] 127.0.0.1/ptcznweb/public/static/css/back/__STATIC__/img/back/submenu_hover.png [运行时间：0.162061s][吞吐率：6.17req/s] [内存消耗：2,415.86kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'back',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+  '__STATIC__' => 'img',
+  'back' => 'submenu_hover.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:52:12+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/back/__STATIC__/img/back/body-bg.png
+[ info ] 127.0.0.1/ptcznweb/public/static/css/back/__STATIC__/img/back/body-bg.png [运行时间：0.283291s][吞吐率：3.53req/s] [内存消耗：2,415.73kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'back',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+  '__STATIC__' => 'img',
+  'back' => 'body-bg.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:52:12+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/img/side-bar-list-bg.png
+[ info ] 127.0.0.1/ptcznweb/public/static/css/img/side-bar-list-bg.png [运行时间：0.179691s][吞吐率：5.57req/s] [内存消耗：2,414.75kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style_default.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:52:14+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/css/img/side-bar-list-bg.png
+[ info ] 127.0.0.1/ptcznweb/public/static/css/img/side-bar-list-bg.png [运行时间：0.028395s][吞吐率：35.22req/s] [内存消耗：2,414.08kb] [文件加载：38]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/static/css/back/style_default.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-11T23:52:15+08:00 ] 127.0.0.1 GET /ptcznweb/public/index/back/maps_google.html
+[ info ] 127.0.0.1/ptcznweb/public/index/back/maps_google.html [运行时间：0.033318s][吞吐率：30.01req/s] [内存消耗：2,936.27kb] [文件加载：46]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'back',
+    2 => 'maps_google',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/index/back/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=imjq94fg4i2a7uk4tvpo84st92',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

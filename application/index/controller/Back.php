@@ -14,11 +14,17 @@ class Back extends Base
 {
     public function index()
     {
+        session_start();
+        if(empty($_SESSION['uname'])) {
+            return $this->redirect('Publogin/index');
+        }
         return $this->fetch('index');
     }
 
     public function logout()
     {
-        return $this->fetch('Publogin/index');
+        session_start();
+        session_unset();
+        return $this->redirect('Publogin/index');
     }
 }

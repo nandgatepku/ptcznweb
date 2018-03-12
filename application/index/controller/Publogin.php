@@ -42,8 +42,7 @@ class Publogin extends Base
                         $_SESSION['upwd'] = $upwd;
                         //跳转到用户中心
 //                        $this->redirect('Index/show', '', 2, '登录成功！前往管理后台!...页面跳转中...');
-                        echo $uname;
-                        echo $upwd;
+                        echo "loading...";
 //                        $this->redirect('Back/index');
                         exit('<script language="javascript">top.location.href="../back/index.html"</script>');
 
