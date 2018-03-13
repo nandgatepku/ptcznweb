@@ -184,9 +184,9 @@
 .join_d li .wen .title{ width:300px; height:55px; line-height:55px;}
 .join_d li .wen .des{ width:300px; padding:10px 0; height:155px;}
 .join_d li .wen .des p{ font-size:14px;}
-.scd .scd_top{ margin-bottom:0;}
-.scd .scd_top .s_nav,.scd .scd_top{ height:auto;}
-.scd .scd_top .pst{ position:static; border:0; border-top:1px dashed #ddd;}
+.scd .scd_top{ margin-bottom:50px;}
+.scd .scd_top .s_nav,.scd .scd_top{height:40px; }
+.scd .scd_top .pst{width:100%; text-align:left; border-bottom:1px dashed #ddd; top:45px;}
 .invite table{ display:none;}
 .invite .zp{ display:block;}
 .attrct li .name,.attrct li .des{ width:290px; font-size:13px;}

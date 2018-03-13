@@ -1,0 +1,4 @@
+---------------------------------------------------------------
+[ 2018-03-13T14:36:23+08:00 ] 127.0.0.1 POST /ptcznweb/public/index/publogin/denglu.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.259689s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] select *from author where authorname='user2' and password='123456' [ RunTime:0.161837s ]
