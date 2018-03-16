@@ -1,0 +1,120 @@
+{include file='index/head' /}
+<title>PTCZN后台文章管理</title>
+<form action="{:url('index/swi')}"method="post">
+<body class="main_body">
+	<div class="layui-layout layui-layout-admin">
+		<!-- 顶部 -->
+		<div class="layui-header header">
+			<div class="layui-main">
+				<a href="#" class="logo">后台管理</a>
+
+			    <!-- 顶部右侧菜单 -->
+			    <ul class="layui-nav top_menu">
+			    	<li class="layui-nav-item showNotice" id="showNotice" pc>
+						<a href="javascript:;"><i class="iconfont icon-gonggao"></i><cite>系统公告</cite></a>
+					</li>
+			    	<li class="layui-nav-item" mobile>
+			    		<a href="javascript:;" data-url="page/user/changePwd.html"><i class="iconfont icon-shezhi1" data-icon="icon-shezhi1"></i><cite>设置</cite></a>
+			    	</li>
+			    	<li class="layui-nav-item" mobile>
+			    		<a href="javascript:;"><i class="iconfont icon-loginout"></i> 退出</a>
+			    	</li>
+
+					<li class="layui-nav-item" pc>
+						<a href="javascript:;">
+							<img src="images/face.jpg" class="layui-circle" width="35" height="35">
+							<cite>admin</cite>
+						</a>
+						<dl class="layui-nav-child">
+							<dd><a href="javascript:;" data-url="page/user/userInfo.html"><i class="iconfont icon-zhanghu" data-icon="icon-zhanghu"></i>
+								<cite>个人资料</cite></a></dd>
+							<dd><a href="javascript:;" data-url="page/user/changePwd.html"><i class="iconfont icon-shezhi1" data-icon="icon-shezhi1"></i>
+								<cite>修改密码</cite></a></dd>
+							<dd><a href="javascript:;"><i class="iconfont icon-loginout"></i><cite>退出</cite></a></dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 左侧导航 -->
+		<div class="layui-side layui-bg-black">
+			<div class="user-photo">
+				<a class="img" title="我的头像" ><img src="images/face.jpg"></a>
+				<p>你好！<span class="userName">admin</span>, 欢迎登录</p>
+			</div>
+			<div class="navBar layui-side-scroll" style="height: 385px;">
+				<ul class="layui-nav layui-nav-tree">
+					<li class="layui-nav-item layui-this">
+						<a href="javascript:;" data-url="page/main.html">
+							<i class="iconfont icon-computer" data-icon="icon-computer"></i>
+							<cite>后台首页</cite>
+						</a>
+					</li>
+					<li class="layui-nav-item">
+						<a href="javascript:;" onclick="newslist()">
+							<i class="iconfont icon-text" data-icon="icon-text"></i>
+							<cite>文章列表</cite>
+						</a>
+					</li>
+					<li class="layui-nav-item">
+						<a href="javascript:;" data-url="page/links/linksList.html">
+							<i class="iconfont icon-text" data-icon="icon-text"></i>
+							<cite>友情链接</cite>
+						</a>
+					</li>
+
+					<li class="layui-nav-item">
+						<a href="javascript:;" data-url="page/systemParameter/systemParameter.html">
+							<i class="layui-icon" data-icon=""></i>
+							<cite>系统基本参数</cite>
+						</a>
+					</li>
+					<li class="layui-nav-item">
+						<a href="javascript:;">
+							<i class="layui-icon" data-icon=""></i>
+							<cite>二级菜单演示</cite>
+							<span class="layui-nav-more"></span>
+						</a>
+						<dl class="layui-nav-child">
+							<dd class=""><a href="javascript:;" data-url="">
+								<i class="layui-icon" data-icon=""></i>
+								<cite>二级菜单1</cite></a>
+							</dd>
+							<dd class="">
+								<a href="javascript:;" data-url="">
+								<i class="layui-icon" data-icon=""></i>
+									<cite>二级菜单2</cite>
+								</a>
+							</dd>
+						</dl>
+					</li>
+					<span class="layui-nav-bar" style="top: 112.5px; height: 0px; opacity: 0;"></span></ul>
+			</div>
+		</div>
+		<!-- 右侧内容 -->
+		<div class="layui-body layui-form">
+			<div class="layui-tab marg0" lay-filter="bodyTab">
+				<ul class="layui-tab-title top_tab">
+					<li class="layui-this" lay-id=""><i class="iconfont icon-computer"></i> <cite>{$swi}</cite></li>
+				</ul>
+				<div class="layui-tab-content clildFrame">
+					<div class="layui-tab-item layui-show">
+						<iframe src="{:url('index/main')}"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 底部 -->
+		<div class="layui-footer footer">
+			<p>copyright @2017 请叫我</p>
+		</div>
+	</div>
+
+
+	<!-- 移动导航 -->
+	<div class="site-tree-mobile layui-hide"><i class="layui-icon">&#xe602;</i></div>
+	<div class="site-mobile-shade"></div>
+
+	{include file='index/js' /}
+</body>
+</html>
