@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:70:"C:\wamp64\www\ptcznweb\public/../application/index\view\news\news.html";i:1520672396;s:62:"C:\wamp64\www\ptcznweb\application\index\view\common\head.html";i:1520663413;s:66:"C:\wamp64\www\ptcznweb\application\index\view\common\headmenu.html";i:1520672995;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\linkus.html";i:1520669848;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\footer.html";i:1520668646;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:70:"C:\wamp64\www\ptcznweb\public/../application/index\view\news\news.html";i:1521474725;s:62:"C:\wamp64\www\ptcznweb\application\index\view\common\head.html";i:1520663413;s:66:"C:\wamp64\www\ptcznweb\application\index\view\common\headmenu.html";i:1520672995;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\linkus.html";i:1520669848;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\footer.html";i:1520668646;}*/ ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -85,11 +85,11 @@ $(function(){
                       	<div class="tu"><a href="<?php echo url('News/one'); ?>"><img src="/ptcznweb/public/static/upload/pic7.jpg" alt=""/></a></div>
                         <div class="n_m">
                             <div class="title">
-                                <span>2018-03-10</span>
-                                <p class="name"><a href="<?php echo url('News/one'); ?>">中国内地轨道交通规划初探</a></p>
+                                <span><?php echo $time_1; ?></span>
+                                <p class="name"><a href="<?php echo url('News/one'); ?>"><?php echo $title_1; ?></a></p>
                             </div>
                             <div class="des">
-                                北京地铁16号线北京地铁16号线北京地铁16号线北京地铁16号线北京地铁16号线北京地铁16号线北京地铁16号线...
+                                <?php echo $abstract_1; ?>...
                             </div>
                         </div>
                       </li>
