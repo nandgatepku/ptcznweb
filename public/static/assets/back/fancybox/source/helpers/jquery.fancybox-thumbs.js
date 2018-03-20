@@ -139,7 +139,7 @@
 			this.list.children().removeClass('active').eq(obj.index).addClass('active');
 		},
 
-		//Center list
+		//Index list
 		onUpdate: function (opts, obj) {
 			if (this.list) {
 				this.list.stop(true).animate({

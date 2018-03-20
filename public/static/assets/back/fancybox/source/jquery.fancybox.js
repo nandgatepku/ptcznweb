@@ -492,7 +492,7 @@
 			}
 		},
 
-		// Navigate to gallery item by index
+		// Navigate to gallery item by Index
 		jumpto: function ( index, direction, router ) {
 			var current = F.current;
 
@@ -520,7 +520,7 @@
 			}
 		},
 
-		// Center inside viewport and toggle position type to fixed or absolute if needed
+		// Index inside viewport and toggle position type to fixed or absolute if needed
 		reposition: function (e, onlyAbsolute) {
 			var current = F.current,
 				wrap    = current ? current.wrap : null,
@@ -833,7 +833,7 @@
 			/*
 			 * Add reference to the group, so it`s possible to access from callbacks, example:
 			 * afterLoad : function() {
-			 *     this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+			 *     this.title = 'Image ' + (this.Index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
 			 * }
 			 */
 

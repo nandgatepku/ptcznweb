@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:71:"C:\wamp64\www\ptcznweb\public/../application/index\view\back\index.html";i:1520859202;s:62:"C:\wamp64\www\ptcznweb\application\index\view\common\head.html";i:1520663413;s:64:"C:\wamp64\www\ptcznweb\application\index\view\back\backhead.html";i:1520773087;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\linkus.html";i:1520669848;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\footer.html";i:1520668646;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:71:"C:\wamp64\www\ptcznweb\public/../application/Index\view\back\Index.html";i:1520859202;s:62:"C:\wamp64\www\ptcznweb\application\Index\view\common\head.html";i:1520663413;s:64:"C:\wamp64\www\ptcznweb\application\Index\view\back\backhead.html";i:1520773087;s:64:"C:\wamp64\www\ptcznweb\application\Index\view\common\linkus.html";i:1520669848;s:64:"C:\wamp64\www\ptcznweb\application\Index\view\common\footer.html";i:1520668646;}*/ ?>
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->

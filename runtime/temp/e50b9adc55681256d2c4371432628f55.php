@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\wamp64\www\ptcznweb\public/../application/index\view\about\cv.html";i:1520612256;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\wamp64\www\ptcznweb\public/../application/Index\view\about\cv.html";i:1520612256;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -22,15 +22,19 @@
 
 					<li class="layui-nav-item" pc>
 						<a href="javascript:;">
-							<img src="images/face.jpg" class="layui-circle" width="35" height="35">
+							<img src="__STATIC__/img/admin/face.jpg" class="layui-circle" width="35" height="35">
 							<cite>admin</cite>
+							<span class="layui-nav-more layui-nav-mored"></span>
 						</a>
-						<dl class="layui-nav-child">
-							<dd><a href="javascript:;" data-url="page/user/userInfo.html"><i class="iconfont icon-zhanghu" data-icon="icon-zhanghu"></i>
+						<dl class="layui-nav-child layui-anim layui-anim-upbit layui-show">
+							<dd><a href="javascript:;" data-url="page/user/userInfo.html">
+								<i class="iconfont icon-zhanghu" data-icon="icon-zhanghu"></i>
 								<cite>个人资料</cite></a></dd>
-							<dd><a href="javascript:;" data-url="page/user/changePwd.html"><i class="iconfont icon-shezhi1" data-icon="icon-shezhi1"></i>
+							<dd><a href="javascript:;" data-url="page/user/changePwd.html">
+								<i class="iconfont icon-shezhi1" data-icon="icon-shezhi1"></i>
 								<cite>修改密码</cite></a></dd>
-							<dd><a href="javascript:;"><i class="iconfont icon-loginout"></i><cite>退出</cite></a></dd>
+							<dd><a href="{:url('Index/logout')}">
+								</i><cite>退出</cite></a></dd>
 						</dl>
 					</li>
 				</ul>
@@ -95,11 +99,11 @@
 		<div class="layui-body layui-form">
 			<div class="layui-tab marg0" lay-filter="bodyTab">
 				<ul class="layui-tab-title top_tab">
-					<li class="layui-this" lay-id=""><i class="iconfont icon-computer"></i> <cite>{$swi}</cite></li>
+					<li class="layui-this" lay-id=""><i class="iconfont icon-computer"></i> <cite>$swi</cite></li>
 				</ul>
 				<div class="layui-tab-content clildFrame">
 					<div class="layui-tab-item layui-show">
-						<iframe src="{:url('index/main')}"></iframe>
+						<iframe src="{:url('index/newslist')}"></iframe>
 					</div>
 				</div>
 			</div>

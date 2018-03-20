@@ -8494,9 +8494,9 @@
 		 *  @type function
 		 *  @param {node} nFoot "TR" element for the footer
 		 *  @param {array} aData Full table data (as derived from the original HTML)
-		 *  @param {int} iStart Index for the current display starting point in the 
+		 *  @param {int} iStart Index for the current display starting point in the
 		 *    display array
-		 *  @param {int} iEnd Index for the current display ending point in the 
+		 *  @param {int} iEnd Index for the current display ending point in the
 		 *    display array
 		 *  @param {array int} aiDisplay Index array to translate the visual position
 		 *    to the full data array

@@ -55,10 +55,10 @@ div{-webkit-transition: all .3s ease-in-out 0s;-moz-transition: all .3s ease-in-
 .owl-pagination .active { background:#F9A519;}
 .owl-buttons { display: none;}
 .owl-buttons div { position: absolute; top: 50%; width: 24px; height: 48px; margin-top: -40px; text-indent: -9999px;}
-/*.owl-prev { left: 10px; background-image: url(../../img/index/bg17.png);}
-.owl-next { right: 10px; background-image: url(../../img/index/bg18.png);}
-.owl-prev:hover { background-image: url(../../img/index/bg17.png);}
-.owl-next:hover { background-image: url(../../img/index/bg18.png);}*/
+/*.owl-prev { left: 10px; background-image: url(../../img/Index/bg17.png);}
+.owl-next { right: 10px; background-image: url(../../img/Index/bg18.png);}
+.owl-prev:hover { background-image: url(../../img/Index/bg17.png);}
+.owl-next:hover { background-image: url(../../img/Index/bg18.png);}*/
 @media screen and (max-width: 579px) {.owl-pagination{bottom:0px;height:15px;}}
 /*幻灯片*/
 .i_ma{ width:1170px; margin:0px auto; text-align:center;}

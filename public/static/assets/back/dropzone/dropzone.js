@@ -60,7 +60,7 @@ require.aliases = {};
  *
  * Lookup:
  *
- *   - PATH/index.js
+ *   - PATH/Index.js
  *   - PATH.js
  *   - PATH
  *
@@ -70,14 +70,14 @@ require.aliases = {};
  */
 
 require.resolve = function(path) {
-  var index = path + '/index.js';
+  var index = path + '/Index.js';
 
   var paths = [
     path,
     path + '.js',
     path + '.json',
-    path + '/index.js',
-    path + '/index.json'
+    path + '/Index.js',
+    path + '/Index.json'
   ];
 
   for (var i = 0; i < paths.length; i++) {
@@ -205,7 +205,7 @@ require.relative = function(parent) {
 
   return localRequire;
 };
-require.register("component-emitter/index.js", function(exports, require, module){
+require.register("component-emitter/Index.js", function(exports, require, module){
 
 /**
  * Expose `Emitter`.
@@ -356,7 +356,7 @@ Emitter.prototype.hasListeners = function(event){
 };
 
 });
-require.register("dropzone/index.js", function(exports, require, module){
+require.register("dropzone/Index.js", function(exports, require, module){
 
 
 /**
@@ -931,7 +931,7 @@ require.register("dropzone/lib/dropzone.js", function(exports, require, module){
 }).call(this);
 
 });
-require.alias("component-emitter/index.js", "dropzone/deps/emitter/index.js");
+require.alias("component-emitter/Index.js", "dropzone/deps/emitter/index.js");
 
 if (typeof exports == "object") {
   module.exports = require("dropzone");

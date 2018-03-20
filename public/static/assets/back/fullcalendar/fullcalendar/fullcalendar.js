@@ -1669,7 +1669,7 @@ function stackSegs(segs) {
 		j, collide, k;
 	for (i=0; i<len; i++) {
 		seg = segs[i];
-		j = 0; // the level index where seg should belong
+		j = 0; // the level Index where seg should belong
 		while (true) {
 			collide = false;
 			if (levels[j]) {
@@ -2263,7 +2263,7 @@ function BasicView(element, calendar, viewName) {
 		dayBind(bodyCells);
 		
 		daySegmentContainer =
-			$("<div style='position:absolute;z-index:8;top:0;left:0'/>")
+			$("<div style='position:absolute;z-Index:8;top:0;left:0'/>")
 				.appendTo(element);
 	}
 	
@@ -2914,7 +2914,7 @@ function AgendaView(element, calendar, viewName) {
 	var tm;
 	var firstDay;
 	var nwe;            // no weekends (int)
-	var rtl, dis, dit;  // day index sign / translate
+	var rtl, dis, dit;  // day Index sign / translate
 	var minMinute, maxMinute;
 	var colFormat;
 	
@@ -3015,13 +3015,13 @@ function AgendaView(element, calendar, viewName) {
 		gutterCells = dayTable.find('.fc-agenda-gutter');
 		
 		slotLayer =
-			$("<div style='position:absolute;z-index:2;left:0;width:100%'/>")
+			$("<div style='position:absolute;z-Index:2;left:0;width:100%'/>")
 				.appendTo(element);
 				
 		if (opt('allDaySlot')) {
 		
 			daySegmentContainer =
-				$("<div style='position:absolute;z-index:8;top:0;left:0'/>")
+				$("<div style='position:absolute;z-Index:8;top:0;left:0'/>")
 					.appendTo(slotLayer);
 		
 			s =
@@ -3063,7 +3063,7 @@ function AgendaView(element, calendar, viewName) {
 				.appendTo(slotScroller);
 				
 		slotSegmentContainer =
-			$("<div style='position:absolute;z-index:8;top:0;left:0'/>")
+			$("<div style='position:absolute;z-Index:8;top:0;left:0'/>")
 				.appendTo(slotContent);
 		
 		s =
@@ -3899,7 +3899,7 @@ function AgendaEventRenderer() {
 		}
 		html +=
 			" class='" + classes.join(' ') + "'" +
-			" style='position:absolute;z-index:8;top:" + seg.top + "px;left:" + seg.left + "px;" + skinCss + "'" +
+			" style='position:absolute;z-Index:8;top:" + seg.top + "px;left:" + seg.left + "px;" + skinCss + "'" +
 			">" +
 			"<div class='fc-event-inner fc-event-skin'" + skinCssAttr + ">" +
 			"<div class='fc-event-head fc-event-skin'" + skinCssAttr + ">" +
@@ -4644,7 +4644,7 @@ function DayEventRenderer() {
 			}
 			html +=
 				" class='" + classes.join(' ') + "'" +
-				" style='position:absolute;z-index:8;left:"+left+"px;" + skinCss + "'" +
+				" style='position:absolute;z-Index:8;left:"+left+"px;" + skinCss + "'" +
 				">" +
 				"<div" +
 				" class='fc-event-inner fc-event-skin'" +
@@ -5065,7 +5065,7 @@ function OverlayManager() {
 	function renderOverlay(rect, parent) {
 		var e = unusedOverlays.shift();
 		if (!e) {
-			e = $("<div class='fc-cell-overlay' style='position:absolute;z-index:3'/>");
+			e = $("<div class='fc-cell-overlay' style='position:absolute;z-Index:3'/>");
 		}
 		if (e[0].parentNode != parent[0]) {
 			e.appendTo(parent);

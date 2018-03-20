@@ -404,7 +404,7 @@ More detail and specific examples can be found in the included HTML file.
 						
 					ctx.beginPath();
 					if (Math.abs(angle - Math.PI*2) > 0.000000001)
-						ctx.moveTo(0,0); // Center of the pie
+						ctx.moveTo(0,0); // Index of the pie
 					else if ($.browser.msie)
 						angle -= 0.0001;
 					//ctx.arc(0,0,radius,0,angle,false); // This doesn't work properly in Opera
@@ -534,7 +534,7 @@ More detail and specific examples can be found in the included HTML file.
 				{
 					ctx.save();
 					ctx.beginPath();
-					ctx.moveTo(0,0); // Center of the pie
+					ctx.moveTo(0,0); // Index of the pie
 					//ctx.scale(1, options.series.pie.tilt);	// this actually seems to break everything when here.
 					ctx.arc(0,0,radius,s.startAngle,s.startAngle+s.angle,false);
 					ctx.closePath();
@@ -689,7 +689,7 @@ More detail and specific examples can be found in the included HTML file.
 				
 				octx.beginPath();
 				if (Math.abs(series.angle - Math.PI*2) > 0.000000001)
-					octx.moveTo(0,0); // Center of the pie
+					octx.moveTo(0,0); // Index of the pie
 				octx.arc(0,0,radius,series.startAngle,series.startAngle+series.angle,false);
 				octx.closePath();
 				octx.fill();

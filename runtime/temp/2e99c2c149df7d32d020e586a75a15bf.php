@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:72:"C:\wamp64\www\ptcznweb\public/../application/admin\view\index\index.html";i:1521177055;s:61:"C:\wamp64\www\ptcznweb\application\admin\view\index\head.html";i:1521112279;s:59:"C:\wamp64\www\ptcznweb\application\admin\view\index\js.html";i:1521111845;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:72:"C:\wamp64\www\ptcznweb\public/../application/admin\view\index\index.html";i:1521553113;s:61:"C:\wamp64\www\ptcznweb\application\admin\view\Index\head.html";i:1521112279;s:59:"C:\wamp64\www\ptcznweb\application\admin\view\Index\js.html";i:1521111845;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,15 +38,19 @@
 
 					<li class="layui-nav-item" pc>
 						<a href="javascript:;">
-							<img src="images/face.jpg" class="layui-circle" width="35" height="35">
+							<img src="/ptcznweb/public/static/img/admin/face.jpg" class="layui-circle" width="35" height="35">
 							<cite>admin</cite>
+							<span class="layui-nav-more layui-nav-mored"></span>
 						</a>
-						<dl class="layui-nav-child">
-							<dd><a href="javascript:;" data-url="page/user/userInfo.html"><i class="iconfont icon-zhanghu" data-icon="icon-zhanghu"></i>
+						<dl class="layui-nav-child layui-anim layui-anim-upbit layui-show">
+							<dd><a href="javascript:;" data-url="page/user/userInfo.html">
+								<i class="iconfont icon-zhanghu" data-icon="icon-zhanghu"></i>
 								<cite>个人资料</cite></a></dd>
-							<dd><a href="javascript:;" data-url="page/user/changePwd.html"><i class="iconfont icon-shezhi1" data-icon="icon-shezhi1"></i>
+							<dd><a href="javascript:;" data-url="page/user/changePwd.html">
+								<i class="iconfont icon-shezhi1" data-icon="icon-shezhi1"></i>
 								<cite>修改密码</cite></a></dd>
-							<dd><a href="javascript:;"><i class="iconfont icon-loginout"></i><cite>退出</cite></a></dd>
+							<dd><a href="<?php echo url('Index/logout'); ?>">
+								</i><cite>退出</cite></a></dd>
 						</dl>
 					</li>
 				</ul>
@@ -111,11 +115,11 @@
 		<div class="layui-body layui-form">
 			<div class="layui-tab marg0" lay-filter="bodyTab">
 				<ul class="layui-tab-title top_tab">
-					<li class="layui-this" lay-id=""><i class="iconfont icon-computer"></i> <cite><?php echo $swi; ?></cite></li>
+					<li class="layui-this" lay-id=""><i class="iconfont icon-computer"></i> <cite>$swi</cite></li>
 				</ul>
 				<div class="layui-tab-content clildFrame">
 					<div class="layui-tab-item layui-show">
-						<iframe src="<?php echo url('index/main'); ?>"></iframe>
+						<iframe src="<?php echo url('index/newslist'); ?>"></iframe>
 					</div>
 				</div>
 			</div>

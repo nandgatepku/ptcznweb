@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:70:"C:\wamp64\www\ptcznweb\public/../application/index\view\news\news.html";i:1521474725;s:62:"C:\wamp64\www\ptcznweb\application\index\view\common\head.html";i:1520663413;s:66:"C:\wamp64\www\ptcznweb\application\index\view\common\headmenu.html";i:1520672995;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\linkus.html";i:1520669848;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\footer.html";i:1520668646;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:70:"C:\wamp64\www\ptcznweb\public/../application/Index\view\news\news.html";i:1521543737;s:62:"C:\wamp64\www\ptcznweb\application\Index\view\common\head.html";i:1520663413;s:66:"C:\wamp64\www\ptcznweb\application\Index\view\common\headmenu.html";i:1520672995;s:64:"C:\wamp64\www\ptcznweb\application\Index\view\common\linkus.html";i:1520669848;s:64:"C:\wamp64\www\ptcznweb\application\Index\view\common\footer.html";i:1520668646;}*/ ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -39,11 +39,11 @@ $(function(){
             <div class="nav_m">
             <div class="n_icon">导航栏</div>
             <ul class="nav clearfix">
-                <li class="now"><a href="<?php echo url('Index/index'); ?>">首页</a></li>
-                <li><a href="<?php echo url('About/index'); ?>">关于望问津</a></li>
-                <li><a href="<?php echo url('News/index'); ?>">贝海拾遗</a></li>
+                <li class="now"><a href="<?php echo url('Index/Index'); ?>">首页</a></li>
+                <li><a href="<?php echo url('About/Index'); ?>">关于望问津</a></li>
+                <li><a href="<?php echo url('News/Index'); ?>">贝海拾遗</a></li>
                 <li class="er"><a href="">思维航向</a></li>
-                <li><a href="<?php echo url('Publogin/index'); ?>">作者登录</a></li>
+                <li><a href="<?php echo url('Publogin/Index'); ?>">作者登录</a></li>
             </ul>
             <div class="er_m">
                 <div class="hx">
@@ -72,7 +72,7 @@ $(function(){
     <div class="news clearfix">
     	<div class="news_l">
         	<div class="scd_top">
-                <span>头条随笔</span>
+                <span>重点随笔</span>
                 <div class="pst">
                     当前位置：<a href="">首页</a>-<a href="">贝海拾遗</a>
                 </div>
@@ -85,11 +85,11 @@ $(function(){
                       	<div class="tu"><a href="<?php echo url('News/one'); ?>"><img src="/ptcznweb/public/static/upload/pic7.jpg" alt=""/></a></div>
                         <div class="n_m">
                             <div class="title">
-                                <span><?php echo $time_1; ?></span>
-                                <p class="name"><a href="<?php echo url('News/one'); ?>"><?php echo $title_1; ?></a></p>
+                                <span><?php echo $sql['0']['cre_time']; ?></span>
+                                <p class="name"><a href="<?php echo url('News/one'); ?>"><?php echo $sql['0']['title']; ?></a></p>
                             </div>
                             <div class="des">
-                                <?php echo $abstract_1; ?>...
+                                <?php echo mb_substr($sql['0']['abstract'],0,70,'utf-8');?>...
                             </div>
                         </div>
                       </li>
@@ -103,54 +103,54 @@ $(function(){
                 </script> 
             	<div class="n_m">
                     <div class="title">
-                        <span>2018-01-01</span>
-                        <p class="name"><a href="">第二条随笔</a></p>
+                        <span><?php echo $sql['1']['cre_time']; ?></span>
+                        <p class="name"><a href=""><?php echo $sql['1']['title']; ?></a></p>
                     </div>
                     <div class="des">
-                        第二条随笔第二条随笔第二条随笔第二条随笔第二条随笔第二条随笔第二条随笔第二条随笔第二条随笔沙大酒店开始...
+                        <?php echo mb_substr($sql['1']['abstract'],0,70,'utf-8');?>...
                     </div>
                 </div>
             </div>
         </div>
         <div class="news_r">
         	<div class="scd_top">
-                <span>全部随笔</span>
+                <span>近期随笔</span>
             </div>
             <div class="new_m">
         	<div class="n_m">
                 <div class="title">
-                    <span>2017-12-01</span>
-                    <p class="name"><a href="">第三条随笔</a></p>
+                    <span><?php echo $sql['0']['cre_time']; ?></span>
+                    <p class="name"><a href=""></a><?php echo $sql['0']['title']; ?></p>
                 </div>
                 <div class="des">
-                    第三条随笔第三条随笔第三条随笔第三条随笔第三条随笔第三条随笔舉第三条随笔第三条随笔第三条随笔开始...
+                    <?php echo mb_substr($sql['0']['abstract'],0,70,'utf-8');?>...
                 </div>
             </div>
             <div class="n_m">
                 <div class="title">
-                    <span>2017-09-24</span>
-                    <p class="name"><a href="">第四条随笔</a></p>
+                    <span><?php echo $sql['1']['cre_time']; ?></span>
+                    <p class="name"><a href=""><?php echo $sql['1']['title']; ?></a></p>
                 </div>
                 <div class="des">
-                    第四条随笔第四条随笔第四条随笔第四条随笔酒第四条随笔第四条随笔第四条随笔第四条随笔...
+                    <?php echo mb_substr($sql['1']['abstract'],0,70,'utf-8');?>...
                 </div>
             </div>
             <div class="n_m">
                 <div class="title">
-                    <span>2017-04-08</span>
-                    <p class="name"><a href="">第五条随笔</a></p>
+                    <span><?php echo $sql['2']['cre_time']; ?></span>
+                    <p class="name"><a href=""><?php echo $sql['2']['title']; ?></a></p>
                 </div>
                 <div class="des">
-                    第五条随笔第五条随笔第五条随笔第五条随笔第五条随笔第五条随笔第五条随笔第五条随笔第五条随笔...
+                    <?php echo mb_substr($sql['2']['abstract'],0,70,'utf-8');?>...
                 </div>
             </div>
             <div class="n_m">
                 <div class="title">
-                    <span>2016-07-14</span>
-                    <p class="name"><a href="">第六条随笔</a></p>
+                    <span><?php echo $sql['3']['cre_time']; ?></span>
+                    <p class="name"><a href=""><?php echo $sql['3']['title']; ?></a></p>
                 </div>
                 <div class="des">
-                    第六条随笔第六条随笔第六条随笔第六条随笔第六条随笔第六条随笔第六条随笔第六条随笔第六条随笔第六条随笔第六条随笔...
+                    <?php echo mb_substr($sql['3']['abstract'],0,70,'utf-8');?>...
                 </div>
            </div>
         </div>

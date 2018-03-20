@@ -2066,7 +2066,7 @@ jQuery.extend({
 					}
 				}
 
-				// browsers index elements by id/name on forms, give priority to attributes.
+				// browsers Index elements by id/name on forms, give priority to attributes.
 				if ( jQuery.nodeName( elem, "form" ) && elem.getAttributeNode(name) ) {
 					return elem.getAttributeNode( name ).nodeValue;
 				}
@@ -6824,7 +6824,7 @@ function buildParams( prefix, obj, traditional, add ) {
 
 			} else {
 				// If array item is non-scalar (array or object), encode its
-				// numeric index to resolve deserialization ambiguity issues.
+				// numeric Index to resolve deserialization ambiguity issues.
 				// Note that rack (as of 1.0.0) can't currently deserialize
 				// nested arrays properly, and attempting to do so may cause
 				// a server error. Possible fixes are to modify rack's

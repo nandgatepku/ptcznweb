@@ -1,28 +1,37 @@
 <?php
 namespace app\admin\controller;
 
+use think\Db;
 use app\admin\common\Base;
 
 class Index extends Base
 {
     public function index()
     {
-        $swi="后台首页";
+        session_start();
+        if(empty($_SESSION['kname'])) {
+            return $this->redirect('Login/index');
+        }
         return $this->fetch('index');
-    }
-
-    public function swi()
-    {
-        return $this->fetch('main');
     }
 
     public function main()
     {
-        return $this->fetch('main');
+         return $this->fetch('main');
     }
 
     public function newslist()
     {
-        $swi="文章列表";
+        $list=Db::query("select id,title,abstract,cre_time,author from news order by id DESC limit 5");
+
+        $this ->assign('list',$list);
+        return $this->fetch('newslist');
+    }
+
+    public function logout()
+    {
+        session_start();
+        session_unset();
+        return $this->redirect('Login/index');
     }
 }
