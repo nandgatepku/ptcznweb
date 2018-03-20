@@ -7,10 +7,10 @@
     {
         public function index()
         {
-            return $this->fetch('Index');
+            return $this->fetch('index');
 
             if(isset($_POST['homepage'])) {
-                $this->redirect('Index/Index');
+                $this->redirect('Index/index');
             }
 
         }

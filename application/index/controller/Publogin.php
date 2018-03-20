@@ -23,7 +23,7 @@ class Publogin extends Base
 
     public function back()
     {
-        return $this->fetch('../back/Index');
+        return $this->fetch('../back/index');
     }
 
     public function denglu(){
@@ -44,7 +44,7 @@ class Publogin extends Base
 //                        $this->redirect('Index/show', '', 2, '登录成功！前往管理后台!...页面跳转中...');
                         echo "loading...";
 //                        $this->redirect('Back/Index');
-                        exit('<script language="javascript">top.location.href="../back/Index.html"</script>');
+                        exit('<script language="javascript">top.location.href="../back/index.html"</script>');
 
                     } else {  // 如果用户不存在
                         $this->error('用户名或密码错误!...页面跳转中...', 'log', '', '2');

@@ -14,7 +14,7 @@ use app\admin\common\Base;
 class Login extends Base
 {
     public function index(){
-        return $this->fetch('Index');
+        return $this->fetch('index');
     }
 
     public function denglu(){
