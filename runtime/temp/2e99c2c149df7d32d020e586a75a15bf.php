@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:72:"C:\wamp64\www\ptcznweb\public/../application/admin\view\index\index.html";i:1521553113;s:61:"C:\wamp64\www\ptcznweb\application\admin\view\Index\head.html";i:1521112279;s:59:"C:\wamp64\www\ptcznweb\application\admin\view\Index\js.html";i:1521111845;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:72:"C:\wamp64\www\ptcznweb\public/../application/admin\view\index\index.html";i:1521641552;s:61:"C:\wamp64\www\ptcznweb\application\admin\view\index\head.html";i:1521112279;s:59:"C:\wamp64\www\ptcznweb\application\admin\view\index\js.html";i:1521111845;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="/ptcznweb/public/static/css/admin/main.css" media="all" />
 </head>
 <title>PTCZN后台文章管理</title>
-<form action="<?php echo url('index/swi'); ?>"method="post">
+<!--<form action="<?php echo url('index/swi'); ?>"method="post">-->
 <body class="main_body">
 	<div class="layui-layout layui-layout-admin">
 		<!-- 顶部 -->
@@ -115,7 +115,7 @@
 		<div class="layui-body layui-form">
 			<div class="layui-tab marg0" lay-filter="bodyTab">
 				<ul class="layui-tab-title top_tab">
-					<li class="layui-this" lay-id=""><i class="iconfont icon-computer"></i> <cite>$swi</cite></li>
+					<li class="layui-this" lay-id=""><i class="iconfont icon-computer"></i> <cite>文章管理界面</cite></li>
 				</ul>
 				<div class="layui-tab-content clildFrame">
 					<div class="layui-tab-item layui-show">
@@ -126,7 +126,7 @@
 		</div>
 		<!-- 底部 -->
 		<div class="layui-footer footer">
-			<p>copyright @2017 请叫我</p>
+			<p>copyright @2017-2018</p>
 		</div>
 	</div>
 

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:70:"C:\wamp64\www\ptcznweb\public/../application/Index\view\news\news.html";i:1521543737;s:62:"C:\wamp64\www\ptcznweb\application\Index\view\common\head.html";i:1520663413;s:66:"C:\wamp64\www\ptcznweb\application\Index\view\common\headmenu.html";i:1520672995;s:64:"C:\wamp64\www\ptcznweb\application\Index\view\common\linkus.html";i:1520669848;s:64:"C:\wamp64\www\ptcznweb\application\Index\view\common\footer.html";i:1520668646;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:70:"C:\wamp64\www\ptcznweb\public/../application/index\view\news\news.html";i:1521642020;s:62:"C:\wamp64\www\ptcznweb\application\index\view\common\head.html";i:1520663413;s:66:"C:\wamp64\www\ptcznweb\application\index\view\common\headmenu.html";i:1521636850;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\linkus.html";i:1520669848;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\footer.html";i:1520668646;}*/ ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -39,11 +39,11 @@ $(function(){
             <div class="nav_m">
             <div class="n_icon">导航栏</div>
             <ul class="nav clearfix">
-                <li class="now"><a href="<?php echo url('Index/Index'); ?>">首页</a></li>
-                <li><a href="<?php echo url('About/Index'); ?>">关于望问津</a></li>
-                <li><a href="<?php echo url('News/Index'); ?>">贝海拾遗</a></li>
+                <li class="now"><a href="<?php echo url('Index/index'); ?>">首页</a></li>
+                <li><a href="<?php echo url('About/index'); ?>">关于望问津</a></li>
+                <li><a href="<?php echo url('News/index'); ?>">贝海拾遗</a></li>
                 <li class="er"><a href="">思维航向</a></li>
-                <li><a href="<?php echo url('Publogin/Index'); ?>">作者登录</a></li>
+                <li><a href="<?php echo url('Publogin/index'); ?>">作者登录</a></li>
             </ul>
             <div class="er_m">
                 <div class="hx">
@@ -53,10 +53,10 @@ $(function(){
                     </div>
                     <div class="hx_m clearfix">
                     	<ul class="hx_ml">
-                        	<li><a href="">信息化研究</a></li>
-                            <li><a href="">规划思考</a></li>
-                            <li><a href="">旅行足迹</a></li>
-                            <li><a href="">人文观点</a></li>
+                        	<li><a href="<?php echo url('News/newslist1'); ?>">信息化研究</a></li>
+                            <li><a href="<?php echo url('News/newslist2'); ?>">规划思考</a></li>
+                            <li><a href="<?php echo url('News/newslist3'); ?>">旅行足迹</a></li>
+                            <li><a href="<?php echo url('News/newslist4'); ?>">人文观点</a></li>
                         </ul>
                         <div class="hx_mr"><img src="/ptcznweb/public/static/upload/pic3.jpg" alt=""/></div>
                     </div>
@@ -85,11 +85,11 @@ $(function(){
                       	<div class="tu"><a href="<?php echo url('News/one'); ?>"><img src="/ptcznweb/public/static/upload/pic7.jpg" alt=""/></a></div>
                         <div class="n_m">
                             <div class="title">
-                                <span><?php echo $sql['0']['cre_time']; ?></span>
-                                <p class="name"><a href="<?php echo url('News/one'); ?>"><?php echo $sql['0']['title']; ?></a></p>
+                                <span><?php echo substr($toutiao['0']['cre_time'],0,10);?></span>
+                                <p class="name"><a href="<?php echo url('News/one'); ?>"><?php echo $toutiao['0']['title']; ?></a></p>
                             </div>
                             <div class="des">
-                                <?php echo mb_substr($sql['0']['abstract'],0,70,'utf-8');?>...
+                                <?php echo mb_substr($toutiao['0']['abstract'],0,70,'utf-8');?>...
                             </div>
                         </div>
                       </li>
@@ -103,24 +103,24 @@ $(function(){
                 </script> 
             	<div class="n_m">
                     <div class="title">
-                        <span><?php echo $sql['1']['cre_time']; ?></span>
-                        <p class="name"><a href=""><?php echo $sql['1']['title']; ?></a></p>
+                        <span><?php echo substr($citiao['0']['cre_time'],0,10);?></span>
+                        <p class="name"><a href=""><?php echo $citiao['0']['title']; ?></a></p>
                     </div>
                     <div class="des">
-                        <?php echo mb_substr($sql['1']['abstract'],0,70,'utf-8');?>...
+                        <?php echo mb_substr($citiao['0']['abstract'],0,70,'utf-8');?>...
                     </div>
                 </div>
             </div>
         </div>
         <div class="news_r">
         	<div class="scd_top">
-                <span>近期随笔</span>
+                <span><a href="<?php echo url('news/newslistall'); ?>">近期随笔</a></span>
             </div>
             <div class="new_m">
         	<div class="n_m">
                 <div class="title">
-                    <span><?php echo $sql['0']['cre_time']; ?></span>
-                    <p class="name"><a href=""></a><?php echo $sql['0']['title']; ?></p>
+                    <span><?php echo substr($sql['0']['cre_time'],0,10);?></span>
+                    <p class="name"><a href=""><?php echo $sql['0']['title']; ?></a></p>
                 </div>
                 <div class="des">
                     <?php echo mb_substr($sql['0']['abstract'],0,70,'utf-8');?>...
@@ -128,7 +128,7 @@ $(function(){
             </div>
             <div class="n_m">
                 <div class="title">
-                    <span><?php echo $sql['1']['cre_time']; ?></span>
+                    <span><?php echo substr($sql['1']['cre_time'],0,10);?></span>
                     <p class="name"><a href=""><?php echo $sql['1']['title']; ?></a></p>
                 </div>
                 <div class="des">
@@ -137,7 +137,7 @@ $(function(){
             </div>
             <div class="n_m">
                 <div class="title">
-                    <span><?php echo $sql['2']['cre_time']; ?></span>
+                    <span><?php echo substr($sql['2']['cre_time'],0,10);?></span>
                     <p class="name"><a href=""><?php echo $sql['2']['title']; ?></a></p>
                 </div>
                 <div class="des">
@@ -146,7 +146,7 @@ $(function(){
             </div>
             <div class="n_m">
                 <div class="title">
-                    <span><?php echo $sql['3']['cre_time']; ?></span>
+                    <span><?php echo substr($sql['3']['cre_time'],0,10);?></span>
                     <p class="name"><a href=""><?php echo $sql['3']['title']; ?></a></p>
                 </div>
                 <div class="des">

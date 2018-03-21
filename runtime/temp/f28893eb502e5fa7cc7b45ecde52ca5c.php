@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:72:"C:\wamp64\www\ptcznweb\public/../application/index\view\about\about.html";i:1520663413;s:62:"C:\wamp64\www\ptcznweb\application\index\view\common\head.html";i:1520663413;s:66:"C:\wamp64\www\ptcznweb\application\index\view\common\headmenu.html";i:1521636850;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\linkus.html";i:1520669848;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\footer.html";i:1520668646;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:6:{s:75:"C:\wamp64\www\ptcznweb\public/../application/index\view\news\newslist3.html";i:1521645452;s:62:"C:\wamp64\www\ptcznweb\application\index\view\common\head.html";i:1520663413;s:66:"C:\wamp64\www\ptcznweb\application\index\view\common\headmenu.html";i:1521636850;s:64:"C:\wamp64\www\ptcznweb\application\index\view\news\rightnav.html";i:1521637063;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\linkus.html";i:1520669848;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\footer.html";i:1520668646;}*/ ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,7 +26,7 @@ $(function(){
 });
 </script>
 </head>
-<title>about望问津</title>
+<title>望问津云端站点之贝海拾遗</title>
 <body>
 <div class="header">
     <div class="head clearfix">
@@ -66,11 +66,75 @@ $(function(){
         </div>
     </div>
 </div>
-
-<!--<div class="banner banner_s"><img src="/ptcznweb/public/static/upload/banner_a.jpg" alt=""/></div>-->
-
-<iframe frameborder="0" src="<?php echo url('about/cv'); ?>" width="100%" height="100%"></iframe>
-
+<div class="space_hx">&nbsp;</div>
+<div class="scd clearfix">
+    <div class="scd_top">
+        <span>旅行足迹</span>
+        <div class="pst">
+            当前位置：<a href="">首页</a>-<a href="">旅行足迹</a>
+        </div>
+    </div>
+    <div class="scd_m clearfix">
+        <div class="scd_ml">
+            <div>
+                <?php if(is_array($list3) || $list3 instanceof \think\Collection || $list3 instanceof \think\Paginator): if( count($list3)==0 ) : echo "" ;else: foreach($list3 as $k=>$id): ?>
+                <div>
+                    <div>
+                        <span><?php echo substr($list3["$k"]['cre_time'],0,10);?></span>
+                        <p><a href='article.html?id=<?php echo $list3["$k"]["id"]; ?>'><?php echo $list3["$k"]['title']; ?></a></p>
+                    </div>
+                    <div>
+                        <?php echo mb_substr($list3["$k"]['abstract'],0,70,'utf-8');?>...
+                    </div>
+                    <br>
+                </div>
+                <?php endforeach; endif; else: echo "" ;endif; ?>
+            </div>
+            <?php echo $page3; ?>
+        </div>
+        
+<div class="scd_mr">
+    <div class="box_h">
+        <span>当前攻坚</span>
+        <a href="">更多</a>
+    </div>
+    <div class="box_m"><img src="/ptcznweb/public/static/upload/pic4.jpg" alt=""/></div>
+    <div class="space_hx">&nbsp;</div>
+    <div class="box_h">
+        <span>参与案例</span>
+        <a href="">更多</a>
+    </div>
+    <div class="box_m">
+        <div class="videoRow-box">
+            <div class="rel">
+                <a href="#">
+                    <img src="/ptcznweb/public/static/upload/example1.jpg" alt=""/>
+                    <!--<span class="play-btn"><img src="/ptcznweb/public/static/img/index/icon7.png"></span>-->
+                </a>
+                <!--<video class="video videoPlay" controls>-->
+                <!--<source src="/ptcznweb/public/static/img/index/movie.ogg">-->
+                <!--</video>-->
+                <!--<embed class="video videoPlay" id="player" src="http://player.youku.com/player.php/Type/Folder/Fid/26148725/Ob/1/sid/XMTM2MDQ4NzY3Mg==/v.swf" quality="high" align="middle"></embed>-->
+            </div>
+        </div>
+    </div>
+    <div class="space_hx">&nbsp;</div>
+    <div class="box_h">
+        <span>其他随笔</span>
+        <a href="<?php echo url('News/newslistall'); ?>">更多</a>
+    </div>
+    <div class="box_m">
+        <ul>
+            <li><a href="">間安防領域的完美應用案例。卓越...</a></li>
+            <li><a href="">間安防領域的完美應用案例。卓越...</a></li>
+            <li><a href="">間安防領域的完美應用案例。卓越...</a></li>
+            <li><a href="">間安防領域的完美應用案例。卓越...</a></li>
+            <li><a href="">間安防領域的完美應用案例。卓越...</a></li>
+        </ul>
+    </div>
+</div>
+    </div>
+</div>
 
 <div class="fn_bg">
 	<ul class="f_nav clearfix">

@@ -1,0 +1,566 @@
+---------------------------------------------------------------
+[ 2018-03-22T00:00:18+08:00 ] 127.0.0.1 GET /ptcznweb/public/news/index.html
+[ info ] 127.0.0.1/ptcznweb/public/news/index.html [运行时间：0.102667s][吞吐率：9.74req/s] [内存消耗：3,399.32kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'news',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/news/article.html?id=9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1521168836; PHPSESSID=opbcjp8bnm6vq6saa9bhrsj4j6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\News->index[ C:\wamp64\www\ptcznweb\application\index\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/index\view\news\news.html [ array (
+  0 => 'sql',
+  1 => 'toutiao',
+  2 => 'citiao',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020204s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] select id,title,abstract,cre_time,author from news where import='0' order by id DESC limit 4 [ RunTime:0.014724s ]
+[ sql ] [ SQL ] select id,title,abstract,cre_time,author from news where import='1' order by id [ RunTime:0.015460s ]
+[ sql ] [ SQL ] select id,title,abstract,cre_time,author from news where import='2' order by id [ RunTime:0.015407s ]
+---------------------------------------------------------------
+[ 2018-03-22T00:00:21+08:00 ] 127.0.0.1 GET /ptcznweb/public/news/newslist2.html
+[ info ] 127.0.0.1/ptcznweb/public/news/newslist2.html [运行时间：0.145837s][吞吐率：6.86req/s] [内存消耗：4,948.23kb] [文件加载：61]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'news',
+    2 => 'newslist2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/news/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1521168836; PHPSESSID=opbcjp8bnm6vq6saa9bhrsj4j6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\News->newslist2[ C:\wamp64\www\ptcznweb\application\index\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/index\view\news\newslist2.html [ array (
+  0 => 'page2',
+  1 => 'list2',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022158s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.015958s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `newstype` = 2 LIMIT 1 [ RunTime:0.015286s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`abstract`,`cre_time`,`author` FROM `news` WHERE  `newstype` = 2 ORDER BY `id`  desc LIMIT 0,5 [ RunTime:0.017251s ]
+[ error ] [8]未定义变量: rightnav[C:\wamp64\www\ptcznweb\runtime\temp\1a91076f9e3dcbe24c36c63fb34af347.php:128]
+---------------------------------------------------------------
+[ 2018-03-22T00:01:40+08:00 ] 127.0.0.1 GET /ptcznweb/public/news/newslist2.html
+[ info ] 127.0.0.1/ptcznweb/public/news/newslist2.html [运行时间：0.171404s][吞吐率：5.83req/s] [内存消耗：4,581.97kb] [文件加载：57]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'news',
+    2 => 'newslist2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/news/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1521168836; PHPSESSID=opbcjp8bnm6vq6saa9bhrsj4j6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\News->newslist2[ C:\wamp64\www\ptcznweb\application\index\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024337s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.018104s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `newstype` = 2 LIMIT 1 [ RunTime:0.016880s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`abstract`,`cre_time`,`author` FROM `news` WHERE  `newstype` = 2 ORDER BY `id`  desc LIMIT 0,5 [ RunTime:0.016265s ]
+[ error ] [1]Call to undefined function app\index\controller\rightnav()[C:\wamp64\www\ptcznweb\application\index\controller\News.php:65]
+---------------------------------------------------------------
+[ 2018-03-22T00:02:18+08:00 ] 127.0.0.1 GET /ptcznweb/public/news/newslist2.html
+[ info ] 127.0.0.1/ptcznweb/public/news/newslist2.html [运行时间：0.180961s][吞吐率：5.53req/s] [内存消耗：4,581.77kb] [文件加载：57]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'news',
+    2 => 'newslist2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/news/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1521168836; PHPSESSID=opbcjp8bnm6vq6saa9bhrsj4j6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\News->newslist2[ C:\wamp64\www\ptcznweb\application\index\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022928s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.016108s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `newstype` = 2 LIMIT 1 [ RunTime:0.016042s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`abstract`,`cre_time`,`author` FROM `news` WHERE  `newstype` = 2 ORDER BY `id`  desc LIMIT 0,5 [ RunTime:0.017664s ]
+[ error ] [1]Call to undefined function app\index\controller\rightnav()[C:\wamp64\www\ptcznweb\application\index\controller\News.php:71]
+---------------------------------------------------------------
+[ 2018-03-22T00:02:19+08:00 ] 127.0.0.1 GET /ptcznweb/public/news/newslist2.html
+[ info ] 127.0.0.1/ptcznweb/public/news/newslist2.html [运行时间：0.179339s][吞吐率：5.58req/s] [内存消耗：4,581.77kb] [文件加载：57]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'news',
+    2 => 'newslist2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/news/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1521168836; PHPSESSID=opbcjp8bnm6vq6saa9bhrsj4j6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\News->newslist2[ C:\wamp64\www\ptcznweb\application\index\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.028358s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.016161s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `newstype` = 2 LIMIT 1 [ RunTime:0.022119s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`abstract`,`cre_time`,`author` FROM `news` WHERE  `newstype` = 2 ORDER BY `id`  desc LIMIT 0,5 [ RunTime:0.016134s ]
+[ error ] [1]Call to undefined function app\index\controller\rightnav()[C:\wamp64\www\ptcznweb\application\index\controller\News.php:71]
+---------------------------------------------------------------
+[ 2018-03-22T00:09:13+08:00 ] 127.0.0.1 GET /ptcznweb/public/news/newslist2.html
+[ info ] 127.0.0.1/ptcznweb/public/news/newslist2.html [运行时间：0.176929s][吞吐率：5.65req/s] [内存消耗：4,852.77kb] [文件加载：57]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'news',
+    2 => 'newslist2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/news/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1521168836; PHPSESSID=opbcjp8bnm6vq6saa9bhrsj4j6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\News->newslist2[ C:\wamp64\www\ptcznweb\application\index\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/index\view\news\newslist2.html [ array (
+  0 => 'page2',
+  1 => 'list2',
+  2 => 'rightnav',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021617s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.015618s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `newstype` = 2 LIMIT 1 [ RunTime:0.017085s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`abstract`,`cre_time`,`author` FROM `news` WHERE  `newstype` = 2 ORDER BY `id`  desc LIMIT 0,5 [ RunTime:0.015241s ]
+[ sql ] [ SQL ] select id,title from news order by id DESC limit 5 [ RunTime:0.019895s ]
+---------------------------------------------------------------
+[ 2018-03-22T00:10:37+08:00 ] 127.0.0.1 GET /ptcznweb/public/news/newslist2.html
+[ info ] 127.0.0.1/ptcznweb/public/news/newslist2.html [运行时间：0.168714s][吞吐率：5.93req/s] [内存消耗：4,852.61kb] [文件加载：57]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'news',
+    2 => 'newslist2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/news/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1521168836; PHPSESSID=opbcjp8bnm6vq6saa9bhrsj4j6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\News->newslist2[ C:\wamp64\www\ptcznweb\application\index\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/index\view\news\newslist2.html [ array (
+  0 => 'page2',
+  1 => 'list2',
+  2 => 'rightnav',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023206s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.016330s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `newstype` = 2 LIMIT 1 [ RunTime:0.014374s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`abstract`,`cre_time`,`author` FROM `news` WHERE  `newstype` = 2 ORDER BY `id`  desc LIMIT 0,5 [ RunTime:0.015225s ]
+[ sql ] [ SQL ] select id,title from news order by id DESC limit 5 [ RunTime:0.018633s ]
+---------------------------------------------------------------
+[ 2018-03-22T00:10:39+08:00 ] 127.0.0.1 GET /ptcznweb/public/news/article.html?id=9
+[ info ] 127.0.0.1/ptcznweb/public/news/article.html?id=9 [运行时间：0.086045s][吞吐率：11.62req/s] [内存消耗：3,396.48kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'news',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/news/newslist2.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1521168836; PHPSESSID=opbcjp8bnm6vq6saa9bhrsj4j6',
+)
+[ info ] [ PARAM ] array (
+  'id' => '9',
+)
+[ info ] [ RUN ] app\index\controller\News->article[ C:\wamp64\www\ptcznweb\application\index\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/index\view\news\article.html [ array (
+  0 => 'arti',
+  1 => 'id',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.035294s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] select title,abstract,cre_time,author,content from news where id='9' [ RunTime:0.017751s ]
+---------------------------------------------------------------
+[ 2018-03-22T00:11:14+08:00 ] 127.0.0.1 GET /ptcznweb/public/news/article.html?id=9
+[ info ] 127.0.0.1/ptcznweb/public/news/article.html?id=9 [运行时间：0.112313s][吞吐率：8.90req/s] [内存消耗：3,749.56kb] [文件加载：55]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'news',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/news/newslist2.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1521168836; PHPSESSID=opbcjp8bnm6vq6saa9bhrsj4j6',
+)
+[ info ] [ PARAM ] array (
+  'id' => '9',
+)
+[ info ] [ RUN ] app\index\controller\News->article[ C:\wamp64\www\ptcznweb\application\index\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/index\view\news\article.html [ array (
+  0 => 'arti',
+  1 => 'id',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019919s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] select title,abstract,cre_time,author,content from news where id='9' [ RunTime:0.015651s ]
+[ error ] [8]未定义变量: rightnav[C:\wamp64\www\ptcznweb\runtime\temp\0c9316a66bdc2c285a67e4e0561c95d5.php:138]
+---------------------------------------------------------------
+[ 2018-03-22T00:11:28+08:00 ] 127.0.0.1 GET /ptcznweb/public/news/article.html?id=9
+[ info ] 127.0.0.1/ptcznweb/public/news/article.html?id=9 [运行时间：0.093893s][吞吐率：10.65req/s] [内存消耗：3,398.55kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'news',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/news/newslist2.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1521168836; PHPSESSID=opbcjp8bnm6vq6saa9bhrsj4j6',
+)
+[ info ] [ PARAM ] array (
+  'id' => '9',
+)
+[ info ] [ RUN ] app\index\controller\News->article[ C:\wamp64\www\ptcznweb\application\index\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/index\view\news\article.html [ array (
+  0 => 'arti',
+  1 => 'id',
+  2 => 'rightnav',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.026002s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] select title,abstract,cre_time,author,content from news where id='9' [ RunTime:0.014162s ]
+[ sql ] [ SQL ] select id,title from news order by id DESC limit 5 [ RunTime:0.012601s ]
+---------------------------------------------------------------
+[ 2018-03-22T00:11:32+08:00 ] 127.0.0.1 GET /ptcznweb/public/news/newslistall.html
+[ info ] 127.0.0.1/ptcznweb/public/news/newslistall.html [运行时间：0.135949s][吞吐率：7.36req/s] [内存消耗：4,603.85kb] [文件加载：55]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'news',
+    2 => 'newslistall',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/news/article.html?id=9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1521168836; PHPSESSID=opbcjp8bnm6vq6saa9bhrsj4j6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\News->newslistall[ C:\wamp64\www\ptcznweb\application\index\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/index\view\news\newslistall.html [ array (
+  0 => 'pageall',
+  1 => 'listall',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023639s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.016130s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1 [ RunTime:0.016764s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`abstract`,`cre_time`,`author` FROM `news` ORDER BY `id`  desc LIMIT 0,5 [ RunTime:0.029126s ]
+---------------------------------------------------------------
+[ 2018-03-22T00:11:34+08:00 ] 127.0.0.1 GET /ptcznweb/public/news/newslist1.html
+[ info ] 127.0.0.1/ptcznweb/public/news/newslist1.html [运行时间：0.157580s][吞吐率：6.35req/s] [内存消耗：4,860.66kb] [文件加载：57]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'news',
+    2 => 'newslist1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/news/newslistall.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1521168836; PHPSESSID=opbcjp8bnm6vq6saa9bhrsj4j6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\News->newslist1[ C:\wamp64\www\ptcznweb\application\index\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/index\view\news\newslist1.html [ array (
+  0 => 'page1',
+  1 => 'list1',
+  2 => 'rightnav',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020854s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.014398s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `newstype` = 1 LIMIT 1 [ RunTime:0.028034s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`abstract`,`cre_time`,`author` FROM `news` WHERE  `newstype` = 1 ORDER BY `id`  desc LIMIT 0,5 [ RunTime:0.014734s ]
+[ sql ] [ SQL ] select id,title from news order by id DESC limit 5 [ RunTime:0.013043s ]
+---------------------------------------------------------------
+[ 2018-03-22T00:11:37+08:00 ] 127.0.0.1 GET /ptcznweb/public/news/article.html?id=9
+[ info ] 127.0.0.1/ptcznweb/public/news/article.html?id=9 [运行时间：0.089342s][吞吐率：11.19req/s] [内存消耗：3,398.16kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'news',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/news/newslist1.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1521168836; PHPSESSID=opbcjp8bnm6vq6saa9bhrsj4j6',
+)
+[ info ] [ PARAM ] array (
+  'id' => '9',
+)
+[ info ] [ RUN ] app\index\controller\News->article[ C:\wamp64\www\ptcznweb\application\index\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/index\view\news\article.html [ array (
+  0 => 'arti',
+  1 => 'id',
+  2 => 'rightnav',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.026565s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] select title,abstract,cre_time,author,content from news where id='9' [ RunTime:0.018591s ]
+[ sql ] [ SQL ] select id,title from news order by id DESC limit 5 [ RunTime:0.012959s ]
+---------------------------------------------------------------
+[ 2018-03-22T00:11:44+08:00 ] 127.0.0.1 GET /ptcznweb/public/index/index.html
+[ info ] 127.0.0.1/ptcznweb/public/index/index.html [运行时间：0.029271s][吞吐率：34.16req/s] [内存消耗：2,971.12kb] [文件加载：45]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/news/article.html?id=9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1521168836; PHPSESSID=opbcjp8bnm6vq6saa9bhrsj4j6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\wamp64\www\ptcznweb\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-22T00:11:44+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/upload/banner.jpg
+[ info ] 127.0.0.1/ptcznweb/public/static/upload/banner.jpg [运行时间：0.032068s][吞吐率：31.18req/s] [内存消耗：2,424.88kb] [文件加载：39]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'static',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1521168836; PHPSESSID=opbcjp8bnm6vq6saa9bhrsj4j6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

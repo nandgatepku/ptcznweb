@@ -1,0 +1,47 @@
+{include file='common/head' /}
+<title>望问津云端站点之贝海拾遗</title>
+<body>
+{include file='common/headmenu' /}
+<div class="space_hx">&nbsp;</div>
+<div class="scd clearfix">
+	<div class="scd_top">
+    	<span>随笔全文</span>
+        <div class="pst">
+        	当前位置：<a href="">首页</a>-<a href="">贝海拾遗</a>
+        </div>
+    </div>
+    <div class="scd_m clearfix">
+    	<div class="scd_ml">
+        	<h1>{$arti['title']}</h1>
+            <div class="time">
+            	<span>{$arti['cre_time']}</span>
+                <span>作者：{$arti['author']}</span>
+                <span>浏览次数：Null</span>
+                <div class="font">
+                	<span>字体大小：</span>
+                    <em class="on f_14">14px</em>
+                    <em class="f_16">16px</em>
+                    <em class="f_18">18px</em>
+                </div>
+            </div>
+            <div class="ctn">
+            	<div class="des">
+                	<p>[摘要] {$arti['abstract']}</p>
+                </div>
+                <div class="ctn_m">
+                    <p>{$arti['content']}</p>
+                    <br/>
+                    <div style="text-align:center"><img src="__STATIC__/upload/pic6.jpg" width="540" height="295" alt=""/></div>
+                    <br/>
+                    <p>{$arti['content']}</p>
+                    <br/>
+                </div>
+            </div>
+        </div>
+        {include file='news/rightnav' /}
+    </div>
+</div>
+{include file='common/linkus' /}
+{include file='common/footer' /}
+</body>
+</html>

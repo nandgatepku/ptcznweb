@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:72:"C:\wamp64\www\ptcznweb\public/../application/index\view\about\about.html";i:1520663413;s:62:"C:\wamp64\www\ptcznweb\application\index\view\common\head.html";i:1520663413;s:66:"C:\wamp64\www\ptcznweb\application\index\view\common\headmenu.html";i:1521636850;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\linkus.html";i:1520669848;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\footer.html";i:1520668646;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:77:"C:\wamp64\www\ptcznweb\public/../application/index\view\news\newslistall.html";i:1521645228;s:62:"C:\wamp64\www\ptcznweb\application\index\view\common\head.html";i:1520663413;s:66:"C:\wamp64\www\ptcznweb\application\index\view\common\headmenu.html";i:1521636850;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\linkus.html";i:1520669848;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\footer.html";i:1520668646;}*/ ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,7 +26,7 @@ $(function(){
 });
 </script>
 </head>
-<title>about望问津</title>
+<title>望问津云端站点之贝海拾遗</title>
 <body>
 <div class="header">
     <div class="head clearfix">
@@ -66,11 +66,68 @@ $(function(){
         </div>
     </div>
 </div>
+<div class="space_hx">&nbsp;</div>
+<div class="scd clearfix">
+    <div class="scd_top">
+        <span>全部随笔</span>
+        <div class="pst">
+            当前位置：<a href="">首页</a>-<a href="">全部随笔</a>
+        </div>
+    </div>
+    <div class="scd_m clearfix">
+        <div class="scd_ml">
+            <div>
+                <?php if(is_array($listall) || $listall instanceof \think\Collection || $listall instanceof \think\Paginator): if( count($listall)==0 ) : echo "" ;else: foreach($listall as $k=>$id): ?>
+                <div>
+                    <div>
+                        <span><?php echo substr($listall["$k"]['cre_time'],0,10);?></span>
+                        <p><a href='article.html?id=<?php echo $listall["$k"]["id"]; ?>'><?php echo $listall["$k"]['title']; ?></a></p>
+                    </div>
+                    <div>
+                        <?php echo mb_substr($listall["$k"]['abstract'],0,70,'utf-8');?>...
+                    </div>
+                    <br>
+                </div>
+                <?php endforeach; endif; else: echo "" ;endif; ?>
+            </div>
+            <?php echo $pageall; ?>
+        </div>
 
-<!--<div class="banner banner_s"><img src="/ptcznweb/public/static/upload/banner_a.jpg" alt=""/></div>-->
-
-<iframe frameborder="0" src="<?php echo url('about/cv'); ?>" width="100%" height="100%"></iframe>
-
+        <div class="scd_mr">
+            <div class="box_h">
+                <span>当前攻坚</span>
+                <a href="">更多</a>
+            </div>
+            <div class="box_m"><img src="/ptcznweb/public/static/upload/pic4.jpg" alt=""/></div>
+            <div class="space_hx">&nbsp;</div>
+            <div class="box_h">
+                <span>参与案例</span>
+                <a href="">更多</a>
+            </div>
+            <div class="box_m">
+                <div class="videoRow-box">
+                    <div class="rel">
+                        <a href="#">
+                            <img src="/ptcznweb/public/static/upload/example1.jpg" alt=""/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="space_hx">&nbsp;</div>
+            <div class="box_h">
+                <span>贝海拾遗</span>
+            </div>
+            <div class="box_m">
+                <ul>
+                    <li><a href="<?php echo url('news/newslist1'); ?>">信息化研究</a></li>
+                    <li><a href="<?php echo url('news/newslist2'); ?>">规划思考</a></li>
+                    <li><a href="<?php echo url('news/newslist3'); ?>">旅行足迹</a></li>
+                    <li><a href="<?php echo url('news/newslist4'); ?>">人文观点</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="fn_bg">
 	<ul class="f_nav clearfix">

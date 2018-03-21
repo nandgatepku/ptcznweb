@@ -1,0 +1,37 @@
+{include file='common/head' /}
+<title>望问津云端站点之贝海拾遗</title>
+<body>
+{include file='common/headmenu' /}
+<div class="space_hx">&nbsp;</div>
+<div class="scd clearfix">
+    <div class="scd_top">
+        <span>人文观点</span>
+        <div class="pst">
+            当前位置：<a href="">首页</a>-<a href="">人文观点</a>
+        </div>
+    </div>
+    <div class="scd_m clearfix">
+        <div class="scd_ml">
+            <div>
+                {foreach name='list4' id='id' key='k'}
+                <div>
+                    <div>
+                        <span><?php echo substr($list4["$k"]['cre_time'],0,10);?></span>
+                        <p><a href='article.html?id={$list4["$k"]["id"]}'>{$list4["$k"]['title']}</a></p>
+                    </div>
+                    <div>
+                        <?php echo mb_substr($list4["$k"]['abstract'],0,70,'utf-8');?>...
+                    </div>
+                    <br>
+                </div>
+                {/foreach}
+            </div>
+            {$page4}
+        </div>
+        {include file='news/rightnav' /}
+    </div>
+</div>
+{include file='common/linkus' /}
+{include file='common/footer' /}
+</body>
+</html>
