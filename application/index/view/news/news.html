@@ -22,7 +22,7 @@
                         <div class="n_m">
                             <div class="title">
                                 <span><?php echo substr($toutiao['0']['cre_time'],0,10);?></span>
-                                <p class="name"><a href="{:url('News/one')}">{$toutiao['0']['title']}</a></p>
+                                <p class="name"><a href='article.html?id={$toutiao["0"]["id"]}'>{$toutiao['0']['title']}</a></p>
                             </div>
                             <div class="des">
                                 <?php echo mb_substr($toutiao['0']['abstract'],0,70,'utf-8');?>...
@@ -40,7 +40,7 @@
             	<div class="n_m">
                     <div class="title">
                         <span><?php echo substr($citiao['0']['cre_time'],0,10);?></span>
-                        <p class="name"><a href="">{$citiao['0']['title']}</a></p>
+                        <p class="name"><a href='article.html?id={$citiao["0"]["id"]}'>{$citiao['0']['title']}</a></p>
                     </div>
                     <div class="des">
                         <?php echo mb_substr($citiao['0']['abstract'],0,70,'utf-8');?>...
@@ -56,7 +56,7 @@
         	<div class="n_m">
                 <div class="title">
                     <span><?php echo substr($sql['0']['cre_time'],0,10);?></span>
-                    <p class="name"><a href="">{$sql['0']['title']}</a></p>
+                    <p class="name"><a href='article.html?id={$sql["0"]["id"]}'>{$sql['0']['title']}</a></p>
                 </div>
                 <div class="des">
                     <?php echo mb_substr($sql['0']['abstract'],0,70,'utf-8');?>...
@@ -65,7 +65,7 @@
             <div class="n_m">
                 <div class="title">
                     <span><?php echo substr($sql['1']['cre_time'],0,10);?></span>
-                    <p class="name"><a href="">{$sql['1']['title']}</a></p>
+                    <p class="name"><a href='article.html?id={$sql["1"]["id"]}'>{$sql['1']['title']}</a></p>
                 </div>
                 <div class="des">
                     <?php echo mb_substr($sql['1']['abstract'],0,70,'utf-8');?>...
@@ -74,7 +74,7 @@
             <div class="n_m">
                 <div class="title">
                     <span><?php echo substr($sql['2']['cre_time'],0,10);?></span>
-                    <p class="name"><a href="">{$sql['2']['title']}</a></p>
+                    <p class="name"><a href='article.html?id={$sql["2"]["id"]}'>{$sql['2']['title']}</a></p>
                 </div>
                 <div class="des">
                     <?php echo mb_substr($sql['2']['abstract'],0,70,'utf-8');?>...
@@ -83,7 +83,7 @@
             <div class="n_m">
                 <div class="title">
                     <span><?php echo substr($sql['3']['cre_time'],0,10);?></span>
-                    <p class="name"><a href="">{$sql['3']['title']}</a></p>
+                    <p class="name"><a href='article.html?id={$sql["3"]["id"]}'>{$sql['3']['title']}</a></p>
                 </div>
                 <div class="des">
                     <?php echo mb_substr($sql['3']['abstract'],0,70,'utf-8');?>...

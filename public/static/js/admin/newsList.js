@@ -224,33 +224,48 @@ layui.config({
 	})
  
 	//操作
-	$("body").on("click",".news_edit",function(){  //编辑
-		layer.alert('您点击了文章编辑按钮，由于是纯静态页面，所以暂时不存在编辑内容，后期会添加，敬请谅解。。。',{icon:6, title:'文章编辑'});
-	})
+	// $("body").on("click",".news_edit",function(){  //编辑
+	// 	// layer.alert('您点击了文章编辑按钮，由于是纯静态页面，所以暂时不存在编辑内容，后期会添加，敬请谅解。。。',{icon:6, title:'文章编辑'});
+     //    var index = layui.layer.open({
+     //        title : "编辑文章",
+     //        type : 2,
+     //        content : 'newsedit.html?id={$list["$k"]["id"]}',
+     //        success : function(layero, index){
+     //            layui.layer.tips('点击此处返回文章列表', '.layui-layer-setwin .layui-layer-close', {
+     //                tips: 3
+     //            });
+     //        }
+     //    })
+        //改变窗口大小时，重置弹窗的高度，防止超出可视区域（如F12调出debug的操作）
+     //    $(window).resize(function(){
+     //        layui.layer.full(index);
+     //    })
+     //    layui.layer.full(index);
+	// })
 
-	$("body").on("click",".news_collect",function(){  //收藏.
-		if($(this).text().indexOf("已收藏") > 0){
-			layer.msg("取消收藏成功！");
-			$(this).html("<i class='layui-icon'>&#xe600;</i> 收藏");
-		}else{
-			layer.msg("收藏成功！");
-			$(this).html("<i class='iconfont icon-star'></i> 已收藏");
-		}
-	})
+	// $("body").on("click",".news_collect",function(){  //收藏.
+	// 	if($(this).text().indexOf("已收藏") > 0){
+	// 		layer.msg("取消收藏成功！");
+	// 		$(this).html("<i class='layui-icon'>&#xe600;</i> 收藏");
+	// 	}else{
+	// 		layer.msg("收藏成功！");
+	// 		$(this).html("<i class='iconfont icon-star'></i> 已收藏");
+	// 	}
+	// })
 
-	$("body").on("click",".news_del",function(){  //删除
-		var _this = $(this);
-		layer.confirm('确定删除此信息？',{icon:3, title:'提示信息'},function(index){
-			//_this.parents("tr").remove();
-			for(var i=0;i<newsData.length;i++){
-				if(newsData[i].newsId == _this.attr("data-id")){
-					newsData.splice(i,1);
-					newsList(newsData);
-				}
-			}
-			layer.close(index);
-		});
-	})
+	// $("body").on("click",".news_del",function(){  //删除
+	// 	var _this = $(this);
+	// 	layer.confirm('确定删除此信息？',{icon:3, title:'提示信息'},function(index){
+	// 		//_this.parents("tr").remove();
+	// 		for(var i=0;i<newsData.length;i++){
+	// 			if(newsData[i].newsId == _this.attr("data-id")){
+	// 				newsData.splice(i,1);
+	// 				newsList(newsData);
+	// 			}
+	// 		}
+	// 		layer.close(index);
+	// 	});
+	// })
 
 	function newsList(that){
 		//渲染数据
@@ -289,7 +304,7 @@ layui.config({
 		}
 
 		//分页
-		var nums = 13; //每页出现的数据量
+		var nums = 3; //每页出现的数据量
 		if(that){
 			newsData = that;
 		}

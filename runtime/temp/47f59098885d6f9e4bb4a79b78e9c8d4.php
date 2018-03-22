@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:6:{s:75:"C:\wamp64\www\ptcznweb\public/../application/index\view\news\newslist4.html";i:1521645452;s:62:"C:\wamp64\www\ptcznweb\application\index\view\common\head.html";i:1520663413;s:66:"C:\wamp64\www\ptcznweb\application\index\view\common\headmenu.html";i:1521636850;s:64:"C:\wamp64\www\ptcznweb\application\index\view\news\rightnav.html";i:1521637063;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\linkus.html";i:1520669848;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\footer.html";i:1520668646;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:6:{s:75:"C:\wamp64\www\ptcznweb\public/../application/index\view\news\newslist4.html";i:1521645452;s:62:"C:\wamp64\www\ptcznweb\application\index\view\common\head.html";i:1520663413;s:66:"C:\wamp64\www\ptcznweb\application\index\view\common\headmenu.html";i:1521636850;s:64:"C:\wamp64\www\ptcznweb\application\index\view\news\rightnav.html";i:1521648636;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\linkus.html";i:1520669848;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\footer.html";i:1520668646;}*/ ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -125,11 +125,11 @@ $(function(){
     </div>
     <div class="box_m">
         <ul>
-            <li><a href="">間安防領域的完美應用案例。卓越...</a></li>
-            <li><a href="">間安防領域的完美應用案例。卓越...</a></li>
-            <li><a href="">間安防領域的完美應用案例。卓越...</a></li>
-            <li><a href="">間安防領域的完美應用案例。卓越...</a></li>
-            <li><a href="">間安防領域的完美應用案例。卓越...</a></li>
+            <li><a href='article.html?id=<?php echo $rightnav["0"]["id"]; ?>'><?php echo $rightnav['0']['title']; ?>...</a></li>
+            <li><a href='article.html?id=<?php echo $rightnav["1"]["id"]; ?>'><?php echo $rightnav['1']['title']; ?>..</a></li>
+            <li><a href='article.html?id=<?php echo $rightnav["2"]["id"]; ?>'><?php echo $rightnav['2']['title']; ?>...</a></li>
+            <li><a href='article.html?id=<?php echo $rightnav["3"]["id"]; ?>'><?php echo $rightnav['3']['title']; ?>...</a></li>
+            <li><a href='article.html?id=<?php echo $rightnav["4"]["id"]; ?>'><?php echo $rightnav['4']['title']; ?>...</a></li>
         </ul>
     </div>
 </div>

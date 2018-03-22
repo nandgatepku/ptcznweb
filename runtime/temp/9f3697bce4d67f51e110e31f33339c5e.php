@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:75:"C:\wamp64\www\ptcznweb\public/../application/admin\view\index\newslist.html";i:1521641293;s:61:"C:\wamp64\www\ptcznweb\application\admin\view\index\head.html";i:1521112279;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:75:"C:\wamp64\www\ptcznweb\public/../application/admin\view\index\newslist.html";i:1521697243;s:61:"C:\wamp64\www\ptcznweb\application\admin\view\index\head.html";i:1521112279;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,15 +27,15 @@
 		<div class="layui-inline">
 			<a class="layui-btn layui-btn-normal newsAdd_btn">添加文章</a>
 		</div>
-		<div class="layui-inline">
-			<a class="layui-btn recommend" style="background-color:#5FB878">推荐文章</a>
-		</div>
+		<!--<div class="layui-inline">-->
+			<!--<a class="layui-btn recommend" style="background-color:#5FB878">推荐文章</a>-->
+		<!--</div>-->
 		<div class="layui-inline">
 			<a class="layui-btn audit_btn">审核文章</a>
 		</div>
-		<div class="layui-inline">
-			<a class="layui-btn layui-btn-danger batchDel">批量删除</a>
-		</div>
+		<!--<div class="layui-inline">-->
+			<!--<a class="layui-btn layui-btn-danger batchDel">批量删除</a>-->
+		<!--</div>-->
 	</blockquote>
 	<div class="layui-form news_list">
 	  	<table class="layui-table">
@@ -46,8 +46,8 @@
 				<col width="9%">
 				<col width="9%">
 				<col width="9%">
-				<col width="10%">
 				<col width="15%">
+				<col width="7%">
 		    </colgroup>
 		    <thead>
 				<tr>
@@ -58,7 +58,7 @@
 					<th>是否头条</th>
 					<th>是否公开</th>
 					<th>创建时间</th>
-					<th>操作</th>
+					<th>编辑</th>
 				</tr> 
 		    </thead>
 		    <tbody class="news_content">
@@ -74,20 +74,21 @@
 						<i class="layui-icon"></i>
 					</div>
 				</td>
-				<td align="left"><a href="/ptcznweb/public/admin.php/admin/index/../../../index.php/news/one.html" target="_blank"><?php echo $list["$k"]['title']; ?></a></td>
+				<td align="left"><a href='/ptcznweb/public/admin.php/admin/index/../../../index.php/news/article.html?id=<?php echo $list["$k"]["id"]; ?>' target="_blank"><?php echo $list["$k"]['title']; ?></a></td>
 				<td><?php echo $list["$k"]['author']; ?></td>
 				<td><?php echo $list["$k"]['newstype']; ?></td>
 				<td><?php echo $list["$k"]['import']; ?></td>
 				<td>
-					<input type="checkbox" name="show" checked="checked" lay-skin="switch" lay-filter="isShow" lay-text="是|否">
-					<div class="layui-unselect layui-form-switch" lay-skin="_switch"><em>否</em>
-						<i></i></div>
+					<!--<input type="checkbox" name="show" checked="checked" lay-skin="switch" lay-filter="isShow" lay-text="是|否">-->
+					<!--<div class="layui-unselect layui-form-switch" lay-skin="_switch"><em>否</em>-->
+						<!--<i></i></div>-->
+					<?php echo $list["$k"]['newsopen']; ?>
 				</td>
 				<td><?php echo $list["$k"]['cre_time']; ?></td>
 				<td>
-					<a class="layui-btn layui-btn-mini news_edit"><i class="iconfont icon-edit"></i> 编辑</a>
-					<a class="layui-btn layui-btn-danger layui-btn-mini news_del" data-id="1">
-						<i class="layui-icon"></i> 删除</a>
+					<a class="layui-btn layui-btn-mini" href='newsedit.html?id=<?php echo $list["$k"]["id"]; ?>'><i class="iconfont icon-edit"></i> 编辑</a>
+					<!--<a class="layui-btn layui-btn-danger layui-btn-mini news_del" data-id="1">-->
+						<!--<i class="layui-icon"></i> 删除</a>-->
 				</td>
 			</tr>
 			<?php endforeach; endif; else: echo "" ;endif; ?>

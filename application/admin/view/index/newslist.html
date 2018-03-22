@@ -11,15 +11,15 @@
 		<div class="layui-inline">
 			<a class="layui-btn layui-btn-normal newsAdd_btn">添加文章</a>
 		</div>
-		<div class="layui-inline">
-			<a class="layui-btn recommend" style="background-color:#5FB878">推荐文章</a>
-		</div>
+		<!--<div class="layui-inline">-->
+			<!--<a class="layui-btn recommend" style="background-color:#5FB878">推荐文章</a>-->
+		<!--</div>-->
 		<div class="layui-inline">
 			<a class="layui-btn audit_btn">审核文章</a>
 		</div>
-		<div class="layui-inline">
-			<a class="layui-btn layui-btn-danger batchDel">批量删除</a>
-		</div>
+		<!--<div class="layui-inline">-->
+			<!--<a class="layui-btn layui-btn-danger batchDel">批量删除</a>-->
+		<!--</div>-->
 	</blockquote>
 	<div class="layui-form news_list">
 	  	<table class="layui-table">
@@ -30,8 +30,8 @@
 				<col width="9%">
 				<col width="9%">
 				<col width="9%">
-				<col width="10%">
 				<col width="15%">
+				<col width="7%">
 		    </colgroup>
 		    <thead>
 				<tr>
@@ -42,7 +42,7 @@
 					<th>是否头条</th>
 					<th>是否公开</th>
 					<th>创建时间</th>
-					<th>操作</th>
+					<th>编辑</th>
 				</tr> 
 		    </thead>
 		    <tbody class="news_content">
@@ -58,20 +58,21 @@
 						<i class="layui-icon"></i>
 					</div>
 				</td>
-				<td align="left"><a href="__URL__/../../../index.php/news/one.html" target="_blank">{$list["$k"]['title']}</a></td>
+				<td align="left"><a href='__URL__/../../../index.php/news/article.html?id={$list["$k"]["id"]}' target="_blank">{$list["$k"]['title']}</a></td>
 				<td>{$list["$k"]['author']}</td>
 				<td>{$list["$k"]['newstype']}</td>
 				<td>{$list["$k"]['import']}</td>
 				<td>
-					<input type="checkbox" name="show" checked="checked" lay-skin="switch" lay-filter="isShow" lay-text="是|否">
-					<div class="layui-unselect layui-form-switch" lay-skin="_switch"><em>否</em>
-						<i></i></div>
+					<!--<input type="checkbox" name="show" checked="checked" lay-skin="switch" lay-filter="isShow" lay-text="是|否">-->
+					<!--<div class="layui-unselect layui-form-switch" lay-skin="_switch"><em>否</em>-->
+						<!--<i></i></div>-->
+					{$list["$k"]['newsopen']}
 				</td>
 				<td>{$list["$k"]['cre_time']}</td>
 				<td>
-					<a class="layui-btn layui-btn-mini news_edit"><i class="iconfont icon-edit"></i> 编辑</a>
-					<a class="layui-btn layui-btn-danger layui-btn-mini news_del" data-id="1">
-						<i class="layui-icon"></i> 删除</a>
+					<a class="layui-btn layui-btn-mini" href='newsedit.html?id={$list["$k"]["id"]}'><i class="iconfont icon-edit"></i> 编辑</a>
+					<!--<a class="layui-btn layui-btn-danger layui-btn-mini news_del" data-id="1">-->
+						<!--<i class="layui-icon"></i> 删除</a>-->
 				</td>
 			</tr>
 			{/foreach}

@@ -1,15 +1,36 @@
 layui.config({
 	base : "js/"
-}).use(['form','layer','jquery','layedit','laydate'],function(){
+}).use(['form','layer','jquery','layedit','laydate','upload'],function(){
 	var form = layui.form(),
 		layer = parent.layer === undefined ? layui.layer : parent.layer,
 		laypage = layui.laypage,
 		layedit = layui.layedit,
 		laydate = layui.laydate,
+		upload = layui.upload,
 		$ = layui.jquery;
 
-	//创建一个编辑器
- 	var editIndex = layedit.build('news_content');
+    upload.render({
+        elem: '#id'
+        ,url: 'admin/index/editUpload'
+        // ,done: function(res, index, upload){ //上传后的回调
+
+        }
+        //,accept: 'file' //允许上传的文件类型
+        //,size: 50 //最大允许上传的文件大小
+        //,……
+    })
+    // upload.set({
+     //    uploadImage: {
+     //        url: '{:url("admin/index/editUpload")}', //实现图片上传的接口url
+     //    	type: 'post' ,//默认post
+     //        success:function(res){
+    //
+     //        }
+    	// }
+	// });
+//创建一个编辑器
+	var editIndex = layedit.build('news_content');
+
  	var addNewsArray = [],addNews;
  	form.on("submit(addNews)",function(data){
  		//是否添加过信息

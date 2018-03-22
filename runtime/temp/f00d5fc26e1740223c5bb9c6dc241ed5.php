@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:78:"C:\wamp64\www\ptcznweb\public/../application/index\view\publogin\publogin.html";i:1520669446;s:62:"C:\wamp64\www\ptcznweb\application\index\view\common\head.html";i:1520663413;s:66:"C:\wamp64\www\ptcznweb\application\index\view\common\headmenu.html";i:1520672995;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\linkus.html";i:1520669848;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\footer.html";i:1520668646;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:78:"C:\wamp64\www\ptcznweb\public/../application/index\view\publogin\publogin.html";i:1520669446;s:62:"C:\wamp64\www\ptcznweb\application\index\view\common\head.html";i:1520663413;s:66:"C:\wamp64\www\ptcznweb\application\index\view\common\headmenu.html";i:1521636850;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\linkus.html";i:1520669848;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\footer.html";i:1520668646;}*/ ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -53,10 +53,10 @@ $(function(){
                     </div>
                     <div class="hx_m clearfix">
                     	<ul class="hx_ml">
-                        	<li><a href="">信息化研究</a></li>
-                            <li><a href="">规划思考</a></li>
-                            <li><a href="">旅行足迹</a></li>
-                            <li><a href="">人文观点</a></li>
+                        	<li><a href="<?php echo url('News/newslist1'); ?>">信息化研究</a></li>
+                            <li><a href="<?php echo url('News/newslist2'); ?>">规划思考</a></li>
+                            <li><a href="<?php echo url('News/newslist3'); ?>">旅行足迹</a></li>
+                            <li><a href="<?php echo url('News/newslist4'); ?>">人文观点</a></li>
                         </ul>
                         <div class="hx_mr"><img src="/ptcznweb/public/static/upload/pic3.jpg" alt=""/></div>
                     </div>

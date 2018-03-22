@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:70:"C:\wamp64\www\ptcznweb\public/../application/index\view\news\news.html";i:1521642020;s:62:"C:\wamp64\www\ptcznweb\application\index\view\common\head.html";i:1520663413;s:66:"C:\wamp64\www\ptcznweb\application\index\view\common\headmenu.html";i:1521636850;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\linkus.html";i:1520669848;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\footer.html";i:1520668646;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:70:"C:\wamp64\www\ptcznweb\public/../application/index\view\news\news.html";i:1521717195;s:62:"C:\wamp64\www\ptcznweb\application\index\view\common\head.html";i:1520663413;s:66:"C:\wamp64\www\ptcznweb\application\index\view\common\headmenu.html";i:1521636850;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\linkus.html";i:1520669848;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\footer.html";i:1520668646;}*/ ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -86,7 +86,7 @@ $(function(){
                         <div class="n_m">
                             <div class="title">
                                 <span><?php echo substr($toutiao['0']['cre_time'],0,10);?></span>
-                                <p class="name"><a href="<?php echo url('News/one'); ?>"><?php echo $toutiao['0']['title']; ?></a></p>
+                                <p class="name"><a href='article.html?id=<?php echo $toutiao["0"]["id"]; ?>'><?php echo $toutiao['0']['title']; ?></a></p>
                             </div>
                             <div class="des">
                                 <?php echo mb_substr($toutiao['0']['abstract'],0,70,'utf-8');?>...
@@ -104,7 +104,7 @@ $(function(){
             	<div class="n_m">
                     <div class="title">
                         <span><?php echo substr($citiao['0']['cre_time'],0,10);?></span>
-                        <p class="name"><a href=""><?php echo $citiao['0']['title']; ?></a></p>
+                        <p class="name"><a href='article.html?id=<?php echo $citiao["0"]["id"]; ?>'><?php echo $citiao['0']['title']; ?></a></p>
                     </div>
                     <div class="des">
                         <?php echo mb_substr($citiao['0']['abstract'],0,70,'utf-8');?>...
@@ -120,7 +120,7 @@ $(function(){
         	<div class="n_m">
                 <div class="title">
                     <span><?php echo substr($sql['0']['cre_time'],0,10);?></span>
-                    <p class="name"><a href=""><?php echo $sql['0']['title']; ?></a></p>
+                    <p class="name"><a href='article.html?id=<?php echo $sql["0"]["id"]; ?>'><?php echo $sql['0']['title']; ?></a></p>
                 </div>
                 <div class="des">
                     <?php echo mb_substr($sql['0']['abstract'],0,70,'utf-8');?>...
@@ -129,7 +129,7 @@ $(function(){
             <div class="n_m">
                 <div class="title">
                     <span><?php echo substr($sql['1']['cre_time'],0,10);?></span>
-                    <p class="name"><a href=""><?php echo $sql['1']['title']; ?></a></p>
+                    <p class="name"><a href='article.html?id=<?php echo $sql["1"]["id"]; ?>'><?php echo $sql['1']['title']; ?></a></p>
                 </div>
                 <div class="des">
                     <?php echo mb_substr($sql['1']['abstract'],0,70,'utf-8');?>...
@@ -138,7 +138,7 @@ $(function(){
             <div class="n_m">
                 <div class="title">
                     <span><?php echo substr($sql['2']['cre_time'],0,10);?></span>
-                    <p class="name"><a href=""><?php echo $sql['2']['title']; ?></a></p>
+                    <p class="name"><a href='article.html?id=<?php echo $sql["2"]["id"]; ?>'><?php echo $sql['2']['title']; ?></a></p>
                 </div>
                 <div class="des">
                     <?php echo mb_substr($sql['2']['abstract'],0,70,'utf-8');?>...
@@ -147,7 +147,7 @@ $(function(){
             <div class="n_m">
                 <div class="title">
                     <span><?php echo substr($sql['3']['cre_time'],0,10);?></span>
-                    <p class="name"><a href=""><?php echo $sql['3']['title']; ?></a></p>
+                    <p class="name"><a href='article.html?id=<?php echo $sql["3"]["id"]; ?>'><?php echo $sql['3']['title']; ?></a></p>
                 </div>
                 <div class="des">
                     <?php echo mb_substr($sql['3']['abstract'],0,70,'utf-8');?>...

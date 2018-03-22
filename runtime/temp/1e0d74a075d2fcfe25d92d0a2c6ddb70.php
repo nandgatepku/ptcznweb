@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:74:"C:\wamp64\www\ptcznweb\public/../application/admin\view\index\newsadd.html";i:1521629262;s:61:"C:\wamp64\www\ptcznweb\application\admin\view\index\head.html";i:1521112279;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:74:"C:\wamp64\www\ptcznweb\public/../application/admin\view\index\newsadd.html";i:1521714683;s:61:"C:\wamp64\www\ptcznweb\application\admin\view\index\head.html";i:1521112279;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -77,7 +77,7 @@
 		</div>
 		<div class="layui-form-item">
 			<div class="layui-input-block">
-				<button type="submit" class="layui-btn" lay-submit="" lay-filter="addNews">立即提交</button>
+				<button type="submit" class="layui-btn" lay-submit="" lay-filter="addNews">提交</button>
 				<button type="reset" class="layui-btn layui-btn-primary">重置</button>
 		    </div>
 		</div>

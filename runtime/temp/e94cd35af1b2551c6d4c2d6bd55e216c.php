@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:10:{s:72:"C:\wamp64\www\ptcznweb\public/../application/index\view\index\index.html";i:1521636850;s:62:"C:\wamp64\www\ptcznweb\application\index\view\common\head.html";i:1520663413;s:66:"C:\wamp64\www\ptcznweb\application\index\view\common\headmenu.html";i:1521636850;s:63:"C:\wamp64\www\ptcznweb\application\index\view\index\banner.html";i:1520662221;s:66:"C:\wamp64\www\ptcznweb\application\index\view\index\newsindex.html";i:1520671932;s:65:"C:\wamp64\www\ptcznweb\application\index\view\index\services.html";i:1520670796;s:64:"C:\wamp64\www\ptcznweb\application\index\view\index\example.html";i:1520671083;s:64:"C:\wamp64\www\ptcznweb\application\index\view\index\linkwho.html";i:1520607434;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\linkus.html";i:1520669848;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\footer.html";i:1520668646;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:10:{s:72:"C:\wamp64\www\ptcznweb\public/../application/index\view\index\index.html";i:1521636850;s:62:"C:\wamp64\www\ptcznweb\application\index\view\common\head.html";i:1520663413;s:66:"C:\wamp64\www\ptcznweb\application\index\view\common\headmenu.html";i:1521636850;s:63:"C:\wamp64\www\ptcznweb\application\index\view\index\banner.html";i:1520662221;s:66:"C:\wamp64\www\ptcznweb\application\index\view\index\newsindex.html";i:1521695546;s:65:"C:\wamp64\www\ptcznweb\application\index\view\index\services.html";i:1520670796;s:64:"C:\wamp64\www\ptcznweb\application\index\view\index\example.html";i:1520671083;s:64:"C:\wamp64\www\ptcznweb\application\index\view\index\linkwho.html";i:1520607434;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\linkus.html";i:1520669848;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\footer.html";i:1520668646;}*/ ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -136,36 +136,14 @@ $(function(){
             <a href="<?php echo url('News/index'); ?>"><span>贝海拾遗</span></a>Articles
         </div>
         <ul>
+            <?php if(is_array($newsindex) || $newsindex instanceof \think\Collection || $newsindex instanceof \think\Paginator): if( count($newsindex)==0 ) : echo "" ;else: foreach($newsindex as $k=>$id): ?>
         	<li>
-            	<a href="<?php echo url('News/one'); ?>">
-                	<p>中国内地轨道交通规划初探</p>
-                    <em>2018-03-10</em>
+            	<a href='/ptcznweb/public/index/index/../news/article.html?id=<?php echo $newsindex["$k"]["id"]; ?>'>
+                	<p><?php echo mb_substr($newsindex["$k"]['title'],0,20,'utf-8');?></p>
+                    <em><?php echo substr($newsindex["$k"]['cre_time'],0,10);?></em>
                 </a>
             </li>
-            <li>
-            	<a href="<?php echo url('News/index'); ?>">
-                	<p>更多文章待补充待补充啊啊</p>
-                    <em>2015-10-25</em>
-                </a>
-            </li>
-            <li>
-            	<a href="<?php echo url('News/index'); ?>">
-                	<p>更多文章待补充待补充啊啊</p>
-                    <em>2015-10-25</em>
-                </a>
-            </li>
-            <li>
-            	<a href="<?php echo url('News/index'); ?>">
-                	<p>更多文章待补充待补充啊啊</p>
-                    <em>2015-10-25</em>
-                </a>
-            </li>
-            <li>
-            	<a href="<?php echo url('News/index'); ?>">
-                	<p>更多文章待补充待补充啊啊</p>
-                    <em>2015-10-25</em>
-                </a>
-            </li>
+            <?php endforeach; endif; else: echo "" ;endif; ?>
         </ul>
     </div>
 

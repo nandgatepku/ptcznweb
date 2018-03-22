@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:72:"C:\wamp64\www\ptcznweb\public/../application/admin\view\index\index.html";i:1521641552;s:61:"C:\wamp64\www\ptcznweb\application\admin\view\index\head.html";i:1521112279;s:59:"C:\wamp64\www\ptcznweb\application\admin\view\index\js.html";i:1521111845;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:72:"C:\wamp64\www\ptcznweb\public/../application/admin\view\index\index.html";i:1521725431;s:61:"C:\wamp64\www\ptcznweb\application\admin\view\index\head.html";i:1521112279;s:59:"C:\wamp64\www\ptcznweb\application\admin\view\index\js.html";i:1521111845;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,8 +27,9 @@
 			    <!-- 顶部右侧菜单 -->
 			    <ul class="layui-nav top_menu">
 			    	<li class="layui-nav-item showNotice" id="showNotice" pc>
-						<a href="javascript:;"><i class="iconfont icon-gonggao"></i><cite>系统公告</cite></a>
+						<a href="<?php echo url('Func/uppic'); ?>"  target="_blank"><cite>上传图片</cite></a>
 					</li>
+
 			    	<li class="layui-nav-item" mobile>
 			    		<a href="javascript:;" data-url="page/user/changePwd.html"><i class="iconfont icon-shezhi1" data-icon="icon-shezhi1"></i><cite>设置</cite></a>
 			    	</li>
@@ -40,18 +41,22 @@
 						<a href="javascript:;">
 							<img src="/ptcznweb/public/static/img/admin/face.jpg" class="layui-circle" width="35" height="35">
 							<cite>admin</cite>
-							<span class="layui-nav-more layui-nav-mored"></span>
+							<!--<span class="layui-nav-more"></span>-->
 						</a>
-						<dl class="layui-nav-child layui-anim layui-anim-upbit layui-show">
-							<dd><a href="javascript:;" data-url="page/user/userInfo.html">
-								<i class="iconfont icon-zhanghu" data-icon="icon-zhanghu"></i>
-								<cite>个人资料</cite></a></dd>
-							<dd><a href="javascript:;" data-url="page/user/changePwd.html">
-								<i class="iconfont icon-shezhi1" data-icon="icon-shezhi1"></i>
-								<cite>修改密码</cite></a></dd>
-							<dd><a href="<?php echo url('Index/logout'); ?>">
-								</i><cite>退出</cite></a></dd>
-						</dl>
+						<!--<dl class="layui-nav-child layui-anim layui-anim-upbit layui-show">-->
+							<!--<dd><a href="javascript:;" data-url="page/user/userInfo.html">-->
+								<!--<i class="iconfont icon-zhanghu" data-icon="icon-zhanghu"></i>-->
+								<!--<cite>个人资料</cite></a></dd>-->
+							<!--<dd><a href="javascript:;" data-url="page/user/changePwd.html">-->
+								<!--<i class="iconfont icon-shezhi1" data-icon="icon-shezhi1"></i>-->
+								<!--<cite>修改密码</cite></a></dd>-->
+							<!--<dd><a href="<?php echo url('Index/logout'); ?>">-->
+								<!--</i><cite>退出</cite></a></dd>-->
+						<!--</dl>-->
+					</li>
+					<li class="layui-nav-item showNotice" id="showNotice" pc>
+						<a href="<?php echo url('Index/logout'); ?>">
+							</i><cite>退出</cite></a>
 					</li>
 				</ul>
 			</div>

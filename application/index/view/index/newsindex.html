@@ -3,35 +3,13 @@
             <a href="{:url('News/index')}"><span>贝海拾遗</span></a>Articles
         </div>
         <ul>
+            {foreach name='newsindex' id='id' key='k'}
         	<li>
-            	<a href="{:url('News/one')}">
-                	<p>中国内地轨道交通规划初探</p>
-                    <em>2018-03-10</em>
+            	<a href='__URL__/../news/article.html?id={$newsindex["$k"]["id"]}'>
+                	<p><?php echo mb_substr($newsindex["$k"]['title'],0,20,'utf-8');?></p>
+                    <em><?php echo substr($newsindex["$k"]['cre_time'],0,10);?></em>
                 </a>
             </li>
-            <li>
-            	<a href="{:url('News/index')}">
-                	<p>更多文章待补充待补充啊啊</p>
-                    <em>2015-10-25</em>
-                </a>
-            </li>
-            <li>
-            	<a href="{:url('News/index')}">
-                	<p>更多文章待补充待补充啊啊</p>
-                    <em>2015-10-25</em>
-                </a>
-            </li>
-            <li>
-            	<a href="{:url('News/index')}">
-                	<p>更多文章待补充待补充啊啊</p>
-                    <em>2015-10-25</em>
-                </a>
-            </li>
-            <li>
-            	<a href="{:url('News/index')}">
-                	<p>更多文章待补充待补充啊啊</p>
-                    <em>2015-10-25</em>
-                </a>
-            </li>
+            {/foreach}
         </ul>
     </div>
