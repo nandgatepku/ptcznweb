@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:75:"C:\wamp64\www\ptcznweb\public/../application/admin\view\index\newsedit.html";i:1521777061;s:61:"C:\wamp64\www\ptcznweb\application\admin\view\index\head.html";i:1521112279;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:75:"C:\wamp64\www\ptcznweb\public/../application/admin\view\index\newsedit.html";i:1521793815;s:61:"C:\wamp64\www\ptcznweb\application\admin\view\index\head.html";i:1521793882;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="/ptcznweb/public/static/assets/layui/css/layui.css" media="all" />
     <link rel="stylesheet" href="/ptcznweb/public/static/css/admin/font_eolqem241z66flxr.css" media="all" />
     <link rel="stylesheet" href="/ptcznweb/public/static/css/admin/main.css" media="all" />
+
+    <script type="text/javascript" src="/ptcznweb/public/static/assets/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" src="/ptcznweb/public/static/assets/ueditor/ueditor.all.min.js"></script>
+    <script type="text/javascript" src="/ptcznweb/public/static/assets/ueditor/lang/zh-cn/zh-cn.js"></script>
 </head>
 <title>文章添加</title>
 <body class="childrenBody">
@@ -96,7 +100,8 @@
     <div class="layui-form-item">
         <label class="layui-form-label">文章内容</label>
         <div class="layui-input-block">
-            <textarea class="layui-textarea layui-hide" name="editcontent" lay-verify="content" id="news_content" style="display: none;"><?php echo $edit['content']; ?></textarea>
+            <textarea name="editcontent" id="content" style="float:left;"><?php echo $edit['content']; ?></textarea>
+            <!--<textarea class="layui-textarea layui-hide" name="editcontent" lay-verify="content" id="news_content" style="display: none;"><?php echo $edit['content']; ?></textarea>-->
         </div>
     </div>
     <div class="layui-form-item">
@@ -110,18 +115,21 @@
 
 <script type="text/javascript" src="/ptcznweb/public/static/assets/layui/layui.js"></script>
 <script type="text/javascript" src="/ptcznweb/public/static/js/admin/newsAdd.js"></script>
+<!--<script type="text/javascript">-->
+    <!--layui.use('layedit',-->
+        <!--function() {-->
+            <!--var layedit = layui.layedit;-->
+            <!--layedit.set({-->
+                <!--uploadImage: {-->
+                    <!--url: '<?php echo url("index/lay_img_upload"); ?>',-->
+                <!--type: 'post'-->
+            <!--}-->
+        <!--});-->
+            <!--layedit.build('news_content',{height:400}); //建立编辑器-->
+        <!--});-->
+<!--</script>-->
 <script type="text/javascript">
-    layui.use('layedit',
-        function() {
-            var layedit = layui.layedit;
-            layedit.set({
-                uploadImage: {
-                    url: '<?php echo url("index/lay_img_upload"); ?>',
-                type: 'post'
-            }
-        });
-            layedit.build('news_content',{height:400}); //建立编辑器
-        });
+    UE.getEditor('content',{initialFrameWidth:800,initialFrameHeight:200})
 </script>
 </body>
 </html>
