@@ -30,7 +30,7 @@
 				<col width="9%">
 				<col width="9%">
 				<col width="9%">
-				<col width="15%">
+				<col width="17%">
 				<col width="7%">
 		    </colgroup>
 		    <thead>
@@ -78,10 +78,12 @@
 			{/foreach}
 			</tbody>
 		</table>
-		{$page}
+		<div align="center">
+			<div class="layui-laypage" align="center">
+				{$list->render()}
+			</div>
+		</div>
 	</div>
-	<div id="page"></div>
-	<script type="text/javascript" src="__STATIC__/assets/layui/layui.js"></script>
-	<script type="text/javascript" src="__JS__/admin/newsList.js"></script>
+
 </body>
 </html>

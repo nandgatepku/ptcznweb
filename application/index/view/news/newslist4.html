@@ -12,21 +12,28 @@
     </div>
     <div class="scd_m clearfix">
         <div class="scd_ml">
-            <div>
-                {foreach name='list4' id='id' key='k'}
-                <div>
-                    <div>
-                        <span><?php echo substr($list4["$k"]['cre_time'],0,10);?></span>
-                        <p><a href='article.html?id={$list4["$k"]["id"]}'>{$list4["$k"]['title']}</a></p>
+            <div class="news clearfix">
+                <div class="new_m">
+                    {foreach name='list4' id='id' key='k'}
+                    <div class="n_m">
+                        <div class="title">
+                            <span><?php echo substr($list4["$k"]['cre_time'],0,10);?></span>
+                            <p class="name"><a href='article.html?id={$list4["$k"]["id"]}'>{$list4["$k"]['title']}</a></p>
+                        </div>
+                        <div class="des">
+                            <?php echo mb_substr($list4["$k"]['abstract'],0,70,'utf-8');?>...
+                        </div>
+                        <br>
                     </div>
-                    <div>
-                        <?php echo mb_substr($list4["$k"]['abstract'],0,70,'utf-8');?>...
-                    </div>
-                    <br>
+                    {/foreach}
                 </div>
-                {/foreach}
             </div>
-            {$page4}
+
+            <div align="center">
+                <div class="layui-laypage" align="center">
+                    {$page4}
+                </div>
+            </div>
         </div>
         {include file='news/rightnav' /}
     </div>

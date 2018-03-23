@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"C:\wamp64\www\ptcznweb\public/../application/Index\view\publogin\log.html";i:1520926412;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"C:\wamp64\www\ptcznweb\public/../application/index\view\publogin\log.html";i:1521806555;}*/ ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -45,10 +45,10 @@ $(function(){
 <body>
 
 <div class="login-box">
-	<h1>作者后台登录</h1>
+	<h1>评论员后台登录</h1>
 	<form method="post" action="">
 		<div class="name">
-			<label>作者账号：</label>
+			<label>评论账号：</label>
 			<input type="text" name="uname" tabindex="1" autocomplete="off" onblur="if(this.value == 'user2')this.value='';" onclick="if(this.value == 'user2')this.value='';" value="user2" />
 		</div>
 		<div class="password">

@@ -31,8 +31,9 @@ class Index extends Base
     {
         $this->islog();
 //        $list=Db::query("select id,title,abstract,cre_time,author from news order by id DESC") -> paginate(5);
-        $list=Db::table('news')->field('id,title,abstract,cre_time,author,newstype,newsopen,import')->order('id','desc')->paginate(5);
+        $list=Db::table('news')->field('id,title,abstract,cre_time,author,newstype,newsopen,import')->order('id','desc')->paginate(6);
 
+//        $page=new Fpage($list->currentPage(),$list->lastPage());
         $page = $list->render();
         $this->assign('page', $page);
         $this ->assign('list',$list);

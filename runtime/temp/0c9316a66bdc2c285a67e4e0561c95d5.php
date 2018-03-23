@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:6:{s:73:"C:\wamp64\www\ptcznweb\public/../application/index\view\news\article.html";i:1521776510;s:62:"C:\wamp64\www\ptcznweb\application\index\view\common\head.html";i:1520663413;s:66:"C:\wamp64\www\ptcznweb\application\index\view\common\headmenu.html";i:1521636850;s:64:"C:\wamp64\www\ptcznweb\application\index\view\news\rightnav.html";i:1521648636;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\linkus.html";i:1520669848;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\footer.html";i:1520668646;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:6:{s:73:"C:\wamp64\www\ptcznweb\public/../application/index\view\news\article.html";i:1521776510;s:62:"C:\wamp64\www\ptcznweb\application\index\view\common\head.html";i:1521813232;s:66:"C:\wamp64\www\ptcznweb\application\index\view\common\headmenu.html";i:1521806489;s:64:"C:\wamp64\www\ptcznweb\application\index\view\news\rightnav.html";i:1521648636;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\linkus.html";i:1520669848;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\footer.html";i:1520668646;}*/ ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +10,7 @@
 <script type="text/javascript" src="/ptcznweb/public/static/js/index/banner.js"></script>
 <link rel="stylesheet" type="text/css" href="/ptcznweb/public/static/css/index/thems.css">
 <link rel="stylesheet" type="text/css" href="/ptcznweb/public/static/css/index/responsive.css">
+<link rel="stylesheet" href="/ptcznweb/public/static/assets/layui/css/layui.css" media="all" />
 <script language="javascript">
 $(function(){
 	$('#owl-demo').owlCarousel({
@@ -43,7 +44,7 @@ $(function(){
                 <li><a href="<?php echo url('About/index'); ?>">关于望问津</a></li>
                 <li><a href="<?php echo url('News/index'); ?>">贝海拾遗</a></li>
                 <li class="er"><a href="">思维航向</a></li>
-                <li><a href="<?php echo url('Publogin/index'); ?>">作者登录</a></li>
+                <li><a href="<?php echo url('Publogin/index'); ?>">评论登录</a></li>
             </ul>
             <div class="er_m">
                 <div class="hx">

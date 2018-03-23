@@ -5,7 +5,7 @@
         <ul>
             {foreach name='newsindex' id='id' key='k'}
         	<li>
-            	<a href='__URL__/../news/article.html?id={$newsindex["$k"]["id"]}'>
+            	<a href='__URL__/../../news/article.html?id={$newsindex["$k"]["id"]}'>
                 	<p><?php echo mb_substr($newsindex["$k"]['title'],0,20,'utf-8');?></p>
                     <em><?php echo substr($newsindex["$k"]['cre_time'],0,10);?></em>
                 </a>

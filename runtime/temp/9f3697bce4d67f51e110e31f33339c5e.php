@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:75:"C:\wamp64\www\ptcznweb\public/../application/admin\view\index\newslist.html";i:1521697243;s:61:"C:\wamp64\www\ptcznweb\application\admin\view\index\head.html";i:1521793882;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:75:"C:\wamp64\www\ptcznweb\public/../application/admin\view\index\newslist.html";i:1521813168;s:61:"C:\wamp64\www\ptcznweb\application\admin\view\index\head.html";i:1521793882;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -50,7 +50,7 @@
 				<col width="9%">
 				<col width="9%">
 				<col width="9%">
-				<col width="15%">
+				<col width="17%">
 				<col width="7%">
 		    </colgroup>
 		    <thead>
@@ -98,10 +98,12 @@
 			<?php endforeach; endif; else: echo "" ;endif; ?>
 			</tbody>
 		</table>
-		<?php echo $page; ?>
+		<div align="center">
+			<div class="layui-laypage" align="center">
+				<?php echo $list->render(); ?>
+			</div>
+		</div>
 	</div>
-	<div id="page"></div>
-	<script type="text/javascript" src="/ptcznweb/public/static/assets/layui/layui.js"></script>
-	<script type="text/javascript" src="/ptcznweb/public/static/js/admin/newsList.js"></script>
+
 </body>
 </html>

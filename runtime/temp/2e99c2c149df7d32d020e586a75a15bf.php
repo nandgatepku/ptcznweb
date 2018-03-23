@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:72:"C:\wamp64\www\ptcznweb\public/../application/admin\view\index\index.html";i:1521777138;s:61:"C:\wamp64\www\ptcznweb\application\admin\view\index\head.html";i:1521793882;s:59:"C:\wamp64\www\ptcznweb\application\admin\view\index\js.html";i:1521111845;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:72:"C:\wamp64\www\ptcznweb\public/../application/admin\view\index\index.html";i:1521813855;s:61:"C:\wamp64\www\ptcznweb\application\admin\view\index\head.html";i:1521793882;s:59:"C:\wamp64\www\ptcznweb\application\admin\view\index\js.html";i:1521111845;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,20 +43,10 @@
 
 					<li class="layui-nav-item" pc>
 						<a href="javascript:;">
-							<img src="/ptcznweb/public/static/img/admin/face.jpg" class="layui-circle" width="35" height="35">
+							<!--<img src="/ptcznweb/public/static/img/admin/face.jpg" class="layui-circle" width="35" height="35">-->
 							<cite>admin</cite>
 							<!--<span class="layui-nav-more"></span>-->
 						</a>
-						<!--<dl class="layui-nav-child layui-anim layui-anim-upbit layui-show">-->
-							<!--<dd><a href="javascript:;" data-url="page/user/userInfo.html">-->
-								<!--<i class="iconfont icon-zhanghu" data-icon="icon-zhanghu"></i>-->
-								<!--<cite>个人资料</cite></a></dd>-->
-							<!--<dd><a href="javascript:;" data-url="page/user/changePwd.html">-->
-								<!--<i class="iconfont icon-shezhi1" data-icon="icon-shezhi1"></i>-->
-								<!--<cite>修改密码</cite></a></dd>-->
-							<!--<dd><a href="<?php echo url('Index/logout'); ?>">-->
-								<!--</i><cite>退出</cite></a></dd>-->
-						<!--</dl>-->
 					</li>
 					<li class="layui-nav-item showNotice" id="showNotice" pc>
 						<a href="<?php echo url('Index/logout'); ?>">
@@ -68,54 +58,35 @@
 		<!-- 左侧导航 -->
 		<div class="layui-side layui-bg-black">
 			<div class="user-photo">
-				<a class="img" title="我的头像" ><img src="images/face.jpg"></a>
+				<a class="img" title="我的头像" ><img src="/ptcznweb/public/static/img/admin/face.jpg"></a>
 				<p>你好！<span class="userName">admin</span>, 欢迎登录</p>
 			</div>
 			<div class="navBar layui-side-scroll" style="height: 385px;">
 				<ul class="layui-nav layui-nav-tree">
-					<li class="layui-nav-item layui-this">
-						<a href="javascript:;" data-url="page/main.html">
+					<li class="layui-nav-item">
+						<a href="javascript:;" data-url="#">
 							<i class="iconfont icon-computer" data-icon="icon-computer"></i>
 							<cite>后台首页</cite>
 						</a>
 					</li>
-					<li class="layui-nav-item">
+					<li class="layui-nav-item  layui-this">
 						<a href="javascript:;" onclick="newslist()">
 							<i class="iconfont icon-text" data-icon="icon-text"></i>
 							<cite>文章列表</cite>
 						</a>
 					</li>
 					<li class="layui-nav-item">
-						<a href="javascript:;" data-url="page/links/linksList.html">
+						<a href="javascript:;" data-url="#">
 							<i class="iconfont icon-text" data-icon="icon-text"></i>
 							<cite>友情链接</cite>
 						</a>
 					</li>
 
 					<li class="layui-nav-item">
-						<a href="javascript:;" data-url="page/systemParameter/systemParameter.html">
+						<a href="javascript:;" data-url="#">
 							<i class="layui-icon" data-icon=""></i>
 							<cite>系统基本参数</cite>
 						</a>
-					</li>
-					<li class="layui-nav-item">
-						<a href="javascript:;">
-							<i class="layui-icon" data-icon=""></i>
-							<cite>二级菜单演示</cite>
-							<span class="layui-nav-more"></span>
-						</a>
-						<dl class="layui-nav-child">
-							<dd class=""><a href="javascript:;" data-url="">
-								<i class="layui-icon" data-icon=""></i>
-								<cite>二级菜单1</cite></a>
-							</dd>
-							<dd class="">
-								<a href="javascript:;" data-url="">
-								<i class="layui-icon" data-icon=""></i>
-									<cite>二级菜单2</cite>
-								</a>
-							</dd>
-						</dl>
 					</li>
 					<span class="layui-nav-bar" style="top: 112.5px; height: 0px; opacity: 0;"></span></ul>
 			</div>
