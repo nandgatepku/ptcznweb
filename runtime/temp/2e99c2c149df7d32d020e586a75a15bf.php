@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:72:"C:\wamp64\www\ptcznweb\public/../application/admin\view\index\index.html";i:1521777138;s:61:"C:\wamp64\www\ptcznweb\application\admin\view\index\head.html";i:1521112279;s:59:"C:\wamp64\www\ptcznweb\application\admin\view\index\js.html";i:1521111845;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:72:"C:\wamp64\www\ptcznweb\public/../application/admin\view\index\index.html";i:1521777138;s:61:"C:\wamp64\www\ptcznweb\application\admin\view\index\head.html";i:1521793882;s:59:"C:\wamp64\www\ptcznweb\application\admin\view\index\js.html";i:1521111845;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="/ptcznweb/public/static/assets/layui/css/layui.css" media="all" />
     <link rel="stylesheet" href="/ptcznweb/public/static/css/admin/font_eolqem241z66flxr.css" media="all" />
     <link rel="stylesheet" href="/ptcznweb/public/static/css/admin/main.css" media="all" />
+
+    <script type="text/javascript" src="/ptcznweb/public/static/assets/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" src="/ptcznweb/public/static/assets/ueditor/ueditor.all.min.js"></script>
+    <script type="text/javascript" src="/ptcznweb/public/static/assets/ueditor/lang/zh-cn/zh-cn.js"></script>
 </head>
 <title>PTCZN后台文章管理</title>
 <!--<form action="<?php echo url('index/swi'); ?>"method="post">-->

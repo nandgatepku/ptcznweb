@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="192aa850-9bf9-4f7f-a839-05795a0c681e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/head.html" afterPath="$PROJECT_DIR$/application/admin/view/index/head.html" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/index/newsadd.html" afterPath="$PROJECT_DIR$/application/admin/view/index/newsadd.html" />
       <change beforePath="$PROJECT_DIR$/application/admin/view/index/newsedit.html" afterPath="$PROJECT_DIR$/application/admin/view/index/newsedit.html" />
       <change beforePath="$PROJECT_DIR$/runtime/log/201803/23.log" afterPath="$PROJECT_DIR$/runtime/log/201803/23.log" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/2703cf242f5a402e8cf574f021d186f1.php" afterPath="$PROJECT_DIR$/runtime/temp/2703cf242f5a402e8cf574f021d186f1.php" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/2e99c2c149df7d32d020e586a75a15bf.php" afterPath="$PROJECT_DIR$/runtime/temp/2e99c2c149df7d32d020e586a75a15bf.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,10 +23,23 @@
       <file leaf-file-name="newsedit.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/view/index/newsedit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="82" column="71" lean-forward="false" selection-start-line="82" selection-start-column="71" selection-end-line="82" selection-end-column="71" />
+            <state relative-caret-position="541">
+              <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="113" selection-end-column="9" />
               <folding>
-                <marker date="1521793815450" expanded="false" signature="4377:4391" ph="..." />
+                <element signature="n#style#0;n#textarea#0;n#div#0;n#div#4;n#form#0;n#body#0;n#!!top" expanded="true" />
+                <marker date="1521794800444" expanded="false" signature="4401:4415" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="newsadd.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/admin/view/index/newsadd.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="76" column="36" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="84" selection-end-column="17" />
+              <folding>
+                <element signature="n#style#0;n#textarea#0;n#div#0;n#div#4;n#form#0;n#body#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -72,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="head.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="head.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/view/index/head.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -210,13 +224,13 @@
         <option value="$PROJECT_DIR$/application/admin/view/func/uppic.html" />
         <option value="$PROJECT_DIR$/application/admin/view/func/layuiup.html" />
         <option value="$PROJECT_DIR$/application/admin/controller/Func.php" />
-        <option value="$PROJECT_DIR$/application/admin/view/index/newsadd.html" />
         <option value="$PROJECT_DIR$/application/index/view/news/article.html" />
         <option value="$PROJECT_DIR$/public/static/js/admin/newsAdd.js" />
         <option value="$PROJECT_DIR$/application/admin/controller/Index.php" />
         <option value="$PROJECT_DIR$/application/admin/view/index/index.html" />
-        <option value="$PROJECT_DIR$/application/admin/view/index/newsedit.html" />
         <option value="$PROJECT_DIR$/application/admin/view/index/head.html" />
+        <option value="$PROJECT_DIR$/application/admin/view/index/newsedit.html" />
+        <option value="$PROJECT_DIR$/application/admin/view/index/newsadd.html" />
       </list>
     </option>
   </component>
@@ -395,12 +409,12 @@
       <workItem from="1521649556372" duration="657000" />
       <workItem from="1521686542163" duration="8214000" />
       <workItem from="1521713008966" duration="27616000" />
-      <workItem from="1521793667468" duration="233000" />
+      <workItem from="1521793667468" duration="1143000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="170527000" />
+    <option name="totallyTimeSpent" value="171437000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="7" />
@@ -744,6 +758,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="19" />
+          <folding>
+            <element signature="e#121#140#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -751,13 +768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="23" column="112" lean-forward="false" selection-start-line="23" selection-start-column="112" selection-end-line="23" selection-end-column="112" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/index/newsadd.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="689">
-          <caret line="73" column="24" lean-forward="true" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -813,21 +823,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/index/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/view/index/newsedit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="82" column="71" lean-forward="false" selection-start-line="82" selection-start-column="71" selection-end-line="82" selection-end-column="71" />
+        <state relative-caret-position="541">
+          <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="113" selection-end-column="9" />
           <folding>
-            <marker date="1521793815450" expanded="false" signature="4377:4391" ph="..." />
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#4;n#form#0;n#body#0;n#!!top" expanded="true" />
+            <marker date="1521794800444" expanded="false" signature="4401:4415" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/index/head.html">
+    <entry file="file://$PROJECT_DIR$/application/admin/view/index/newsadd.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="305">
+          <caret line="76" column="36" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="84" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#4;n#form#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

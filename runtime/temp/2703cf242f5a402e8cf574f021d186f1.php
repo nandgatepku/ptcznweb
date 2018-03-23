@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:75:"C:\wamp64\www\ptcznweb\public/../application/admin\view\index\newsedit.html";i:1521793815;s:61:"C:\wamp64\www\ptcznweb\application\admin\view\index\head.html";i:1521793882;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:75:"C:\wamp64\www\ptcznweb\public/../application/admin\view\index\newsedit.html";i:1521794800;s:61:"C:\wamp64\www\ptcznweb\application\admin\view\index\head.html";i:1521793882;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -100,7 +100,7 @@
     <div class="layui-form-item">
         <label class="layui-form-label">文章内容</label>
         <div class="layui-input-block">
-            <textarea name="editcontent" id="content" style="float:left;"><?php echo $edit['content']; ?></textarea>
+            <textarea name="editcontent" id="content" style="float:left;width:100%;height:400px;"><?php echo $edit['content']; ?></textarea>
             <!--<textarea class="layui-textarea layui-hide" name="editcontent" lay-verify="content" id="news_content" style="display: none;"><?php echo $edit['content']; ?></textarea>-->
         </div>
     </div>
@@ -129,7 +129,8 @@
         <!--});-->
 <!--</script>-->
 <script type="text/javascript">
-    UE.getEditor('content',{initialFrameWidth:800,initialFrameHeight:200})
+    UE.getEditor('content',{})
+    // initialFrameWidth:2000,initialFrameHeight:200
 </script>
 </body>
 </html>

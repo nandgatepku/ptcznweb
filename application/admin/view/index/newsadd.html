@@ -56,7 +56,8 @@
 		<div class="layui-form-item">
 			<label class="layui-form-label">文章内容</label>
 			<div class="layui-input-block">
-				<textarea class="layui-textarea layui-hide" name="newcontent" lay-verify="content" id="news_content"></textarea>
+				<textarea name="editcontent" id="content" style="float:left;width:100%;height:400px;">{$edit['content']}</textarea>
+				<!--<textarea class="layui-textarea layui-hide" name="newcontent" lay-verify="content" id="news_content"></textarea>-->
 			</div>
 		</div>
 		<div class="layui-form-item">
@@ -69,18 +70,22 @@
 
 	<script type="text/javascript" src="__STATIC__/assets/layui/layui.js"></script>
 	<script type="text/javascript" src="__JS__/admin/newsAdd.js"></script>
+	<!--<script type="text/javascript">-->
+        <!--layui.use('layedit',-->
+            <!--function() {-->
+                <!--var layedit = layui.layedit;-->
+                <!--layedit.set({-->
+                    <!--uploadImage: {-->
+                        <!--url: '{:url("index/lay_img_upload")}',-->
+                        <!--type: 'post'-->
+                    <!--}-->
+                <!--});-->
+                <!--layedit.build('news_content'); //建立编辑器-->
+            <!--});-->
+	<!--</script>-->
 	<script type="text/javascript">
-        layui.use('layedit',
-            function() {
-                var layedit = layui.layedit;
-                layedit.set({
-                    uploadImage: {
-                        url: '{:url("index/lay_img_upload")}',
-                        type: 'post'
-                    }
-                });
-                layedit.build('news_content'); //建立编辑器
-            });
+        UE.getEditor('content',{})
+        // initialFrameWidth:2000,initialFrameHeight:200
 	</script>
 </body>
 </html>
