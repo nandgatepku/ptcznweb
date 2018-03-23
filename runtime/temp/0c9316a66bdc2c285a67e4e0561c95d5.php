@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:6:{s:73:"C:\wamp64\www\ptcznweb\public/../application/index\view\news\article.html";i:1521728058;s:62:"C:\wamp64\www\ptcznweb\application\index\view\common\head.html";i:1520663413;s:66:"C:\wamp64\www\ptcznweb\application\index\view\common\headmenu.html";i:1521636850;s:64:"C:\wamp64\www\ptcznweb\application\index\view\news\rightnav.html";i:1521648636;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\linkus.html";i:1520669848;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\footer.html";i:1520668646;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:6:{s:73:"C:\wamp64\www\ptcznweb\public/../application/index\view\news\article.html";i:1521776510;s:62:"C:\wamp64\www\ptcznweb\application\index\view\common\head.html";i:1520663413;s:66:"C:\wamp64\www\ptcznweb\application\index\view\common\headmenu.html";i:1521636850;s:64:"C:\wamp64\www\ptcznweb\application\index\view\news\rightnav.html";i:1521648636;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\linkus.html";i:1520669848;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\footer.html";i:1520668646;}*/ ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -93,10 +93,6 @@ $(function(){
                 	<p>[摘要] <?php echo $arti['abstract']; ?></p>
                 </div>
                 <div class="ctn_m">
-                    <p><?php echo $arti['content']; ?></p>
-                    <br/>
-                    <div style="text-align:center"><img src="/ptcznweb/public/static/upload/pic6.jpg" width="540" height="295"></div>
-                    <br/>
                     <p><?php echo $arti['content']; ?></p>
                     <br/>
                 </div>

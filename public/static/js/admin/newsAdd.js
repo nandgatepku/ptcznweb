@@ -1,6 +1,6 @@
 layui.config({
 	base : "js/"
-}).use(['form','layer','jquery','layedit','laydate','upload'],function(){
+}).use(['form','layer','jquery'],function(){
 	var form = layui.form(),
 		layer = parent.layer === undefined ? layui.layer : parent.layer,
 		laypage = layui.laypage,
@@ -9,27 +9,32 @@ layui.config({
 		upload = layui.upload,
 		$ = layui.jquery;
 
-    upload.render({
-        elem: '#id'
-        ,url: 'admin/index/editUpload'
-        // ,done: function(res, index, upload){ //上传后的回调
-
-        }
-        //,accept: 'file' //允许上传的文件类型
-        //,size: 50 //最大允许上传的文件大小
-        //,……
-    })
-    // upload.set({
-     //    uploadImage: {
-     //        url: '{:url("admin/index/editUpload")}', //实现图片上传的接口url
-     //    	type: 'post' ,//默认post
-     //        success:function(res){
-    //
-     //        }
-    	// }
-	// });
+//     layui.upload({
+//         url: '{:url("admin/index/editUpload")}' ,//上传接口
+//         success: function(res){
+//         //上传成功后的回调
+//         $("#upload").attr("src",res.src);
+//         console.log(res.src);
+//     }
+// });
+//     upload.render({
+//         elem: '#image'
+//         ,url: '{:url("admin/index/editUpload")}'
+//         ,done: function(res){
+//         	layer.close(loading);
+//
+//
+//         }
+//
+//     })
+//     layedit.set({
+//         uploadImage: {
+//             url: '{:url("admin/Index/editUpload")}', //实现图片上传的接口url
+//         	type: 'post'//默认post
+//     	}
+// 	});
 //创建一个编辑器
-	var editIndex = layedit.build('news_content');
+//     var editIndex = layedit.build('news_content',{height: 100});
 
  	var addNewsArray = [],addNews;
  	form.on("submit(addNews)",function(data){
@@ -62,4 +67,4 @@ layui.config({
  		return false;
  	})
 	
-})
+});

@@ -2,6 +2,7 @@
 namespace app\admin\controller;
 
 use think\Db;
+use  think\Request;
 use app\admin\common\Base;
 
 class Index extends Base
@@ -107,22 +108,30 @@ class Index extends Base
 
         return $this->success('ok','newslist');
     }
-    public function editUpload(){
-        if ($this->request->isPost()){
-            $res['code']=0;
-            $res['msg']='上传成功';
-            $file=$this->request->file('file');
-            $info=$file->move('__STATIC__/upload/2018/');
-            if($info) {
-                $res['data']['title'] = $info->getFilename();
-                $filepath = 'upload/2018/'.$info->getSaveName();
-                $res['data']['src'] = '/'.$filepath;
+
+
+    public function lay_img_upload(){
+        $file = Request::instance()->file('file');
+        if(empty($file)){
+            $result["code"] = "1";
+            $result["msg"] = "请选择图片";
+            $result['data']["src"] = '';
+        }else{
+            // 移动到框架应用根目录/public/uploads/ 目录下
+            $info = $file->move(ROOT_PATH . 'public' . DS . 'static/upload' );
+            if($info){
+                $name_path =str_replace('\\',"/",$info->getSaveName());
+                //成功上传后 获取上传信息
+                $result["code"] = '0';
+                $result["msg"] = "上传成功";
+                $result['data']["src"] = "/ptcznweb/public/static/upload/".$name_path;
+            }else{
+                // 上传失败获取错误信息
+                $result["code"] = "2";
+                $result["msg"] = "上传出错";
+                $result['data']["src"] ='';
             }
-            else{
-                $res['code']=1;
-                $res['msg']='上传失败'.$file->getError();
-            }
-            return json($res);
         }
+        return json_encode($result);
     }
 }

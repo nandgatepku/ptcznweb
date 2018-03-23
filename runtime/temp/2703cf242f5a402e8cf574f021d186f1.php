@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:75:"C:\wamp64\www\ptcznweb\public/../application/admin\view\index\newsedit.html";i:1521734239;s:61:"C:\wamp64\www\ptcznweb\application\admin\view\index\head.html";i:1521112279;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:75:"C:\wamp64\www\ptcznweb\public/../application/admin\view\index\newsedit.html";i:1521777061;s:61:"C:\wamp64\www\ptcznweb\application\admin\view\index\head.html";i:1521112279;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -110,5 +110,18 @@
 
 <script type="text/javascript" src="/ptcznweb/public/static/assets/layui/layui.js"></script>
 <script type="text/javascript" src="/ptcznweb/public/static/js/admin/newsAdd.js"></script>
+<script type="text/javascript">
+    layui.use('layedit',
+        function() {
+            var layedit = layui.layedit;
+            layedit.set({
+                uploadImage: {
+                    url: '<?php echo url("index/lay_img_upload"); ?>',
+                type: 'post'
+            }
+        });
+            layedit.build('news_content',{height:400}); //建立编辑器
+        });
+</script>
 </body>
 </html>

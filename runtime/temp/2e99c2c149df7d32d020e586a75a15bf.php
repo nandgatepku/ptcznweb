@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:72:"C:\wamp64\www\ptcznweb\public/../application/admin\view\index\index.html";i:1521725431;s:61:"C:\wamp64\www\ptcznweb\application\admin\view\index\head.html";i:1521112279;s:59:"C:\wamp64\www\ptcznweb\application\admin\view\index\js.html";i:1521111845;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:72:"C:\wamp64\www\ptcznweb\public/../application/admin\view\index\index.html";i:1521777138;s:61:"C:\wamp64\www\ptcznweb\application\admin\view\index\head.html";i:1521112279;s:59:"C:\wamp64\www\ptcznweb\application\admin\view\index\js.html";i:1521111845;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,7 +27,7 @@
 			    <!-- 顶部右侧菜单 -->
 			    <ul class="layui-nav top_menu">
 			    	<li class="layui-nav-item showNotice" id="showNotice" pc>
-						<a href="<?php echo url('Func/uppic'); ?>"  target="_blank"><cite>上传图片</cite></a>
+						<a href="#"><cite>系统公告</cite></a>
 					</li>
 
 			    	<li class="layui-nav-item" mobile>

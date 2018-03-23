@@ -94,5 +94,18 @@
 
 <script type="text/javascript" src="__STATIC__/assets/layui/layui.js"></script>
 <script type="text/javascript" src="__JS__/admin/newsAdd.js"></script>
+<script type="text/javascript">
+    layui.use('layedit',
+        function() {
+            var layedit = layui.layedit;
+            layedit.set({
+                uploadImage: {
+                    url: '{:url("index/lay_img_upload")}',
+                type: 'post'
+            }
+        });
+            layedit.build('news_content',{height:400}); //建立编辑器
+        });
+</script>
 </body>
 </html>
