@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:75:"C:\wamp64\www\ptcznweb\public/../application/admin\view\index\newslist.html";i:1521813168;s:61:"C:\wamp64\www\ptcznweb\application\admin\view\index\head.html";i:1521793882;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:75:"C:\wamp64\www\ptcznweb\public/../application/admin\view\index\newslist.html";i:1521820067;s:61:"C:\wamp64\www\ptcznweb\application\admin\view\index\head.html";i:1521793882;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -104,6 +104,7 @@
 			</div>
 		</div>
 	</div>
-
+	<script type="text/javascript" src="/ptcznweb/public/static/assets/layui/layui.js"></script>
+	<script type="text/javascript" src="/ptcznweb/public/static/js/admin/newsList.js"></script>
 </body>
 </html>

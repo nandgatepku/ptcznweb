@@ -34,7 +34,7 @@ layui.config({
 //     	}
 // 	});
 //创建一个编辑器
-//     var editIndex = layedit.build('news_content',{height: 100});
+    var editIndex = layedit.build('news_content',{height: 100});
 
  	var addNewsArray = [],addNews;
  	form.on("submit(addNews)",function(data){

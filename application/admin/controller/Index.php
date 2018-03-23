@@ -98,7 +98,7 @@ class Index extends Base
         $this->islog();
 
         $newtitle=$_POST['newtitle'];
-        $newkeyword=$_POST['newkeyword'];
+//        $newkeyword=$_POST['newkeyword'];
         $newauthor=$_POST['newauthor'];
         $newabstract=$_POST['newabstract'];
         $newcontent=$_POST['newcontent'];
