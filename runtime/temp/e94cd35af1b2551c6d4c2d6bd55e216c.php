@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:10:{s:72:"C:\wamp64\www\ptcznweb\public/../application/index\view\index\index.html";i:1521636850;s:62:"C:\wamp64\www\ptcznweb\application\index\view\common\head.html";i:1521813232;s:66:"C:\wamp64\www\ptcznweb\application\index\view\common\headmenu.html";i:1521806489;s:63:"C:\wamp64\www\ptcznweb\application\index\view\index\banner.html";i:1520662221;s:66:"C:\wamp64\www\ptcznweb\application\index\view\index\newsindex.html";i:1521805929;s:65:"C:\wamp64\www\ptcznweb\application\index\view\index\services.html";i:1520670796;s:64:"C:\wamp64\www\ptcznweb\application\index\view\index\example.html";i:1520671083;s:64:"C:\wamp64\www\ptcznweb\application\index\view\index\linkwho.html";i:1520607434;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\linkus.html";i:1520669848;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\footer.html";i:1520668646;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:10:{s:72:"C:\wamp64\www\ptcznweb\public/../application/index\view\index\index.html";i:1521636850;s:62:"C:\wamp64\www\ptcznweb\application\index\view\common\head.html";i:1521882486;s:66:"C:\wamp64\www\ptcznweb\application\index\view\common\headmenu.html";i:1521806489;s:63:"C:\wamp64\www\ptcznweb\application\index\view\index\banner.html";i:1520662221;s:66:"C:\wamp64\www\ptcznweb\application\index\view\index\newsindex.html";i:1521805929;s:65:"C:\wamp64\www\ptcznweb\application\index\view\index\services.html";i:1520670796;s:64:"C:\wamp64\www\ptcznweb\application\index\view\index\example.html";i:1520671083;s:64:"C:\wamp64\www\ptcznweb\application\index\view\index\linkwho.html";i:1520607434;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\linkus.html";i:1520669848;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\footer.html";i:1520668646;}*/ ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +11,7 @@
 <link rel="stylesheet" type="text/css" href="/ptcznweb/public/static/css/index/thems.css">
 <link rel="stylesheet" type="text/css" href="/ptcznweb/public/static/css/index/responsive.css">
 <link rel="stylesheet" href="/ptcznweb/public/static/assets/layui/css/layui.css" media="all" />
+    <link rel="Shortcut Icon" type="image/x-icon" href="/ptcznweb/public/static/img/favicon.ico" />
 <script language="javascript">
 $(function(){
 	$('#owl-demo').owlCarousel({

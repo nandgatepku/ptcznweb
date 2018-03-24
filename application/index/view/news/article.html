@@ -1,6 +1,6 @@
 {include file='common/head' /}
 <title>望问津：{$arti['title']}</title>
-<head><meta property="og:description" content="{$arti['abstract']}"></head>
+<!--<head><meta property="og:description" content="{$arti['abstract']}"></head>-->
 <body>
 {include file='common/headmenu' /}
 <div class="space_hx">&nbsp;</div>
@@ -15,7 +15,7 @@
     	<div class="scd_ml">
         	<h1>{$arti['title']}</h1>
             <div class="time">
-            	<span>{$arti['cre_time']}</span>
+            	<span><?php echo substr($arti['cre_time'],0,16);?></span>
                 <span>作者：{$arti['author']}</span>
                 <span>浏览次数：Null</span>
                 <div class="font">
