@@ -35,16 +35,17 @@ class News extends Base
     public function article()
     {
         $id=$_GET['id'];
-        $isopen=Db::query("select * from news where id='$id' and newsopen='0'");
+        $isopen=Db::query("select * from news where id='$id' and newsopen='1'");
         if($isopen){
+            $arti=Db::query("select title,abstract,cre_time,author,content from news where id='$id'");
+            $arti=$arti['0'];
+            $this ->assign('arti',$arti);
+            $this ->assign('id',$id);
+            $this->rightnav();
+            return $this->fetch('article');
+        }else{
             return $this->redirect('news/newslistall');
         }
-        $arti=Db::query("select title,abstract,cre_time,author,content from news where id='$id'");
-        $arti=$arti['0'];
-        $this ->assign('arti',$arti);
-        $this ->assign('id',$id);
-        $this->rightnav();
-        return $this->fetch('article');
     }
 
     public function newslistall()

@@ -3469,3 +3469,697 @@
 [ info ] [ PARAM ] array (
 )
 [ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-24T13:44:05+08:00 ] 127.0.0.1 GET /ptcznweb/public/
+[ info ] 127.0.0.1/ptcznweb/public/ [运行时间：14.565131s][吞吐率：0.07req/s] [内存消耗：3,357.84kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1521168836',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\wamp64\www\ptcznweb\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/index\view\index\index.html [ array (
+  0 => 'newsindex',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:13.266239s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] select id,title,cre_time from news where newsopen='1' order by id DESC limit 5 [ RunTime:0.025625s ]
+---------------------------------------------------------------
+[ 2018-03-24T13:44:05+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/upload/banner.jpg
+[ info ] 127.0.0.1/ptcznweb/public/static/upload/banner.jpg [运行时间：0.172551s][吞吐率：5.80req/s] [内存消耗：2,424.59kb] [文件加载：39]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'static',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1521168836',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-24T13:44:12+08:00 ] 127.0.0.1 GET /ptcznweb/public/news/index.html
+[ info ] 127.0.0.1/ptcznweb/public/news/index.html [运行时间：0.467113s][吞吐率：2.14req/s] [内存消耗：3,665.08kb] [文件加载：51]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'news',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1521168836',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\News->index[ C:\wamp64\www\ptcznweb\application\index\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/index\view\news\news.html [ array (
+  0 => 'sql',
+  1 => 'toutiao',
+  2 => 'citiao',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.026906s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] select id,title,abstract,cre_time,author from news where import='0' and newsopen='1' order by id DESC limit 4 [ RunTime:0.021275s ]
+[ sql ] [ SQL ] select id,title,abstract,cre_time,author from news where import='1' and newsopen='1' order by id [ RunTime:0.020189s ]
+[ sql ] [ SQL ] select id,title,abstract,cre_time,author from news where import='2' and newsopen='1' order by id [ RunTime:0.023899s ]
+---------------------------------------------------------------
+[ 2018-03-24T13:44:13+08:00 ] 127.0.0.1 GET /ptcznweb/public/news/article.html?id=14
+[ info ] 127.0.0.1/ptcznweb/public/news/article.html?id=14 [运行时间：0.291478s][吞吐率：3.43req/s] [内存消耗：3,404.73kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'news',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/news/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1521168836',
+)
+[ info ] [ PARAM ] array (
+  'id' => '14',
+)
+[ info ] [ RUN ] app\index\controller\News->article[ C:\wamp64\www\ptcznweb\application\index\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/index\view\news\article.html [ array (
+  0 => 'arti',
+  1 => 'id',
+  2 => 'rightnav',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.036499s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] select * from news where id='14' and newsopen='1' [ RunTime:0.057574s ]
+[ sql ] [ SQL ] select title,abstract,cre_time,author,content from news where id='14' [ RunTime:0.029853s ]
+[ sql ] [ SQL ] select id,title from news where newsopen='1' order by id DESC limit 5 [ RunTime:0.044326s ]
+---------------------------------------------------------------
+[ 2018-03-24T13:44:17+08:00 ] 127.0.0.1 GET /ptcznweb/public/news/article.html?id=78
+[ info ] 127.0.0.1/ptcznweb/public/news/article.html?id=78 [运行时间：0.162905s][吞吐率：6.14req/s] [内存消耗：3,338.09kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'news',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1521168836',
+)
+[ info ] [ PARAM ] array (
+  'id' => '78',
+)
+[ info ] [ RUN ] app\index\controller\News->article[ C:\wamp64\www\ptcznweb\application\index\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.032039s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] select * from news where id='78' and newsopen='1' [ RunTime:0.020707s ]
+---------------------------------------------------------------
+[ 2018-03-24T13:44:18+08:00 ] 127.0.0.1 GET /ptcznweb/public/news/newslistall.html
+[ info ] 127.0.0.1/ptcznweb/public/news/newslistall.html [运行时间：0.314549s][吞吐率：3.18req/s] [内存消耗：4,610.09kb] [文件加载：55]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'news',
+    2 => 'newslistall',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1521168836',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\News->newslistall[ C:\wamp64\www\ptcznweb\application\index\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/index\view\news\newslistall.html [ array (
+  0 => 'pageall',
+  1 => 'listall',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.037468s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.032692s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `newsopen` = 1 LIMIT 1 [ RunTime:0.017786s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`abstract`,`cre_time`,`author` FROM `news` WHERE  `newsopen` = 1 ORDER BY `id`  desc LIMIT 0,5 [ RunTime:0.026120s ]
+---------------------------------------------------------------
+[ 2018-03-24T13:44:20+08:00 ] 127.0.0.1 GET /ptcznweb/public/index/index.html
+[ info ] 127.0.0.1/ptcznweb/public/index/index.html [运行时间：0.092068s][吞吐率：10.86req/s] [内存消耗：3,358.84kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/news/newslistall.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1521168836',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\wamp64\www\ptcznweb\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/index\view\index\index.html [ array (
+  0 => 'newsindex',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031843s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] select id,title,cre_time from news where newsopen='1' order by id DESC limit 5 [ RunTime:0.018391s ]
+---------------------------------------------------------------
+[ 2018-03-24T13:44:20+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/upload/banner.jpg
+[ info ] 127.0.0.1/ptcznweb/public/static/upload/banner.jpg [运行时间：0.036755s][吞吐率：27.21req/s] [内存消耗：2,424.92kb] [文件加载：39]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'static',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1521168836',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-24T13:55:39+08:00 ] 127.0.0.1 GET /ptcznweb/public/
+[ info ] 127.0.0.1/ptcznweb/public/ [运行时间：0.077154s][吞吐率：12.96req/s] [内存消耗：3,357.38kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\wamp64\www\ptcznweb\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/index\view\index\index.html [ array (
+  0 => 'newsindex',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.026783s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] select id,title,cre_time from news where newsopen='1' order by id DESC limit 5 [ RunTime:0.015605s ]
+---------------------------------------------------------------
+[ 2018-03-24T13:55:39+08:00 ] 127.0.0.1 GET /ptcznweb/public/static/upload/banner.jpg
+[ info ] 127.0.0.1/ptcznweb/public/static/upload/banner.jpg [运行时间：0.039898s][吞吐率：25.06req/s] [内存消耗：2,424.12kb] [文件加载：39]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'static',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-24T13:55:41+08:00 ] 127.0.0.1 GET /ptcznweb/public/news/index.html
+[ info ] 127.0.0.1/ptcznweb/public/news/index.html [运行时间：0.161159s][吞吐率：6.21req/s] [内存消耗：3,406.86kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'news',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\News->index[ C:\wamp64\www\ptcznweb\application\index\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/index\view\news\news.html [ array (
+  0 => 'sql',
+  1 => 'toutiao',
+  2 => 'citiao',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.028661s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] select id,title,abstract,cre_time,author from news where import='0' and newsopen='1' order by id DESC limit 4 [ RunTime:0.015927s ]
+[ sql ] [ SQL ] select id,title,abstract,cre_time,author from news where import='1' and newsopen='1' order by id [ RunTime:0.018995s ]
+[ sql ] [ SQL ] select id,title,abstract,cre_time,author from news where import='2' and newsopen='1' order by id [ RunTime:0.029780s ]
+---------------------------------------------------------------
+[ 2018-03-24T13:55:42+08:00 ] 127.0.0.1 GET /ptcznweb/public/news/article.html?id=14
+[ info ] 127.0.0.1/ptcznweb/public/news/article.html?id=14 [运行时间：0.267465s][吞吐率：3.74req/s] [内存消耗：3,659.62kb] [文件加载：51]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'news',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/news/index.html',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '14',
+)
+[ info ] [ RUN ] app\index\controller\News->article[ C:\wamp64\www\ptcznweb\application\index\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/index\view\news\article.html [ array (
+  0 => 'arti',
+  1 => 'id',
+  2 => 'rightnav',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.025117s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] select * from news where id='14' and newsopen='1' [ RunTime:0.043986s ]
+[ sql ] [ SQL ] select title,abstract,cre_time,author,content from news where id='14' [ RunTime:0.022891s ]
+[ sql ] [ SQL ] select id,title from news where newsopen='1' order by id DESC limit 5 [ RunTime:0.011485s ]
+---------------------------------------------------------------
+[ 2018-03-24T13:55:43+08:00 ] 127.0.0.1 GET /ptcznweb/public/news/article.html?id=14
+[ info ] 127.0.0.1/ptcznweb/public/news/article.html?id=14 [运行时间：0.180845s][吞吐率：5.53req/s] [内存消耗：3,404.95kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'news',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/news/index.html',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'id' => '14',
+)
+[ info ] [ RUN ] app\index\controller\News->article[ C:\wamp64\www\ptcznweb\application\index\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/index\view\news\article.html [ array (
+  0 => 'arti',
+  1 => 'id',
+  2 => 'rightnav',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.027398s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] select * from news where id='14' and newsopen='1' [ RunTime:0.016883s ]
+[ sql ] [ SQL ] select title,abstract,cre_time,author,content from news where id='14' [ RunTime:0.016997s ]
+[ sql ] [ SQL ] select id,title from news where newsopen='1' order by id DESC limit 5 [ RunTime:0.013291s ]
+---------------------------------------------------------------
+[ 2018-03-24T13:55:45+08:00 ] 127.0.0.1 GET /ptcznweb/public/news/article.html?id=14
+[ info ] 127.0.0.1/ptcznweb/public/news/article.html?id=14 [运行时间：0.218653s][吞吐率：4.57req/s] [内存消耗：3,404.95kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'news',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/news/index.html',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'id' => '14',
+)
+[ info ] [ RUN ] app\index\controller\News->article[ C:\wamp64\www\ptcznweb\application\index\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/index\view\news\article.html [ array (
+  0 => 'arti',
+  1 => 'id',
+  2 => 'rightnav',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.027302s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] select * from news where id='14' and newsopen='1' [ RunTime:0.022798s ]
+[ sql ] [ SQL ] select title,abstract,cre_time,author,content from news where id='14' [ RunTime:0.028961s ]
+[ sql ] [ SQL ] select id,title from news where newsopen='1' order by id DESC limit 5 [ RunTime:0.014350s ]
+---------------------------------------------------------------
+[ 2018-03-24T13:55:46+08:00 ] 127.0.0.1 GET /ptcznweb/public/news/article.html?id=14
+[ info ] 127.0.0.1/ptcznweb/public/news/article.html?id=14 [运行时间：0.161739s][吞吐率：6.18req/s] [内存消耗：3,404.95kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'news',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/news/index.html',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'id' => '14',
+)
+[ info ] [ RUN ] app\index\controller\News->article[ C:\wamp64\www\ptcznweb\application\index\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/index\view\news\article.html [ array (
+  0 => 'arti',
+  1 => 'id',
+  2 => 'rightnav',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.025526s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] select * from news where id='14' and newsopen='1' [ RunTime:0.022351s ]
+[ sql ] [ SQL ] select title,abstract,cre_time,author,content from news where id='14' [ RunTime:0.018726s ]
+[ sql ] [ SQL ] select id,title from news where newsopen='1' order by id DESC limit 5 [ RunTime:0.016974s ]
+---------------------------------------------------------------
+[ 2018-03-24T13:55:47+08:00 ] 127.0.0.1 GET /ptcznweb/public/news/article.html?id=14
+[ info ] 127.0.0.1/ptcznweb/public/news/article.html?id=14 [运行时间：0.134488s][吞吐率：7.44req/s] [内存消耗：3,404.95kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'news',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/news/index.html',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'id' => '14',
+)
+[ info ] [ RUN ] app\index\controller\News->article[ C:\wamp64\www\ptcznweb\application\index\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/index\view\news\article.html [ array (
+  0 => 'arti',
+  1 => 'id',
+  2 => 'rightnav',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.032221s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] select * from news where id='14' and newsopen='1' [ RunTime:0.018595s ]
+[ sql ] [ SQL ] select title,abstract,cre_time,author,content from news where id='14' [ RunTime:0.015674s ]
+[ sql ] [ SQL ] select id,title from news where newsopen='1' order by id DESC limit 5 [ RunTime:0.012884s ]
+---------------------------------------------------------------
+[ 2018-03-24T13:55:48+08:00 ] 127.0.0.1 GET /ptcznweb/public/news/article.html?id=14
+[ info ] 127.0.0.1/ptcznweb/public/news/article.html?id=14 [运行时间：0.170270s][吞吐率：5.87req/s] [内存消耗：3,404.95kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'news',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/news/index.html',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'id' => '14',
+)
+[ info ] [ RUN ] app\index\controller\News->article[ C:\wamp64\www\ptcznweb\application\index\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/index\view\news\article.html [ array (
+  0 => 'arti',
+  1 => 'id',
+  2 => 'rightnav',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022730s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] select * from news where id='14' and newsopen='1' [ RunTime:0.017998s ]
+[ sql ] [ SQL ] select title,abstract,cre_time,author,content from news where id='14' [ RunTime:0.015440s ]
+[ sql ] [ SQL ] select id,title from news where newsopen='1' order by id DESC limit 5 [ RunTime:0.013036s ]
+---------------------------------------------------------------
+[ 2018-03-24T13:55:49+08:00 ] 127.0.0.1 GET /ptcznweb/public/news/article.html?id=14
+[ info ] 127.0.0.1/ptcznweb/public/news/article.html?id=14 [运行时间：0.206209s][吞吐率：4.85req/s] [内存消耗：3,404.95kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'news',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/news/index.html',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'id' => '14',
+)
+[ info ] [ RUN ] app\index\controller\News->article[ C:\wamp64\www\ptcznweb\application\index\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/index\view\news\article.html [ array (
+  0 => 'arti',
+  1 => 'id',
+  2 => 'rightnav',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022924s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] select * from news where id='14' and newsopen='1' [ RunTime:0.021154s ]
+[ sql ] [ SQL ] select title,abstract,cre_time,author,content from news where id='14' [ RunTime:0.021202s ]
+[ sql ] [ SQL ] select id,title from news where newsopen='1' order by id DESC limit 5 [ RunTime:0.014473s ]
+---------------------------------------------------------------
+[ 2018-03-24T13:55:50+08:00 ] 127.0.0.1 GET /ptcznweb/public/news/article.html?id=14
+[ info ] 127.0.0.1/ptcznweb/public/news/article.html?id=14 [运行时间：0.184006s][吞吐率：5.43req/s] [内存消耗：3,404.95kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'news',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/news/index.html',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'id' => '14',
+)
+[ info ] [ RUN ] app\index\controller\News->article[ C:\wamp64\www\ptcznweb\application\index\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/index\view\news\article.html [ array (
+  0 => 'arti',
+  1 => 'id',
+  2 => 'rightnav',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.028156s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] select * from news where id='14' and newsopen='1' [ RunTime:0.021008s ]
+[ sql ] [ SQL ] select title,abstract,cre_time,author,content from news where id='14' [ RunTime:0.016461s ]
+[ sql ] [ SQL ] select id,title from news where newsopen='1' order by id DESC limit 5 [ RunTime:0.017934s ]
