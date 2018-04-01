@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:78:"C:\wamp64\www\ptcznweb\public/../application/index\view\publogin\publogin.html";i:1520669446;s:62:"C:\wamp64\www\ptcznweb\application\index\view\common\head.html";i:1521813232;s:66:"C:\wamp64\www\ptcznweb\application\index\view\common\headmenu.html";i:1521806489;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\linkus.html";i:1520669848;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\footer.html";i:1520668646;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:78:"C:\wamp64\www\ptcznweb\public/../application/index\view\publogin\publogin.html";i:1520669446;s:62:"C:\wamp64\www\ptcznweb\application\index\view\common\head.html";i:1521907302;s:66:"C:\wamp64\www\ptcznweb\application\index\view\common\headmenu.html";i:1521806489;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\linkus.html";i:1520669848;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\footer.html";i:1520668646;}*/ ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +11,8 @@
 <link rel="stylesheet" type="text/css" href="/ptcznweb/public/static/css/index/thems.css">
 <link rel="stylesheet" type="text/css" href="/ptcznweb/public/static/css/index/responsive.css">
 <link rel="stylesheet" href="/ptcznweb/public/static/assets/layui/css/layui.css" media="all" />
+<link rel="Shortcut Icon" type="image/x-icon" href="/ptcznweb/public/static/img/favicon.ico" />
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js" type="text/javascript" charset="utf-8"></script>
 <script language="javascript">
 $(function(){
 	$('#owl-demo').owlCarousel({

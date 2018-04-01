@@ -87,7 +87,7 @@ class Index extends Base
         $editopen=$_POST['editopen'];
         $edit_time=date("Y-m-d H:i:s");
 
-        $sql=Db::query("UPDATE news SET title='$edittitle',author='$editauthor',abstract='$editabstract',content='$editcontent',newstype='$edittype',import='$editimport',newsopen='$editopen',edit_time='$edit_time' where id='$editid'");
+        $sql=Db::query("UPDATE news SET title='$edittitle', author='$editauthor', abstract='$editabstract',content='$editcontent',newstype='$edittype',import='$editimport', newsopen='$editopen',edit_time='$edit_time' where id='$editid'");
 
         return $this->success('ok','newslist');
     }

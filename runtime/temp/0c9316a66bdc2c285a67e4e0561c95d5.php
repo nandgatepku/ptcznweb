@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:6:{s:73:"C:\wamp64\www\ptcznweb\public/../application/index\view\news\article.html";i:1521882071;s:62:"C:\wamp64\www\ptcznweb\application\index\view\common\head.html";i:1521813232;s:66:"C:\wamp64\www\ptcznweb\application\index\view\common\headmenu.html";i:1521806489;s:64:"C:\wamp64\www\ptcznweb\application\index\view\news\rightnav.html";i:1521648636;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\linkus.html";i:1520669848;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\footer.html";i:1520668646;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:6:{s:73:"C:\wamp64\www\ptcznweb\public/../application/index\view\news\article.html";i:1521983192;s:62:"C:\wamp64\www\ptcznweb\application\index\view\common\head.html";i:1521907302;s:66:"C:\wamp64\www\ptcznweb\application\index\view\common\headmenu.html";i:1521806489;s:64:"C:\wamp64\www\ptcznweb\application\index\view\news\rightnav.html";i:1521648636;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\linkus.html";i:1520669848;s:64:"C:\wamp64\www\ptcznweb\application\index\view\common\footer.html";i:1520668646;}*/ ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +11,8 @@
 <link rel="stylesheet" type="text/css" href="/ptcznweb/public/static/css/index/thems.css">
 <link rel="stylesheet" type="text/css" href="/ptcznweb/public/static/css/index/responsive.css">
 <link rel="stylesheet" href="/ptcznweb/public/static/assets/layui/css/layui.css" media="all" />
+<link rel="Shortcut Icon" type="image/x-icon" href="/ptcznweb/public/static/img/favicon.ico" />
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js" type="text/javascript" charset="utf-8"></script>
 <script language="javascript">
 $(function(){
 	$('#owl-demo').owlCarousel({
@@ -28,7 +30,7 @@ $(function(){
 </script>
 </head>
 <title>望问津：<?php echo $arti['title']; ?></title>
-<head><meta property="og:description" content="<?php echo $arti['abstract']; ?>"></head>
+<!--<head><meta property="og:description" content="<?php echo $arti['abstract']; ?>"></head>-->
 <body>
 <div class="header">
     <div class="head clearfix">
@@ -173,6 +175,7 @@ $(function(){
     </ul>
 </div>
 <div class="bq">Copyright&copy;2017-2018&nbsp;&nbsp;<b>www.ptczn.cn</b>&nbsp;&nbsp;<a href="http://www.miitbeian.gov.cn" target="_blank">京ICP备18007602号</a></div>
+
 
 </body>
 </html>
