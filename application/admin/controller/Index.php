@@ -10,8 +10,12 @@ class Index extends Base
     public function islog()
     {
         session_start();
-        if(empty($_SESSION['kname'])) {
-            return $this->redirect('Login/index');
+        if(empty($_COOKIE['name'])){
+            if(empty($_SESSION['kname'])){
+                return $this->redirect('Login/index');
+            }
+        }else{
+            $_SESSION['kname']=$_COOKIE['name'];
         }
     }
 

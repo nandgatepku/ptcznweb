@@ -39,7 +39,7 @@ class Login extends Base
                         if($remember == 1){
                             setcookie("name", $kname, time()+3600*24*365);
                             setcookie("password", $kpwd, time()+3600*24*365);
-}
+                            }
                         //跳转到用户中心
 //                        $this->redirect('Index/show', '', 2, '登录成功！前往管理后台!...页面跳转中...');
                         echo "loading...";
