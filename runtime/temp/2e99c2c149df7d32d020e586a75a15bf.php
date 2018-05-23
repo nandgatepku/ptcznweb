@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:72:"C:\wamp64\www\ptcznweb\public/../application/admin\view\index\index.html";i:1521822535;s:61:"C:\wamp64\www\ptcznweb\application\admin\view\index\head.html";i:1521793882;s:59:"C:\wamp64\www\ptcznweb\application\admin\view\index\js.html";i:1521111845;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:72:"C:\wamp64\www\ptcznweb\public/../application/admin\view\index\index.html";i:1523007873;s:61:"C:\wamp64\www\ptcznweb\application\admin\view\index\head.html";i:1521793882;s:59:"C:\wamp64\www\ptcznweb\application\admin\view\index\js.html";i:1521111845;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -109,7 +109,6 @@
 			<p>copyright &copy;<b>www.ptczn.cn</b>&nbsp;2017-2018</p>
 		</div>
 	</div>
-
 
 	<!-- 移动导航 -->
 	<div class="site-tree-mobile layui-hide"><i class="layui-icon">&#xe602;</i></div>

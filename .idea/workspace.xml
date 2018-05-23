@@ -4,19 +4,12 @@
     <list default="true" id="192aa850-9bf9-4f7f-a839-05795a0c681e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/application/admin/controller/Index.php" afterPath="$PROJECT_DIR$/application/admin/controller/Index.php" />
-      <change beforePath="$PROJECT_DIR$/application/index/controller/News.php" afterPath="$PROJECT_DIR$/application/index/controller/News.php" />
-      <change beforePath="$PROJECT_DIR$/application/index/view/common/head.html" afterPath="$PROJECT_DIR$/application/index/view/common/head.html" />
-      <change beforePath="$PROJECT_DIR$/application/index/view/news/article.html" afterPath="$PROJECT_DIR$/application/index/view/news/article.html" />
-      <change beforePath="$PROJECT_DIR$/application/index/view/news/newslist1.html" afterPath="$PROJECT_DIR$/application/index/view/news/newslist1.html" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/201803/24.log" afterPath="$PROJECT_DIR$/runtime/log/201803/24.log" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/0c9316a66bdc2c285a67e4e0561c95d5.php" afterPath="$PROJECT_DIR$/runtime/temp/0c9316a66bdc2c285a67e4e0561c95d5.php" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/1a91076f9e3dcbe24c36c63fb34af347.php" afterPath="$PROJECT_DIR$/runtime/temp/1a91076f9e3dcbe24c36c63fb34af347.php" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/342183c34cd9a5b69a2dc5c041ff44c6.php" afterPath="$PROJECT_DIR$/runtime/temp/342183c34cd9a5b69a2dc5c041ff44c6.php" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/47f59098885d6f9e4bb4a79b78e9c8d4.php" afterPath="$PROJECT_DIR$/runtime/temp/47f59098885d6f9e4bb4a79b78e9c8d4.php" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/525b5e0e5665b0a35ed9358ee429fd24.php" afterPath="$PROJECT_DIR$/runtime/temp/525b5e0e5665b0a35ed9358ee429fd24.php" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/e94cd35af1b2551c6d4c2d6bd55e216c.php" afterPath="$PROJECT_DIR$/runtime/temp/e94cd35af1b2551c6d4c2d6bd55e216c.php" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/f00d5fc26e1740223c5bb9c6dc241ed5.php" afterPath="$PROJECT_DIR$/runtime/temp/f00d5fc26e1740223c5bb9c6dc241ed5.php" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/f28893eb502e5fa7cc7b45ecde52ca5c.php" afterPath="$PROJECT_DIR$/runtime/temp/f28893eb502e5fa7cc7b45ecde52ca5c.php" />
+      <change beforePath="$PROJECT_DIR$/application/admin/controller/Login.php" afterPath="$PROJECT_DIR$/application/admin/controller/Login.php" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/index/index.html" afterPath="$PROJECT_DIR$/application/admin/view/index/index.html" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/index/newsedit.html" afterPath="$PROJECT_DIR$/application/admin/view/index/newsedit.html" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/login/index.html" afterPath="$PROJECT_DIR$/application/admin/view/login/index.html" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/2e99c2c149df7d32d020e586a75a15bf.php" afterPath="$PROJECT_DIR$/runtime/temp/2e99c2c149df7d32d020e586a75a15bf.php" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/3860305cd53b05c14e90f03fc22d1385.php" afterPath="$PROJECT_DIR$/runtime/temp/3860305cd53b05c14e90f03fc22d1385.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,36 +23,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="newslist1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/index/view/news/newslist1.html">
+      <file leaf-file-name="newslist.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/admin/view/index/newslist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="9" column="55" lean-forward="false" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
+            <state relative-caret-position="2214">
+              <caret line="82" column="33" lean-forward="false" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="article.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/index/view/news/article.html">
+      <file leaf-file-name="newsadd.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/admin/view/index/newsadd.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+            <state relative-caret-position="1458">
+              <caret line="54" column="14" lean-forward="false" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="89" column="173" lean-forward="false" selection-start-line="89" selection-start-column="173" selection-end-line="89" selection-end-column="173" />
+            <state relative-caret-position="270">
+              <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="39" />
               <folding>
-                <marker date="1522565735071" expanded="true" signature="1438:1528" ph="select title... news" />
-                <marker date="1522565735071" expanded="true" signature="2389:2600" ph="UPDATE news... " />
-                <marker date="1522565735071" expanded="true" signature="3032:3213" ph="insert into news" />
+                <marker date="1525064206684" expanded="true" signature="1439:1529" ph="select title... news" />
+                <marker date="1525064206684" expanded="true" signature="2390:2600" ph="UPDATE news... " />
+                <marker date="1525064206684" expanded="true" signature="3032:3213" ph="insert into news" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/index/view/common/footer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -67,9 +70,62 @@
       <file leaf-file-name="newsedit.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/view/index/newsedit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1756">
-              <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="113" selection-end-column="9" />
+            <state relative-caret-position="2295">
+              <caret line="85" column="10" lean-forward="false" selection-start-line="85" selection-start-column="10" selection-end-line="85" selection-end-column="10" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="head.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/admin/view/index/head.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="86" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/admin/view/index/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/admin/view/index/main.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/admin/view/login/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Login.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/admin/controller/Login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="40" column="28" lean-forward="false" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+              <folding>
+                <element signature="e#121#134#0#PHP" expanded="true" />
+                <marker date="1527038383539" expanded="true" signature="746:805" ph="select *from... admin" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,7 +142,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>log out</find>
       <find>href=</find>
       <find>pst</find>
       <find>layui/css</find>
@@ -116,6 +171,7 @@
       <find>pag</find>
       <find>ne</find>
       <find>new_m</find>
+      <find>iframe</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -161,13 +217,11 @@
         <option value="$PROJECT_DIR$/application/admin/view/index/main.html" />
         <option value="$PROJECT_DIR$/application/admin/controller/Center.php" />
         <option value="$PROJECT_DIR$/application/admin/controller/login.php" />
-        <option value="$PROJECT_DIR$/application/admin/view/login/index.html" />
         <option value="$PROJECT_DIR$/application/index/view/back/index.html" />
         <option value="$PROJECT_DIR$/application/admin/view/Index/index.html" />
         <option value="$PROJECT_DIR$/thinkphp/library/think/View.php" />
         <option value="$PROJECT_DIR$/application/admin/view/Index/newslist.html" />
         <option value="$PROJECT_DIR$/application/index/controller/Publogin.php" />
-        <option value="$PROJECT_DIR$/application/admin/controller/Login.php" />
         <option value="$PROJECT_DIR$/application/index/view/index/index.html" />
         <option value="$PROJECT_DIR$/application/index/view/news/rightnav.html" />
         <option value="$PROJECT_DIR$/application/index/controller/Index.php" />
@@ -176,7 +230,6 @@
         <option value="$PROJECT_DIR$/application/admin/view/func/layuiup.html" />
         <option value="$PROJECT_DIR$/application/admin/controller/Func.php" />
         <option value="$PROJECT_DIR$/application/admin/view/index/head.html" />
-        <option value="$PROJECT_DIR$/application/admin/view/index/newsedit.html" />
         <option value="$PROJECT_DIR$/public/static/assets/ueditor/ueditor.all.js" />
         <option value="$PROJECT_DIR$/public/static/assets/ueditor/ueditor.config.js" />
         <option value="$PROJECT_DIR$/application/index/view/index/newsindex.html" />
@@ -192,13 +245,16 @@
         <option value="$PROJECT_DIR$/public/static/js/admin/newsAdd.js" />
         <option value="$PROJECT_DIR$/application/admin/view/index/newslist.html" />
         <option value="$PROJECT_DIR$/application/admin/view/index/newsadd.html" />
-        <option value="$PROJECT_DIR$/application/admin/view/index/index.html" />
         <option value="$PROJECT_DIR$/application/index/controller/News.php" />
         <option value="$PROJECT_DIR$/application/index/view/common/head.html" />
         <option value="$PROJECT_DIR$/application/index/view/news/5.html" />
         <option value="$PROJECT_DIR$/application/index/view/news/newslist1.html" />
         <option value="$PROJECT_DIR$/application/index/view/news/article.html" />
         <option value="$PROJECT_DIR$/application/admin/controller/Index.php" />
+        <option value="$PROJECT_DIR$/application/admin/view/index/index.html" />
+        <option value="$PROJECT_DIR$/application/admin/view/index/newsedit.html" />
+        <option value="$PROJECT_DIR$/application/admin/view/login/index.html" />
+        <option value="$PROJECT_DIR$/application/admin/controller/Login.php" />
       </list>
     </option>
   </component>
@@ -222,8 +278,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="width" value="1920" />
-    <option name="height" value="1020" />
+    <option name="x" value="-182" />
+    <option name="y" value="1" />
+    <option name="width" value="1458" />
+    <option name="height" value="1030" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -243,8 +301,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -283,17 +339,30 @@
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="login" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="ptcznweb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ptcznweb" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="ptcznweb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ptcznweb" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="static" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sscar" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -368,18 +437,37 @@
       <workItem from="1521951603246" duration="1103000" />
       <workItem from="1521974580357" duration="5373000" />
       <workItem from="1522204731683" duration="19000" />
-      <workItem from="1522565297163" duration="436000" />
+      <workItem from="1522565297163" duration="2397000" />
+      <workItem from="1522803535523" duration="15000" />
+      <workItem from="1522803877247" duration="1695000" />
+      <workItem from="1522904379934" duration="15871000" />
+      <workItem from="1523023837773" duration="1297000" />
+      <workItem from="1523265500467" duration="4861000" />
+      <workItem from="1523792580521" duration="1251000" />
+      <workItem from="1523952941290" duration="3950000" />
+      <workItem from="1524460967463" duration="6000" />
+      <workItem from="1524463560639" duration="15000" />
+      <workItem from="1525062816939" duration="4767000" />
+      <workItem from="1525265011361" duration="676000" />
+      <workItem from="1525347431897" duration="1047000" />
+      <workItem from="1525360009579" duration="486000" />
+      <workItem from="1525439431402" duration="8373000" />
+      <workItem from="1525618987764" duration="595000" />
+      <workItem from="1525659583610" duration="596000" />
+      <workItem from="1525948743789" duration="1802000" />
+      <workItem from="1525973559863" duration="714000" />
+      <workItem from="1527035913090" duration="2461000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198971000" />
+    <option name="totallyTimeSpent" value="251410000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22138229" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21706264" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -418,48 +506,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/static/assets/layui/lay/modules/laypage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/assets/layui/lay/modules/layim.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="1" column="9679" lean-forward="false" selection-start-line="1" selection-start-column="9671" selection-end-line="1" selection-end-column="9679" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/assets/layui/lay/modules/layer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="1" column="16272" lean-forward="false" selection-start-line="1" selection-start-column="16264" selection-end-line="1" selection-end-column="16272" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/func/layuiup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/assets/layui/lay/dest/layui.all.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="4" column="29888" lean-forward="false" selection-start-line="4" selection-start-column="29882" selection-end-line="4" selection-end-column="29888" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/func/uppic.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/static/assets/layui/lay/modules/form.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -516,27 +562,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/publogin/publogin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/publogin/log.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/common/Base.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/controller/Fpage.php" />
     <entry file="file://$PROJECT_DIR$/public/static/assets/layui/css/modules/code.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -577,20 +602,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/index/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="62" column="37" lean-forward="false" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -678,52 +689,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/index/newslist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="87" column="53" lean-forward="false" selection-start-line="87" selection-start-column="53" selection-end-line="87" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/index/newsadd.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1161">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="48" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/index/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2430">
-          <caret line="90" column="10" lean-forward="false" selection-start-line="90" selection-start-column="10" selection-end-line="90" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/index/view/news/5.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/common/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -734,45 +703,173 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/news/newslist1.html">
+    <entry file="file://$PROJECT_DIR$/application/index/view/news/article.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="55" lean-forward="false" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
-          <folding />
+        <state relative-caret-position="540">
+          <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/index/controller/News.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="724">
-          <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+        <state relative-caret-position="346">
+          <caret line="44" column="43" lean-forward="true" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/news/article.html">
+    <entry file="file://$PROJECT_DIR$/application/index/controller/Publogin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+        <state relative-caret-position="270">
+          <caret line="43" column="68" lean-forward="false" selection-start-line="43" selection-start-column="68" selection-end-line="43" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/publogin/publogin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/publogin/log.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/news/newslist1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="55" lean-forward="false" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/common/Base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/index/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/index/newsadd.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1458">
+          <caret line="54" column="14" lean-forward="false" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/index/newslist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2214">
+          <caret line="82" column="33" lean-forward="false" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/index/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/view/index/newsedit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1756">
-          <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="113" selection-end-column="9" />
+        <state relative-caret-position="2295">
+          <caret line="85" column="10" lean-forward="false" selection-start-line="85" selection-start-column="10" selection-end-line="85" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/common/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="89" column="173" lean-forward="false" selection-start-line="89" selection-start-column="173" selection-end-line="89" selection-end-column="173" />
+        <state relative-caret-position="270">
+          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="39" />
           <folding>
-            <marker date="1522565735071" expanded="true" signature="1438:1528" ph="select title... news" />
-            <marker date="1522565735071" expanded="true" signature="2389:2600" ph="UPDATE news... " />
-            <marker date="1522565735071" expanded="true" signature="3032:3213" ph="insert into news" />
+            <marker date="1525064206684" expanded="true" signature="1439:1529" ph="select title... news" />
+            <marker date="1525064206684" expanded="true" signature="2390:2600" ph="UPDATE news... " />
+            <marker date="1525064206684" expanded="true" signature="3032:3213" ph="insert into news" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/login/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/controller/Login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="40" column="28" lean-forward="false" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+          <folding>
+            <element signature="e#121#134#0#PHP" expanded="true" />
+            <marker date="1527038383539" expanded="true" signature="746:805" ph="select *from... admin" />
           </folding>
         </state>
       </provider>
