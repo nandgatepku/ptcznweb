@@ -1,0 +1,462 @@
+---------------------------------------------------------------
+[ 2018-08-07T12:37:10+08:00 ] 127.0.0.1 GET /ptcznweb/public/admin.php
+[ info ] 127.0.0.1/ptcznweb/public/admin.php [运行时间：0.543165s][吞吐率：1.84req/s] [内存消耗：2,953.82kb] [文件加载：47]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1525061175,1525691570',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\ptcznweb\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-07T12:37:10+08:00 ] 127.0.0.1 GET /ptcznweb/public/admin.php/login/index.html
+[ info ] 127.0.0.1/ptcznweb/public/admin.php/login/index.html [运行时间：0.064185s][吞吐率：15.58req/s] [内存消耗：2,984.23kb] [文件加载：47]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1525061175,1525691570; PHPSESSID=hm3g8npea04vi7h951jt2rced5',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ C:\wamp64\www\ptcznweb\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/admin\view\login\index.html [ array (
+  0 => 'remember',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-07T12:37:15+08:00 ] 127.0.0.1 POST /ptcznweb/public/admin.php/login/denglu.html
+[ info ] 127.0.0.1/ptcznweb/public/admin.php/login/denglu.html [运行时间：0.117093s][吞吐率：8.54req/s] [内存消耗：2,961.41kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'denglu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/admin.php/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '29',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1525061175,1525691570; PHPSESSID=hm3g8npea04vi7h951jt2rced5',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'kname' => 'admin1',
+  'kpwd' => '123456',
+  'sub' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->denglu[ C:\wamp64\www\ptcznweb\application\admin\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: remember[C:\wamp64\www\ptcznweb\application\admin\controller\Login.php:29]
+---------------------------------------------------------------
+[ 2018-08-07T12:37:51+08:00 ] 127.0.0.1 GET /ptcznweb/public/admin.php/
+[ info ] 127.0.0.1/ptcznweb/public/admin.php/ [运行时间：0.028585s][吞吐率：34.98req/s] [内存消耗：2,954.00kb] [文件加载：47]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1525061175,1525691570; PHPSESSID=hm3g8npea04vi7h951jt2rced5',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\ptcznweb\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-07T12:37:52+08:00 ] 127.0.0.1 GET /ptcznweb/public/admin.php/login/index.html
+[ info ] 127.0.0.1/ptcznweb/public/admin.php/login/index.html [运行时间：0.024529s][吞吐率：40.77req/s] [内存消耗：2,981.16kb] [文件加载：47]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1525061175,1525691570; PHPSESSID=hm3g8npea04vi7h951jt2rced5',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ C:\wamp64\www\ptcznweb\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/admin\view\login\index.html [ array (
+  0 => 'remember',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-07T12:38:17+08:00 ] 127.0.0.1 POST /ptcznweb/public/admin.php/login/denglu.html
+[ info ] 127.0.0.1/ptcznweb/public/admin.php/login/denglu.html [运行时间：21.304307s][吞吐率：0.05req/s] [内存消耗：3,249.46kb] [文件加载：50]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'denglu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/admin.php/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '29',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1525061175,1525691570; PHPSESSID=hm3g8npea04vi7h951jt2rced5',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'kname' => 'admin1',
+  'kpwd' => '123456',
+  'sub' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->denglu[ C:\wamp64\www\ptcznweb\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+[C:\wamp64\www\ptcznweb\thinkphp\library\think\db\Connection.php:293]
+---------------------------------------------------------------
+[ 2018-08-07T12:41:08+08:00 ] 127.0.0.1 GET /ptcznweb/public/admin.php
+[ info ] 127.0.0.1/ptcznweb/public/admin.php [运行时间：0.035627s][吞吐率：28.07req/s] [内存消耗：2,953.77kb] [文件加载：47]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1525061175,1525691570; PHPSESSID=hm3g8npea04vi7h951jt2rced5',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\ptcznweb\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-07T12:41:08+08:00 ] 127.0.0.1 GET /ptcznweb/public/admin.php/login/index.html
+[ info ] 127.0.0.1/ptcznweb/public/admin.php/login/index.html [运行时间：0.028022s][吞吐率：35.69req/s] [内存消耗：2,981.16kb] [文件加载：47]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1525061175,1525691570; PHPSESSID=hm3g8npea04vi7h951jt2rced5',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ C:\wamp64\www\ptcznweb\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/admin\view\login\index.html [ array (
+  0 => 'remember',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-07T12:41:15+08:00 ] 127.0.0.1 POST /ptcznweb/public/admin.php/login/denglu.html
+[ info ] 127.0.0.1/ptcznweb/public/admin.php/login/denglu.html [运行时间：3.083315s][吞吐率：0.32req/s] [内存消耗：3,099.01kb] [文件加载：47]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'denglu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/admin.php/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '29',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1525061175,1525691570; PHPSESSID=hm3g8npea04vi7h951jt2rced5',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'kname' => 'admin1',
+  'kpwd' => '123456',
+  'sub' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->denglu[ C:\wamp64\www\ptcznweb\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:3.024009s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] select *from admin where name='admin1' and password='123456' [ RunTime:0.014985s ]
+---------------------------------------------------------------
+[ 2018-08-07T12:41:16+08:00 ] 127.0.0.1 GET /ptcznweb/public/admin.php/Index/index.html
+[ info ] 127.0.0.1/ptcznweb/public/admin.php/Index/index.html [运行时间：0.041657s][吞吐率：24.01req/s] [内存消耗：3,015.43kb] [文件加载：47]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/admin.php/login/denglu.html',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1525061175,1525691570; PHPSESSID=hm3g8npea04vi7h951jt2rced5',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\ptcznweb\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-07T12:41:16+08:00 ] 127.0.0.1 GET /ptcznweb/public/admin.php/Index/js/bodyTab.js
+[ info ] 127.0.0.1/ptcznweb/public/admin.php/Index/js/bodyTab.js [运行时间：0.071077s][吞吐率：14.07req/s] [内存消耗：2,979.58kb] [文件加载：48]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/admin.php/Index/index.html',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1525061175,1525691570; PHPSESSID=hm3g8npea04vi7h951jt2rced5',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-07T12:41:16+08:00 ] 127.0.0.1 GET /ptcznweb/public/admin.php/Index/favicon.ico
+[ info ] 127.0.0.1/ptcznweb/public/admin.php/Index/favicon.ico [运行时间：0.056479s][吞吐率：17.71req/s] [内存消耗：2,979.43kb] [文件加载：48]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1525061175,1525691570; PHPSESSID=hm3g8npea04vi7h951jt2rced5',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-07T12:41:16+08:00 ] 127.0.0.1 GET /ptcznweb/public/admin.php/index/newslist.html
+[ info ] 127.0.0.1/ptcznweb/public/admin.php/index/newslist.html [运行时间：0.239582s][吞吐率：4.17req/s] [内存消耗：4,500.55kb] [文件加载：56]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'newslist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/admin.php/Index/index.html',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1525061175,1525691570; PHPSESSID=hm3g8npea04vi7h951jt2rced5',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->newslist[ C:\wamp64\www\ptcznweb\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/admin\view\index\newslist.html [ array (
+  0 => 'page',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019869s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.013744s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1 [ RunTime:0.015973s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`abstract`,`cre_time`,`author`,`newstype`,`newsopen`,`import` FROM `news` ORDER BY `id`  desc LIMIT 0,6 [ RunTime:0.014595s ]
+---------------------------------------------------------------
+[ 2018-08-07T12:41:16+08:00 ] 127.0.0.1 GET /ptcznweb/public/admin.php/Index/favicon.ico
+[ info ] 127.0.0.1/ptcznweb/public/admin.php/Index/favicon.ico [运行时间：0.047207s][吞吐率：21.18req/s] [内存消耗：2,979.24kb] [文件加载：48]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1525061175,1525691570; PHPSESSID=hm3g8npea04vi7h951jt2rced5',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-07T12:41:17+08:00 ] 127.0.0.1 GET /ptcznweb/public/json/newsList.json
+[ info ] 127.0.0.1/ptcznweb/public/json/newsList.json [运行时间：0.049499s][吞吐率：20.20req/s] [内存消耗：2,425.49kb] [文件加载：39]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'json',
+    2 => 'newsList.json',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/admin.php/index/newslist.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1525061175,1525691570; PHPSESSID=hm3g8npea04vi7h951jt2rced5',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

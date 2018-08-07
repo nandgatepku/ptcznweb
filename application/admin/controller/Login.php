@@ -26,7 +26,7 @@ class Login extends Base
     public function denglu(){
         $kname=$_POST['kname']; // 获取用户名
         $kpwd=$_POST['kpwd'];   // 获取密码
-        $remember = $_POST['remember'];
+//        $remember = $_POST['remember'];
         if (isset($_POST['sub'])) {
             if(1) {
                 if (!empty($kname) && !empty($kpwd)) {//如果用户名和密码非空
@@ -36,10 +36,10 @@ class Login extends Base
                         session_start();
                         $_SESSION['kname'] = $kname;
                         $_SESSION['kpwd'] = $kpwd;
-                        if($remember == 1){
-                            setcookie("name", $kname, time()+3600*24*365);
-                            setcookie("password", $kpwd, time()+3600*24*365);
-                            }
+//                        if($remember == 1){
+//                            setcookie("name", $kname, time()+3600*24*365);
+//                            setcookie("password", $kpwd, time()+3600*24*365);
+//                            }
                         //跳转到用户中心
 //                        $this->redirect('Index/show', '', 2, '登录成功！前往管理后台!...页面跳转中...');
                         echo "loading...";

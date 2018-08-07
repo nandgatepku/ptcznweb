@@ -2101,3 +2101,359 @@
   0 => 'remember',
 ) ]
 [ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-23T09:38:49+08:00 ] 127.0.0.1 GET /ptcznweb/public/admin.php/login/index.html
+[ info ] 127.0.0.1/ptcznweb/public/admin.php/login/index.html [运行时间：0.124080s][吞吐率：8.06req/s] [内存消耗：2,984.84kb] [文件加载：47]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'name=admin1; password=123456; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1525590723; PHPSESSID=phde0io8si585lrk55h50ovo14',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ C:\wamp64\www\ptcznweb\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/admin\view\login\index.html [ array (
+  0 => 'remember',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-23T09:38:55+08:00 ] 127.0.0.1 POST /ptcznweb/public/admin.php/login/denglu.html
+[ info ] 127.0.0.1/ptcznweb/public/admin.php/login/denglu.html [运行时间：1.152199s][吞吐率：0.87req/s] [内存消耗：3,253.37kb] [文件加载：50]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'denglu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://127.0.0.1',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/admin.php/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'name=admin1; password=123456; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1525590723; PHPSESSID=phde0io8si585lrk55h50ovo14',
+)
+[ info ] [ PARAM ] array (
+  'kname' => 'admin1',
+  'kpwd' => '123456',
+  'remember' => '1',
+  'sub' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->denglu[ C:\wamp64\www\ptcznweb\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] ����Ŀ�����������ܾ����޷����ӡ�
+[C:\wamp64\www\ptcznweb\thinkphp\library\think\db\Connection.php:293]
+---------------------------------------------------------------
+[ 2018-05-23T09:39:03+08:00 ] 127.0.0.1 POST /ptcznweb/public/admin.php/login/denglu.html
+[ info ] 127.0.0.1/ptcznweb/public/admin.php/login/denglu.html [运行时间：1.157052s][吞吐率：0.86req/s] [内存消耗：3,253.24kb] [文件加载：50]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'denglu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'origin' => 'http://127.0.0.1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/admin.php/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'name=admin1; password=123456; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1525590723; PHPSESSID=phde0io8si585lrk55h50ovo14',
+)
+[ info ] [ PARAM ] array (
+  'kname' => 'admin1',
+  'kpwd' => '123456',
+  'remember' => '1',
+  'sub' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->denglu[ C:\wamp64\www\ptcznweb\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] ����Ŀ�����������ܾ����޷����ӡ�
+[C:\wamp64\www\ptcznweb\thinkphp\library\think\db\Connection.php:293]
+---------------------------------------------------------------
+[ 2018-05-23T09:39:05+08:00 ] 127.0.0.1 POST /ptcznweb/public/admin.php/login/denglu.html
+[ info ] 127.0.0.1/ptcznweb/public/admin.php/login/denglu.html [运行时间：1.138730s][吞吐率：0.88req/s] [内存消耗：3,253.24kb] [文件加载：50]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'denglu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'origin' => 'http://127.0.0.1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/admin.php/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'name=admin1; password=123456; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1525590723; PHPSESSID=phde0io8si585lrk55h50ovo14',
+)
+[ info ] [ PARAM ] array (
+  'kname' => 'admin1',
+  'kpwd' => '123456',
+  'remember' => '1',
+  'sub' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->denglu[ C:\wamp64\www\ptcznweb\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] ����Ŀ�����������ܾ����޷����ӡ�
+[C:\wamp64\www\ptcznweb\thinkphp\library\think\db\Connection.php:293]
+---------------------------------------------------------------
+[ 2018-05-23T09:48:18+08:00 ] 127.0.0.1 POST /ptcznweb/public/admin.php/login/denglu.html
+[ info ] 127.0.0.1/ptcznweb/public/admin.php/login/denglu.html [运行时间：1.182671s][吞吐率：0.85req/s] [内存消耗：3,253.24kb] [文件加载：50]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'denglu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'origin' => 'http://127.0.0.1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/admin.php/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'name=admin1; password=123456; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1525590723; PHPSESSID=phde0io8si585lrk55h50ovo14',
+)
+[ info ] [ PARAM ] array (
+  'kname' => 'admin1',
+  'kpwd' => '123456',
+  'remember' => '1',
+  'sub' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->denglu[ C:\wamp64\www\ptcznweb\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] ����Ŀ�����������ܾ����޷����ӡ�
+[C:\wamp64\www\ptcznweb\thinkphp\library\think\db\Connection.php:293]
+---------------------------------------------------------------
+[ 2018-05-23T09:53:40+08:00 ] 127.0.0.1 POST /ptcznweb/public/admin.php/login/denglu.html
+[ info ] 127.0.0.1/ptcznweb/public/admin.php/login/denglu.html [运行时间：0.717525s][吞吐率：1.39req/s] [内存消耗：3,103.27kb] [文件加载：47]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'denglu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'origin' => 'http://127.0.0.1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/admin.php/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'name=admin1; password=123456; Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1525590723; PHPSESSID=phde0io8si585lrk55h50ovo14',
+)
+[ info ] [ PARAM ] array (
+  'kname' => 'admin1',
+  'kpwd' => '123456',
+  'remember' => '1',
+  'sub' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->denglu[ C:\wamp64\www\ptcznweb\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.570225s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] select *from admin where name='admin1' and password='123456' [ RunTime:0.078676s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:53:40+08:00 ] 127.0.0.1 GET /ptcznweb/public/admin.php/Index/index.html
+[ info ] 127.0.0.1/ptcznweb/public/admin.php/Index/index.html [运行时间：0.052077s][吞吐率：19.20req/s] [内存消耗：3,015.53kb] [文件加载：47]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/admin.php/login/denglu.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1525590723; PHPSESSID=phde0io8si585lrk55h50ovo14',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\ptcznweb\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-23T09:53:40+08:00 ] 127.0.0.1 GET /ptcznweb/public/admin.php/Index/js/bodyTab.js
+[ info ] 127.0.0.1/ptcznweb/public/admin.php/Index/js/bodyTab.js [运行时间：0.059538s][吞吐率：16.80req/s] [内存消耗：2,979.38kb] [文件加载：48]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/admin.php/Index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1525590723; PHPSESSID=phde0io8si585lrk55h50ovo14',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-23T09:53:40+08:00 ] 127.0.0.1 GET /ptcznweb/public/admin.php/index/newslist.html
+[ info ] 127.0.0.1/ptcznweb/public/admin.php/index/newslist.html [运行时间：0.195785s][吞吐率：5.11req/s] [内存消耗：4,500.66kb] [文件加载：56]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'newslist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/admin.php/Index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1525590723; PHPSESSID=phde0io8si585lrk55h50ovo14',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->newslist[ C:\wamp64\www\ptcznweb\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/admin\view\index\newslist.html [ array (
+  0 => 'page',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.032459s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.044729s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` LIMIT 1 [ RunTime:0.020413s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`abstract`,`cre_time`,`author`,`newstype`,`newsopen`,`import` FROM `news` ORDER BY `id`  desc LIMIT 0,6 [ RunTime:0.025876s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:53:40+08:00 ] 127.0.0.1 GET /ptcznweb/public/json/newsList.json
+[ info ] 127.0.0.1/ptcznweb/public/json/newsList.json [运行时间：0.044833s][吞吐率：22.30req/s] [内存消耗：2,425.44kb] [文件加载：39]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'json',
+    2 => 'newsList.json',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/admin.php/index/newslist.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_b393d153aeb26b46e9431fabaf0f6190=1525590723; PHPSESSID=phde0io8si585lrk55h50ovo14',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
