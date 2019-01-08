@@ -1,0 +1,133 @@
+---------------------------------------------------------------
+[ 2019-01-08T17:54:09+08:00 ] 127.0.0.1 GET /ptcznweb/public/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.578029s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] select id,title,cre_time from news where newsopen='1' order by id DESC limit 5 [ RunTime:0.029345s ]
+---------------------------------------------------------------
+[ 2019-01-08T17:54:16+08:00 ] 127.0.0.1 GET /ptcznweb/public/subway
+[ error ] [4]语法错误: unexpected '}'
+---------------------------------------------------------------
+[ 2019-01-08T17:54:52+08:00 ] 127.0.0.1 GET /ptcznweb/public/subway
+[ error ] [4]语法错误: unexpected '}'
+---------------------------------------------------------------
+[ 2019-01-08T17:54:56+08:00 ] 127.0.0.1 GET /ptcznweb/public/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.271020s ] mysql:host=211.159.169.104;port=3306;dbname=ptcznweb;charset=utf8
+[ sql ] [ SQL ] select id,title,cre_time from news where newsopen='1' order by id DESC limit 5 [ RunTime:0.024419s ]
+---------------------------------------------------------------
+[ 2019-01-08T17:55:00+08:00 ] 127.0.0.1 GET /ptcznweb/public/subway
+[ error ] [4]语法错误: unexpected '}'
+---------------------------------------------------------------
+[ 2019-01-08T17:55:13+08:00 ] 127.0.0.1 GET /ptcznweb/public/subway
+[ info ] 127.0.0.1/ptcznweb/public/subway [运行时间：0.127533s][吞吐率：7.84req/s] [内存消耗：2,442.79kb] [文件加载：39]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'subway',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected '}'[C:\wamp64\www\ptcznweb\application\index\controller\Subway.php:15]
+---------------------------------------------------------------
+[ 2019-01-08T17:55:31+08:00 ] 127.0.0.1 GET /ptcznweb/public/subway
+[ info ] 127.0.0.1/ptcznweb/public/subway [运行时间：0.092208s][吞吐率：10.85req/s] [内存消耗：3,117.77kb] [文件加载：46]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'subway',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Subway->index[ C:\wamp64\www\ptcznweb\application\index\controller\Subway.php ]
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/index\view\subway\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-08T17:55:33+08:00 ] 127.0.0.1 GET /ptcznweb/public/atom_matlab.csv
+[ info ] 127.0.0.1/ptcznweb/public/atom_matlab.csv [运行时间：0.041428s][吞吐率：24.14req/s] [内存消耗：2,424.50kb] [文件加载：39]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'atom_matlab.csv',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'text/plain, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'referer' => 'http://127.0.0.1/ptcznweb/public/subway',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-08T17:56:01+08:00 ] 127.0.0.1 GET /ptcznweb/public/subway
+[ info ] 127.0.0.1/ptcznweb/public/subway [运行时间：0.059555s][吞吐率：16.79req/s] [内存消耗：2,854.02kb] [文件加载：44]
+[ info ] [ LANG ] C:\wamp64\www\ptcznweb\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'subway',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Subway->index[ C:\wamp64\www\ptcznweb\application\index\controller\Subway.php ]
+[ info ] [ VIEW ] C:\wamp64\www\ptcznweb\public/../application/index\view\subway\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
