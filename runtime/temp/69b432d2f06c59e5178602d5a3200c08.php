@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"C:\wamp64\www\ptcznweb\public/../application/index\view\subway\index.html";i:1546940453;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"C:\wamp64\www\ptcznweb\public/../application/index\view\subway\index.html";i:1546944138;}*/ ?>
 <!DOCTYPE html> 
 <html style="height: 100%"> 
 <head> 
@@ -34,7 +34,7 @@
 
     $.ajax({
         type: "GET",
-        url: "atom_matlab.csv",
+        url: "http://www.ptczn.cn/static/atom_matlab.csv",
         dataType: "text",
         async:false,
         success: function(data) {

@@ -9,11 +9,11 @@
   <link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
 </head> 
 <body style="height: 100%; margin: 0">
-  <div id="title" style="size: 20px;text-align: center;">数据可视化期末展示</div>
-  <div id="title" style="size: 18px;text-align: right;margin-right: 70px;">方正;林德鑫;唐驻成</div>
+  <div id="title" style="size: 20px;text-align: center;"><b>数据可视化期末展示-北京地铁</b></div>
+  <div id="title" style="size: 18px;text-align: right;margin-right: 100px;"><b>方正;林德鑫;唐驻成</b></div>
   <span id="con">
     <div id="bigmap" style="height: 70%;width: 60%;display:inline-block;margin-left: 20px;"></div>
-    <div id="chart" style="display:inline-block">这里是柱状图</div>
+    <div id="chart" style="height: 70%;width:30%;display:inline-block"></div>
   </span>
     <p style="text-align: center;">
   <label for="amount">选择时间：</label>
@@ -26,8 +26,12 @@
  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script> 
  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script> 
  <script type="text/javascript">
-    var atom_data=[],atom_stop=[],atom_time=[],a_data=[],atom_start=[];
-    var subway_atom={};
+   var line_data = [18203, 23489, 29034, 104970, 131744, 630230,1,1,1,1,1,1,1,1,1,1,1];
+  
+ </script>
+ <script type="text/javascript">
+    var atom_data=[],atom_stop=[],atom_time=[],a_data=[],atom_start=[],line_name=[];
+    var subway_atom={},subway_lines={};
     var subway_data=[];
     var c_time=18;
 
@@ -49,13 +53,90 @@
         atom_time[i] = atom_data[i].split(",");
         atom_stop[i] = a_data[i][2];
         atom_start[i] = atom_stop[i].split(",");
-      }    
+        line_n = atom_start[i][7];
+        if(line_name.indexOf(line_n) == -1){
+          line_name.push(line_n);
+          subway_lines[line_n] = new Array(48).fill(0);
+        }
+        for(j=0;j<atom_time[i].length;j++){
+          subway_lines[line_n][j] += parseFloat(atom_time[i][j]);
+        }
+        
+    }
     
         }
       }
      });
-console.log(atom_start);
+console.log(subway_lines);
 console.log("c_time="+c_time);
+
+   function up(x,y){
+        return x.data-y.data
+    };
+
+  function show_chart(time){
+    var line=[];
+    for (var key in subway_lines) {
+    var line_time = {};
+    line_time['name'] = key;
+    line_time['data'] = subway_lines[key][time];
+    line.push(line_time);
+}
+line.sort(up);
+
+    var new_sort_axis = [],new_sort_data=[];
+   for (var key in line) {
+    new_sort_axis.push(line[key]['name']);
+    new_sort_data.push(line[key]['data']);
+  
+}
+
+    var subway_chart = echarts.init(document.getElementById('chart'));
+
+option_chart = {
+    title: {
+//         text: '北京地铁各线路人流量',
+//         textStyle:{ 
+//            //字体粗细 'normal','bold','bolder','lighter',100 | 200 | 300 | 400...
+//         fontWeight:'normal',
+// 　　　　    fontSize:16
+//         }
+    },
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'shadow'
+        }
+    },
+    // legend: {
+    //     data: ['2011年', '2012年']
+    // },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        top:'1%',
+        containLabel: true
+    },
+    xAxis: {
+        type: 'value',
+        // boundaryGap: [0, 1]
+    },
+    yAxis: {
+        type: 'category',
+        data: new_sort_axis
+    },
+    series: [
+        {
+            name: '2011年',
+            type: 'bar',
+            data: new_sort_data
+        }
+    ]
+};
+ 
+ subway_chart.setOption(option_chart);
+  }
 
 
 function show_map(time){
@@ -97,7 +178,7 @@ for(i=0;i<atom_start.length;i++){
 
 }
 
-     console.log(subway_data);
+     // console.log(subway_data);
 
 
     myChart.setOption(option = {
@@ -302,6 +383,7 @@ for(i=0;i<atom_start.length;i++){
 </script>
 <script>
     show_map(c_time);
+    show_chart(c_time);
   $(function() {
     $( "#slider" ).slider({
       value:18,
@@ -319,6 +401,7 @@ for(i=0;i<atom_start.length;i++){
         $( "#amount" ).val( clock + ":"+min_str );
         c_time = ui.value;
         show_map(c_time);
+        show_chart(c_time);
       }
     });
 
