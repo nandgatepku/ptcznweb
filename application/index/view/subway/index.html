@@ -10,30 +10,46 @@
 </head> 
 <body style="height: 100%; margin: 0">
   <div id="title" style="size: 20px;text-align: center;"><b>数据可视化期末展示-北京地铁</b></div>
-  <div id="title" style="size: 18px;text-align: right;margin-right: 100px;"><b>方正;林德鑫;唐驻成</b></div>
+  <div id="title" style="size: 18px;text-align: right;margin-right: 30%;"><b>方正;林德鑫;唐驻成</b></div>
   <span id="con">
     <div id="bigmap" style="height: 70%;width: 60%;display:inline-block;margin-left: 20px;"></div>
     <div id="chart" style="height: 70%;width:30%;display:inline-block"></div>
   </span>
-    <p style="text-align: center;">
-  <label for="amount">选择时间：</label>
-  <input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;">
-</p>
-  <div id="slider" style="width: 80%;margin: 20px;"></div>
+  <div style="width: 100%">
+      <div style="width: 20%;display:inline-block;margin-left: 5%;margin-top: 0%">
+    <span style="">站点数据</span>
+    <select id="select_id" style="">
+         <option value='0' selected="selected">不显示</option>
+         <option value='1'>出站</option>
+         <option value='2'>进站</option>
+         <option value='3'>总和</option>
+    </select>
+  </div>
 
+    <div style="width: 70%;display:inline-block;">
+      <p style="text-align: center;">
+        <label for="amount">选择时间：</label>
+        <input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;">
+      </p>
+      <div id="slider" style="width: 80%;margin-left: 5%"></div>
+    </div>
+
+  </div>
+ 
  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script> 
  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script> 
  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script> 
  <script type="text/javascript">
-   var line_data = [18203, 23489, 29034, 104970, 131744, 630230,1,1,1,1,1,1,1,1,1,1,1];
-  
+ 
  </script>
  <script type="text/javascript">
     var atom_data=[],atom_stop=[],atom_time=[],a_data=[],atom_start=[],line_name=[];
     var subway_atom={},subway_lines={};
     var subway_data=[];
+    var in_data=[],out_data=[];
     var c_time=18;
+    var station_flag=0;
 
     $.ajax({
         type: "GET",
@@ -67,8 +83,44 @@
         }
       }
      });
-console.log(subway_lines);
-console.log("c_time="+c_time);
+// console.log(subway_lines);
+// console.log("c_time="+c_time);
+
+  $.ajax({
+        type: "GET",
+        url: "in.csv",
+        dataType: "text",
+        async:false,
+        success: function(data) {
+          var str_data = new String(data);
+          var in_lines = str_data.split('\n');
+          for(var i=0;i<in_lines.length;i++){
+            if(in_lines[i] !=''){
+              in_data[i] = in_lines[i].split(',');
+            }
+          
+          }
+        }
+     });
+
+    $.ajax({
+        type: "GET",
+        url: "out.csv",
+        dataType: "text",
+        async:false,
+        success: function(data) {
+          var str_data = new String(data);
+          var out_lines = str_data.split('\n');
+          for(var i=0;i<out_lines.length;i++){
+            if(out_lines[i] !=''){
+              out_data[i] = out_lines[i].split(',');
+            }
+          
+          }
+        }
+     });
+
+  console.log(in_data);
 
    function up(x,y){
         return x.data-y.data
@@ -80,14 +132,39 @@ console.log("c_time="+c_time);
     var line_time = {};
     line_time['name'] = key;
     line_time['data'] = subway_lines[key][time];
+    switch(key.slice(0, -1)){
+      case 'Line1':line_time['color'] = '#A4343A';break;
+      case 'Line2':line_time['color'] = '#004B87';break;
+      case 'Line4':line_time['color'] = '#008C95';break;
+      case 'Line5':line_time['color'] = '#AA0061';break;
+      case 'Line6':line_time['color'] = '#B58500';break;
+      case 'Line7':line_time['color'] = '#FFC56E';break;
+      case 'Line8':line_time['color'] = '#009B77';break;
+      case 'Line9':line_time['color'] = '#97D700';break;
+      case 'Line10':line_time['color'] = '#0092BC';break;
+      case 'Line13':line_time['color'] = '#F4DA40';break;
+      case 'Line14':line_time['color'] = '#CA9A8E';break;
+      case 'Line15':line_time['color'] = '#653279';break;
+      case 'Line16':line_time['color'] = '#6BA539';break;
+      case 'BatongLine':line_time['color'] = '#A4343A';break;
+      case 'DaxingLine':line_time['color'] = '#008C95';break;
+      case 'YizhuangLine':line_time['color'] = '#D0006F';break;
+      case 'FangshanLine':line_time['color'] = '#D86018';break;
+      case 'FangshanLine':line_time['color'] = '#D86018';break;
+      case 'ChangpingLine':line_time['color'] = '#D986BA';break;
+      default:line_time['color'] ='#000000';break;
+    }
     line.push(line_time);
 }
 line.sort(up);
 
-    var new_sort_axis = [],new_sort_data=[];
+console.log(line);
+
+    var new_sort_axis = [],new_sort_data=[],new_sort_color=[];
    for (var key in line) {
     new_sort_axis.push(line[key]['name']);
     new_sort_data.push(line[key]['data']);
+    new_sort_color.push(line[key]['color']);
   
 }
 
@@ -128,9 +205,17 @@ option_chart = {
     },
     series: [
         {
-            name: '2011年',
+            name: '',
             type: 'bar',
-            data: new_sort_data
+            data: new_sort_data,
+            itemStyle: {
+            normal: {
+                color: function(params) { 
+                    var colorList = new_sort_color; 
+                    return colorList[params.dataIndex] 
+                }
+            },
+        },
         }
     ]
 };
@@ -139,8 +224,8 @@ option_chart = {
   }
 
 
-function show_map(time){
-  var dom = document.getElementById("bigmap");
+function show_map(time,station_flag){
+var dom = document.getElementById("bigmap");
 var myChart = echarts.init(dom);
 var app = {};
 option = null;
@@ -179,6 +264,59 @@ for(i=0;i<atom_start.length;i++){
 }
 
      // console.log(subway_data);
+     var station_data=[];
+
+     switch(station_flag)
+     {
+      case '1':
+         for(k=0;k<in_data.length;k++){
+               var temp_data=[],temp_a={},st_color={},st_normal={};
+               temp_data[0]=in_data[k][2];
+               temp_data[1]=in_data[k][3];
+               temp_data[2]=parseFloat(in_data[k][time+4]);
+               temp_a.value=temp_data;
+               var temp_color = echarts.color.modifyHSL('#ff0000', 120-temp_data[2]/2000*120);
+               st_color.color=temp_color;
+               st_normal.normal = st_color;
+               temp_a.itemStyle=st_normal;
+               station_data.push(temp_a);
+         };
+         break;
+      case '2':
+         for(k=0;k<out_data.length;k++){
+               var temp_data=[],temp_a={},st_color={},st_normal={};
+               temp_data[0]=out_data[k][2];
+               temp_data[1]=out_data[k][3];
+               temp_data[2]=parseFloat(out_data[k][time+4]);
+               temp_a.value=temp_data;
+               var temp_color = echarts.color.modifyHSL('#ff0000', 120-temp_data[2]/2000*120);
+               st_color.color=temp_color;
+               st_normal.normal = st_color;
+               temp_a.itemStyle=st_normal;
+               station_data.push(temp_a);
+         };
+          break;
+      case '3':
+         for(k=0;k<in_data.length;k++){
+               var temp_data=[],temp_a={},st_color={},st_normal={};
+               temp_data[0]=in_data[k][2];
+               temp_data[1]=in_data[k][3];
+               temp_data[2]=parseFloat(in_data[k][time+4])+parseFloat(out_data[k][time+4]);
+               temp_a.value=temp_data;
+               var temp_color = echarts.color.modifyHSL('#ff0000', 120-temp_data[2]/4000*120);
+               st_color.color=temp_color;
+               st_normal.normal = st_color;
+               temp_a.itemStyle=st_normal;
+               station_data.push(temp_a);
+               console.log(temp_data[2]);
+         };
+          break;
+      default:
+      // station_data=[];
+       break;
+    }
+
+     console.log(station_data);
 
 
     myChart.setOption(option = {
@@ -336,7 +474,8 @@ for(i=0;i<atom_start.length;i++){
               ]
             }
         },
-       series: [{
+       series: [
+       {
             type: 'lines',
             coordinateSystem: 'bmap',
             polyline: true,
@@ -353,7 +492,8 @@ for(i=0;i<atom_start.length;i++){
             },
             progressiveThreshold: 500,
             progressive: 200
-        }, {
+        },
+         {
             type: 'lines',
             coordinateSystem: 'bmap',
             polyline: true,
@@ -370,11 +510,37 @@ for(i=0;i<atom_start.length;i++){
                 symbolSize: 2
             },
             zlevel: 1
+        }, 
+        {
+            type: 'scatter',
+            coordinateSystem: 'bmap',
+            polyline: true,
+            data: station_data,
+            symbolSize: 6,
+        // 鼠标悬浮的时候在圆点上显示数值
+            label: {
+              normal: {
+                show: false
+              },
+              emphasis: {
+                show: true
+              }
+            },
+            // itemStyle: {
+            //   normal: {
+            //     color: '#ddb926'
+            //   }
+            // },
+          // 鼠标悬浮的时候圆点样式变化
+            emphasis: {
+              borderColor: '#fff',
+              borderWidth: 1
+            },
+            zlevel: 2
         }]
 
     });
 };
-
 
 // if (option && typeof option === "object") {
 //     myChart.setOption(option, true);
@@ -382,8 +548,8 @@ for(i=0;i<atom_start.length;i++){
 
 </script>
 <script>
-    show_map(c_time);
-    show_chart(c_time);
+    show_map(c_time-1,station_flag);
+    show_chart(c_time-1);
   $(function() {
     $( "#slider" ).slider({
       value:18,
@@ -400,13 +566,21 @@ for(i=0;i<atom_start.length;i++){
         }
         $( "#amount" ).val( clock + ":"+min_str );
         c_time = ui.value;
-        show_map(c_time);
-        show_chart(c_time);
+        show_map(c_time-1,station_flag);
+        show_chart(c_time-1);
       }
     });
 
     $( "#amount" ).val( "9:00" );
   });
+
+    $(document).ready(function(){
+        $("#select_id").change(function(){
+            station_flag=$(this).children('option:selected').val();
+            console.log(station_flag);
+            show_map(c_time-1,station_flag);
+        })
+    });
   </script>
 </body> 
 </html>
