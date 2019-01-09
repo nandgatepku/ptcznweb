@@ -132,7 +132,8 @@
     var line_time = {};
     line_time['name'] = key;
     line_time['data'] = subway_lines[key][time];
-    switch(key.slice(0, -1)){
+    key=key.replace(/(^\s*)|(\s*$)/g, ""); 
+    switch(key){
       case 'Line1':line_time['color'] = '#A4343A';break;
       case 'Line2':line_time['color'] = '#004B87';break;
       case 'Line4':line_time['color'] = '#008C95';break;
