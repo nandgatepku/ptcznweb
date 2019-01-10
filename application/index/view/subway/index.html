@@ -61,6 +61,14 @@
       z-index:5;
       margin-left: 20%;
     }
+    .play_button{
+       position:absolute;
+       bottom: 10%;
+       z-index: 5;
+       right: 15%;
+       width: 20px;
+       height: 20px;
+    }
   </style>
 </head> 
 <body style="height: 100%; margin: 0">
@@ -89,6 +97,10 @@
       <div id="slider" style="width: 80%;margin-left: 5%"></div>
     </div>
 
+    <div class="play_button">
+      <input type="button" style="width: 50px;" value="play" id="play"/>
+    </div>
+
   </div>
  
  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script> 
@@ -96,15 +108,13 @@
  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script> 
  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script> 
  <script type="text/javascript">
- 
- </script>
- <script type="text/javascript">
     var atom_data=[],atom_stop=[],atom_time=[],a_data=[],atom_start=[],line_name=[];
     var subway_atom={},subway_lines={};
     var subway_data=[];
     var in_data=[],out_data=[];
-    var c_time=18;
+    var c_time=18,play_value=18;
     var station_flag=0;
+    var play_flag=false;interval_flag = null;
 
     $.ajax({
         type: "GET",
@@ -179,6 +189,32 @@
 
    function up(x,y){
         return x.data-y.data
+    };
+
+    function show_play(choose_time){
+        var clock = parseInt(choose_time/2);
+        var min_flag = Math.round(choose_time%2);
+        if(min_flag==0){
+          var min_str = '00';
+        }else{
+          var min_str = '30';
+        }
+        $( "#amount" ).val( clock + ":"+min_str );
+        c_time = choose_time;
+        show_map(c_time-1,station_flag);
+        show_chart(c_time-1);
+    }
+
+      var paly_function = function(){
+        if(play_value>47){
+          play_value=11
+        }else{
+          play_value++
+        };
+        console.log(play_value);
+        $("#slider").slider('option', 'value',play_value);
+        show_play(play_value);
+
     };
 
   function show_chart(time){
@@ -630,22 +666,14 @@ for(i=0;i<atom_start.length;i++){
     show_chart(c_time-1);
   $(function() {
     $( "#slider" ).slider({
-      value:18,
+      value:play_value,
       min: 1,
       max: 48,
       step: 1,
       slide: function( event, ui ) {
-        var clock = parseInt(ui.value/2);
-        var min_flag = Math.round(ui.value%2);
-        if(min_flag==0){
-          var min_str = '00';
-        }else{
-          var min_str = '30';
-        }
-        $( "#amount" ).val( clock + ":"+min_str );
-        c_time = ui.value;
-        show_map(c_time-1,station_flag);
-        show_chart(c_time-1);
+        var choose_time = ui.value;
+        play_value = ui.value;
+        show_play(choose_time);
       }
     });
 
@@ -657,7 +685,21 @@ for(i=0;i<atom_start.length;i++){
             station_flag=$(this).children('option:selected').val();
             console.log(station_flag);
             show_map(c_time-1,station_flag);
-        })
+        });
+
+        $("#play").mouseup(function(){
+          play_flag=!play_flag;
+          if(play_flag){
+            $(this).css("background","yellow");
+            $(this).val('pause');
+            interval_flag = setInterval(paly_function,3000);
+          }else{
+            $(this).css("background","white");
+            $(this).val('play');
+            clearInterval(interval_flag);
+          }
+          
+        });
     });
   </script>
 </body> 
