@@ -59,13 +59,13 @@
       bottom: 10%;
       color: white;
       z-index:5;
-      margin-left: 20%;
+      margin-left: 15%;
     }
     .play_button{
        position:absolute;
        bottom: 10%;
        z-index: 5;
-       right: 15%;
+       right: 20%;
        width: 20px;
        height: 20px;
     }
@@ -73,11 +73,28 @@
        position:absolute;
        bottom: 10%;
        z-index: 5;
-       right: 8%;
+       right: 13%;
        width: 20px;
        height: 20px;
     }
-
+    .switch_str{
+        position:absolute;
+       bottom: 10%;
+       z-index: 5;
+       right: 7%;
+       width: auto;
+       height: 20px;
+       color: white;
+    }
+    .left_1{
+      height: 40%;
+      width:20%;
+      position:absolute;
+      left: 3%;
+      margin-top: 3%;
+      z-index:5;
+      padding-left: 30px;
+    }
      .switch {
             width: 40px;
             height: 21px;
@@ -133,6 +150,7 @@
   <span id="con">
     <div id="bigmap" class="map"></div>
     <div id="chart" class="chart"></div>
+    <div id="main1" class="left_1"></div>
   </span>
   <div>
       <div class="station">
@@ -146,9 +164,9 @@
   </div>
 
     <div class="time">
-      <p style="text-align: center;">
-        <label for="amount">选择时间：</label>
-        <input type="text" id="amount" style="border:0; color:#f6931f; background-color:transparent;font-weight:bold;" readonly="readonly">
+      <p style="text-align: center;margin-left: 20%;">
+        <label for="amount"></label>
+        <input type="text" id="amount" style="border:0; font-size:35px;color:#f6931f; background-color:transparent;font-weight:bold;" readonly="readonly">
       </p>
       <div id="slider" style="width: 80%;margin-left: 5%"></div>
     </div>
@@ -158,6 +176,7 @@
     </div>
 
     <span class="switch_span"><input id="switch_key"  style="border:0;outline:none;" class="switch switch-anim" type="checkbox" onchange="switch_weekend(this)"></span>
+    <div id="switch_div" class="switch_str">工作日</div>
 
   </div>
  
@@ -165,7 +184,15 @@
  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script> 
  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script> 
- <script type="text/javascript">
+ <script type="text/javascript">  
+  var x = [];
+    for (var i = 0; i <= 48; i++) {
+      if(i % 6 == 0)
+        x.push(i/2);
+      else
+        x.push('');
+    }
+
     var atom_data=[],atom_stop=[],atom_time=[],a_data=[],atom_start=[],line_name=[];
     var subway_atom={},subway_lines={};
     var subway_data=[];
@@ -174,6 +201,9 @@
     var station_flag=0;
     var switch_flag=false;
     var play_flag=false;interval_flag = null;
+    var subway_chart;
+    var new_sort_axis = [],new_sort_data=[],new_sort_color=[];
+
 
     // var atom_csv='atom_matlab.csv';
 
@@ -184,6 +214,11 @@
     }
 
     function load_csv(atom_csv,in_csv,out_csv){
+     atom_data=[],atom_stop=[],atom_time=[],a_data=[],atom_start=[],line_name=[];
+    subway_atom={},subway_lines={};
+    subway_data=[];
+    in_data=[],out_data=[];
+    new_sort_axis = [],new_sort_data=[],new_sort_color=[];
 
     $.ajax({
         type: "GET",
@@ -217,7 +252,7 @@
         }
       }
      });
-// console.log(subway_lines);
+console.log(subway_lines);
 // console.log("c_time="+c_time);
 
   $.ajax({
@@ -263,6 +298,73 @@
         return x.data-y.data
     };
 
+   function plot(i) {
+      var myChart1 = echarts.init(document.getElementById('main1'));
+      var option1 = {
+        title: {
+          text: '流量的时间分布',
+          subtext: i,
+          subtextStyle: {
+            fontSize: 14,
+            fontWeight: 'bold',
+          },
+          textStyle:{
+            color:'#eaf516',
+            fontSize: 14,
+            fontWeight: 'bold',
+          }
+        },
+        // legend: {
+        //   show: 'true',
+        //   right: '0%',
+        // },
+        xAxis: {
+          type: 'category',
+          data: x,
+            axisLine:{
+            lineStyle:{
+                color:'#df0af8',
+                    }
+              },                         
+        axisLabel: {
+              textStyle: {
+                  color: '#21abfa',
+                  fontSize:'16'
+              },
+        },  
+        },
+        yAxis: {
+          type: 'value',
+            axisLine:{
+            lineStyle:{
+                color:'#df0af8',
+                    }
+              },                         
+        axisLabel: {
+              margin: 0,
+              textStyle: {
+                  color: '#21abfa',
+                  fontSize:'16'
+              },
+              formatter: function (value, index) { if (value >= 10000 && value < 10000000) { value = value / 10000 + "万"; } else if (value >= 10000000) { value = value / 10000000 + "千万"; } return value; }
+
+        },  
+        },
+        grid: {
+        left: 40
+    },
+        series: [{
+          name: '',
+          data: subway_lines[i],
+          type: 'line',
+          symbol: 'none',
+        }]
+      };
+     
+      myChart1.setOption(option1);
+
+    };
+
     function show_play(choose_time){
         var clock = parseInt(choose_time/2);
         var min_flag = Math.round(choose_time%2);
@@ -297,34 +399,35 @@
     line_time['data'] = subway_lines[key][time];
     key=key.replace(/(^\s*)|(\s*$)/g, ""); 
     switch(key){
-      case 'Line1':line_time['color'] = '#A4343A';break;
-      case 'Line2':line_time['color'] = '#004B87';break;
-      case 'Line4':line_time['color'] = '#008C95';break;
-      case 'Line5':line_time['color'] = '#AA0061';break;
-      case 'Line6':line_time['color'] = '#B58500';break;
-      case 'Line7':line_time['color'] = '#FFC56E';break;
-      case 'Line8':line_time['color'] = '#009B77';break;
-      case 'Line9':line_time['color'] = '#97D700';break;
-      case 'Line10':line_time['color'] = '#0092BC';break;
-      case 'Line13':line_time['color'] = '#F4DA40';break;
-      case 'Line14':line_time['color'] = '#CA9A8E';break;
-      case 'Line15':line_time['color'] = '#653279';break;
-      case 'Line16':line_time['color'] = '#6BA539';break;
-      case 'BatongLine':line_time['color'] = '#A4343A';break;
-      case 'DaxingLine':line_time['color'] = '#008C95';break;
-      case 'YizhuangLine':line_time['color'] = '#D0006F';break;
-      case 'FangshanLine':line_time['color'] = '#D86018';break;
-      case 'FangshanLine':line_time['color'] = '#D86018';break;
-      case 'ChangpingLine':line_time['color'] = '#D986BA';break;
+      case '1号线':line_time['color'] = '#A4343A';break;
+      case '2号线':line_time['color'] = '#004B87';break;
+      case '4号线':line_time['color'] = '#008C95';break;
+      case '5号线':line_time['color'] = '#AA0061';break;
+      case '6号线':line_time['color'] = '#B58500';break;
+      case '7号线':line_time['color'] = '#FFC56E';break;
+      case '8号线':line_time['color'] = '#009B77';break;
+      case '9号线':line_time['color'] = '#97D700';break;
+      case '10号线':line_time['color'] = '#0092BC';break;
+      case '13号线':line_time['color'] = '#F4DA40';break;
+      case '14号线':line_time['color'] = '#CA9A8E';break;
+      case '15号线':line_time['color'] = '#653279';break;
+      case '16号线':line_time['color'] = '#6BA539';break;
+      case '八通线':line_time['color'] = '#A4343A';break;
+      case '大兴线':line_time['color'] = '#008C95';break;
+      case '亦庄线':line_time['color'] = '#D0006F';break;
+      case '房山线':line_time['color'] = '#D86018';break;
+      case '昌平线':line_time['color'] = '#D986BA';break;
       default:line_time['color'] ='#000000';break;
     }
     line.push(line_time);
 }
 line.sort(up);
 
-console.log(line);
+// console.log(subway_lines);
+new_sort_axis=[];
+new_sort_data=[];
+new_sort_color=[];
 
-    var new_sort_axis = [],new_sort_data=[],new_sort_color=[];
    for (var key in line) {
     new_sort_axis.push(line[key]['name']);
     new_sort_data.push(line[key]['data']);
@@ -332,7 +435,7 @@ console.log(line);
   
 }
 
-    var subway_chart = echarts.init(document.getElementById('chart'));
+    subway_chart = echarts.init(document.getElementById('chart'));
 
 option_chart = {
     title: {
@@ -504,11 +607,10 @@ for(i=0;i<atom_start.length;i++){
 
      console.log(station_data);
 
-
     myChart.setOption(option = {
         bmap: {
-            center: [116.90, 39.92],
-            zoom:10,
+            center: [116.60, 39.92],
+            zoom:11,
             roam: true,
             mapStyle: {
               'styleJson': [
@@ -737,10 +839,9 @@ for(i=0;i<atom_start.length;i++){
   load_csv('atom_matlab.csv','in.csv','out.csv');
   show_map(c_time-1,station_flag);
   show_chart(c_time-1);
+  // plot('1号线');
 
   $(function() {
-
-
     $( "#slider" ).slider({
       value:play_value,
       min: 1,
@@ -757,6 +858,12 @@ for(i=0;i<atom_start.length;i++){
   });
 
     $(document).ready(function(){
+
+      subway_chart.on('click', function (params) {
+      console.log(new_sort_axis[params.dataIndex]);
+      plot(new_sort_axis[params.dataIndex]);
+      // plot(params.dataIndex);
+    });
         $("#select_id").change(function(){
             station_flag=$(this).children('option:selected').val();
             console.log(station_flag);
@@ -764,14 +871,18 @@ for(i=0;i<atom_start.length;i++){
         });
 
         $("#switch_key").change(function(){
-            if(switch_flag){
+            if(!switch_flag){
               load_csv('atom_matlab.csv','in.csv','out.csv');
               // console.log('swflag:'+switch_flag);
               show_map(c_time-1,station_flag);
+              show_chart(c_time-1);
+              $("#switch_div").html('工作日');
             }else{
               load_csv('weekend_atom.csv','weekend_in.csv','weekend_out.csv');
               // console.log('swflag:'+switch_flag);
               show_map(c_time-1,station_flag);
+              show_chart(c_time-1);
+              $("#switch_div").html('周末');
             }
         });
 
