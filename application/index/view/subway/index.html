@@ -69,6 +69,62 @@
        width: 20px;
        height: 20px;
     }
+    .switch_span{
+       position:absolute;
+       bottom: 10%;
+       z-index: 5;
+       right: 8%;
+       width: 20px;
+       height: 20px;
+    }
+
+     .switch {
+            width: 40px;
+            height: 21px;
+            position: relative;
+            border: 1px solid #dfdfdf;
+            background-color: #eaf516;
+            box-shadow: #dfdfdf 0 0 0 0 inset;
+            border-radius: 20px;
+            background-clip: content-box;
+            display: inline-block;
+            -webkit-appearance: none;
+            user-select: none;
+            outline: none;
+        }
+        .switch:before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 20px;
+            background-color: #fff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+        }
+        .switch:checked {
+            border-color: #64bd63;
+            box-shadow: #64bd63 0 0 0 16px inset;
+            background-color: #64bd63;
+        }
+        .switch:checked:before {
+            left: 20px;
+        }
+        .switch.switch-anim {
+            transition: border cubic-bezier(0, 0, 0, 1) 0.4s, box-shadow cubic-bezier(0, 0, 0, 1) 0.4s;
+        }
+        .switch.switch-anim:before {
+            transition: left 0.3s;
+        }
+        .switch.switch-anim:checked {
+            box-shadow: #64bd63 0 0 0 16px inset;
+            background-color: #64bd63;
+            transition: border ease 0.4s, box-shadow ease 0.4s, background-color ease 1.2s;
+        }
+        .switch.switch-anim:checked:before {
+            transition: left 0.3s;
+        }
   </style>
 </head> 
 <body style="height: 100%; margin: 0">
@@ -101,6 +157,8 @@
       <input type="button" style="width: 50px;" value="play" id="play"/>
     </div>
 
+    <span class="switch_span"><input id="switch_key"  style="border:0;outline:none;" class="switch switch-anim" type="checkbox" onchange="switch_weekend(this)"></span>
+
   </div>
  
  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script> 
@@ -114,11 +172,22 @@
     var in_data=[],out_data=[];
     var c_time=18,play_value=18;
     var station_flag=0;
+    var switch_flag=false;
     var play_flag=false;interval_flag = null;
+
+    // var atom_csv='atom_matlab.csv';
+
+    function switch_weekend(a){
+      // console.log('switch:'+a.checked);
+      switch_flag=a.checked;
+
+    }
+
+    function load_csv(atom_csv,in_csv,out_csv){
 
     $.ajax({
         type: "GET",
-        url: "atom_matlab.csv",
+        url: atom_csv,
         dataType: "text",
         async:false,
         success: function(data) {
@@ -153,7 +222,7 @@
 
   $.ajax({
         type: "GET",
-        url: "in.csv",
+        url: in_csv,
         dataType: "text",
         async:false,
         success: function(data) {
@@ -170,7 +239,7 @@
 
     $.ajax({
         type: "GET",
-        url: "out.csv",
+        url: out_csv,
         dataType: "text",
         async:false,
         success: function(data) {
@@ -185,7 +254,10 @@
         }
      });
 
-  console.log(in_data);
+    }
+
+
+  console.log(out_data);
 
    function up(x,y){
         return x.data-y.data
@@ -662,9 +734,13 @@ for(i=0;i<atom_start.length;i++){
 
 </script>
 <script>
-    show_map(c_time-1,station_flag);
-    show_chart(c_time-1);
+  load_csv('atom_matlab.csv','in.csv','out.csv');
+  show_map(c_time-1,station_flag);
+  show_chart(c_time-1);
+
   $(function() {
+
+
     $( "#slider" ).slider({
       value:play_value,
       min: 1,
@@ -685,6 +761,18 @@ for(i=0;i<atom_start.length;i++){
             station_flag=$(this).children('option:selected').val();
             console.log(station_flag);
             show_map(c_time-1,station_flag);
+        });
+
+        $("#switch_key").change(function(){
+            if(switch_flag){
+              load_csv('atom_matlab.csv','in.csv','out.csv');
+              // console.log('swflag:'+switch_flag);
+              show_map(c_time-1,station_flag);
+            }else{
+              load_csv('weekend_atom.csv','weekend_in.csv','weekend_out.csv');
+              // console.log('swflag:'+switch_flag);
+              show_map(c_time-1,station_flag);
+            }
         });
 
         $("#play").mouseup(function(){
