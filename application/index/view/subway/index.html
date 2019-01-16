@@ -203,7 +203,7 @@
     var play_flag=false;interval_flag = null;
     var subway_chart;
     var new_sort_axis = [],new_sort_data=[],new_sort_color=[];
-
+    var switch_name=[];
 
     // var atom_csv='atom_matlab.csv';
 
@@ -298,11 +298,11 @@ console.log(subway_lines);
         return x.data-y.data
     };
 
-   function plot(i) {
+   function plot(i,week) {
       var myChart1 = echarts.init(document.getElementById('main1'));
       var option1 = {
         title: {
-          text: '流量的时间分布',
+          text: week+'的流量时间分布',
           subtext: i,
           subtextStyle: {
             fontSize: 14,
@@ -861,7 +861,8 @@ for(i=0;i<atom_start.length;i++){
 
       subway_chart.on('click', function (params) {
       console.log(new_sort_axis[params.dataIndex]);
-      plot(new_sort_axis[params.dataIndex]);
+      switch_name = new_sort_axis[params.dataIndex];
+      plot(new_sort_axis[params.dataIndex],'工作日');
       // plot(params.dataIndex);
     });
         $("#select_id").change(function(){
@@ -876,12 +877,14 @@ for(i=0;i<atom_start.length;i++){
               // console.log('swflag:'+switch_flag);
               show_map(c_time-1,station_flag);
               show_chart(c_time-1);
+              plot(switch_name,'工作日');
               $("#switch_div").html('工作日');
             }else{
               load_csv('weekend_atom.csv','weekend_in.csv','weekend_out.csv');
               // console.log('swflag:'+switch_flag);
               show_map(c_time-1,station_flag);
               show_chart(c_time-1);
+              plot(switch_name,'周末');
               $("#switch_div").html('周末');
             }
         });
