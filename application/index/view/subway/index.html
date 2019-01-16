@@ -63,6 +63,13 @@
       z-index:5;
       font-weight:bold;
     }
+    .legend{
+       width: auto;
+      margin-left: 5%;
+      position:absolute;
+      bottom: 25%;
+      z-index:5;
+    }
     .time{
       width: 70%;
       position:absolute;
@@ -164,6 +171,7 @@
   </span>
   <div>
     <div id='station_data_div' class="station_data"></div>
+    <img src='legend.png' class="legend">
       <div class="station">
     <span style="">站点数据</span>
     <select id="select_id" style="">
@@ -316,7 +324,7 @@ console.log(subway_lines);
       var option1 = {
         title: {
           text: week+'的流量时间分布',
-          subtext: i,
+          subtext: i+'(点击柱状图切换线路)',
           subtextStyle: {
             fontSize: 14,
             fontWeight: 'bold',
@@ -854,7 +862,8 @@ for(i=0;i<atom_start.length;i++){
   load_csv('atom_matlab.csv','in.csv','out.csv');
   show_map(c_time-1,station_flag);
   show_chart(c_time-1);
-  // plot('1号线');
+  plot(Object.keys(subway_lines)[0],'工作日');
+  console.log(subway_lines[Object.keys(subway_lines)[0]]);
 
   $(function() {
     $( "#slider" ).slider({
