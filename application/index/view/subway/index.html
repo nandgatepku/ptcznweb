@@ -53,6 +53,16 @@
       color: white;
       z-index:5;
     }
+    .station_data{
+      width: auto;
+      margin-left: 5%;
+      position:absolute;
+      bottom: 15%;
+      color: #f6931f;
+      font-size: 35px;
+      z-index:5;
+      font-weight:bold;
+    }
     .time{
       width: 70%;
       position:absolute;
@@ -153,6 +163,7 @@
     <div id="main1" class="left_1"></div>
   </span>
   <div>
+    <div id='station_data_div' class="station_data"></div>
       <div class="station">
     <span style="">站点数据</span>
     <select id="select_id" style="">
@@ -204,6 +215,8 @@
     var subway_chart;
     var new_sort_axis = [],new_sort_data=[],new_sort_color=[];
     var switch_name=[];
+    var week_name='工作日';
+    var myChart;
 
     // var atom_csv='atom_matlab.csv';
 
@@ -512,10 +525,9 @@ option_chart = {
  subway_chart.setOption(option_chart);
   }
 
-
 function show_map(time,station_flag){
 var dom = document.getElementById("bigmap");
-var myChart = echarts.init(dom);
+myChart = echarts.init(dom);
 var app = {};
 option = null;
 app.title = '数据可视化-北京地铁';
@@ -563,6 +575,7 @@ for(i=0;i<atom_start.length;i++){
                temp_data[0]=in_data[k][2];
                temp_data[1]=in_data[k][3];
                temp_data[2]=parseFloat(in_data[k][time+4]);
+               temp_data[3]=in_data[k][1];
                temp_a.value=temp_data;
                var temp_color = echarts.color.modifyHSL('#ff0000', 120-temp_data[2]/2000*120);
                st_color.color=temp_color;
@@ -577,6 +590,7 @@ for(i=0;i<atom_start.length;i++){
                temp_data[0]=out_data[k][2];
                temp_data[1]=out_data[k][3];
                temp_data[2]=parseFloat(out_data[k][time+4]);
+               temp_data[3]=out_data[k][1];
                temp_a.value=temp_data;
                var temp_color = echarts.color.modifyHSL('#ff0000', 120-temp_data[2]/2000*120);
                st_color.color=temp_color;
@@ -591,6 +605,7 @@ for(i=0;i<atom_start.length;i++){
                temp_data[0]=in_data[k][2];
                temp_data[1]=in_data[k][3];
                temp_data[2]=parseFloat(in_data[k][time+4])+parseFloat(out_data[k][time+4]);
+               temp_data[3]=in_data[k][1];
                temp_a.value=temp_data;
                var temp_color = echarts.color.modifyHSL('#ff0000', 120-temp_data[2]/4000*120);
                st_color.color=temp_color;
@@ -862,13 +877,20 @@ for(i=0;i<atom_start.length;i++){
       subway_chart.on('click', function (params) {
       console.log(new_sort_axis[params.dataIndex]);
       switch_name = new_sort_axis[params.dataIndex];
-      plot(new_sort_axis[params.dataIndex],'工作日');
+      plot(new_sort_axis[params.dataIndex],week_name);
       // plot(params.dataIndex);
     });
+
+      myChart.on('click', function (params) {
+      console.log(params.data.value);
+      $('#station_data_div').html(params.data.value[3]+':'+params.data.value[2]+'人');
+    });
+
         $("#select_id").change(function(){
             station_flag=$(this).children('option:selected').val();
             console.log(station_flag);
             show_map(c_time-1,station_flag);
+            $('#station_data_div').html('');
         });
 
         $("#switch_key").change(function(){
@@ -877,19 +899,24 @@ for(i=0;i<atom_start.length;i++){
               // console.log('swflag:'+switch_flag);
               show_map(c_time-1,station_flag);
               show_chart(c_time-1);
-              plot(switch_name,'工作日');
+              week_name='工作日';
+              plot(switch_name,week_name);
               $("#switch_div").html('工作日');
+              $('#station_data_div').html('');
             }else{
               load_csv('weekend_atom.csv','weekend_in.csv','weekend_out.csv');
               // console.log('swflag:'+switch_flag);
               show_map(c_time-1,station_flag);
               show_chart(c_time-1);
-              plot(switch_name,'周末');
+              week_name='周末';
+              plot(switch_name,week_name);
               $("#switch_div").html('周末');
+              $('#station_data_div').html('');
             }
         });
 
         $("#play").mouseup(function(){
+          $('#station_data_div').html('');
           play_flag=!play_flag;
           if(play_flag){
             $(this).css("background","yellow");
