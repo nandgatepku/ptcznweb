@@ -499,7 +499,9 @@ option_chart = {
                   color: '#21abfa',
                   fontSize:'16'
               },
+              formatter: function (value, index) { if (value >= 10000 && value < 10000000) { value = value / 10000 + "万"; } else if (value >= 10000000) { value = value / 10000000 + "千万"; } return value; }
         },   
+
     },
     yAxis: {
         type: 'category',
