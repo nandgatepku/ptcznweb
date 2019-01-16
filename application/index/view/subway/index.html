@@ -320,6 +320,9 @@ console.log(subway_lines);
     };
 
    function plot(i,week) {
+    if(i==''){
+      i=Object.keys(subway_lines)[0];
+    }
       var myChart1 = echarts.init(document.getElementById('main1'));
       var option1 = {
         title: {
